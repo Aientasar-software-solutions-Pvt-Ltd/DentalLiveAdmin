@@ -281,5 +281,10 @@ tbody, th, thead {border-style: none;}
     display: block !important;
 }
 }
+.table {vertical-align: initial;}
 
 .dropdown-item.active, .dropdown-item:active {color: #354053;text-decoration: none;background-color: #EFF3F7;}
+.btn-outline-primary:hover {
+  background-color: #0070D2;
+  color: white!important;
+}
