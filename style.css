@@ -274,3 +274,12 @@ tbody, th, thead {border-style: none;}
 .form-check-input { background-color: #C9E2FF;}
 .form-switch .form-check-input:checked {background-color: #00D9CC;border-color: #00D9CC;}
 .form-check-input:checked {background-color: #0070D2;border-color: #0070D2;}
+
+/* media  */
+@media (max-width: 992px){
+.page-header {
+    display: block !important;
+}
+}
+
+.dropdown-item.active, .dropdown-item:active {color: #354053;text-decoration: none;background-color: #EFF3F7;}
