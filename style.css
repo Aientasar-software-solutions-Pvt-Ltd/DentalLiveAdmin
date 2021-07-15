@@ -282,6 +282,13 @@ tbody, th, thead {border-style: none;}
     display: block !important;
 }
 }
+@media (min-width: 1200px){
+  #chDonut1 {
+    display: block;
+    height: 263px!important;
+    width: 263px!important;
+  }
+  }
 .dropdown-item.active, .dropdown-item:active {color: #354053;text-decoration: none;background-color: #EFF3F7;}
 .btn-outline-primary:hover {background-color: #0070D2;color: white!important;}
 .page-item.active .page-link {background-color: #AEB4BF;border-color: #AEB4BF;}.page-link{color:#AEB4BF ;}
