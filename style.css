@@ -260,6 +260,7 @@ a{text-decoration: none;}
 tr td:first-child, tr th:first-child {padding-left: 1.5rem;}
 tbody, th, thead {border-style: none;}
 .table-hover>tbody>tr:hover {--bs-table-accent-bg: rgb(201 226 255 / 20%);}
+.table tbody td .email span { display: block;}
 
 /* badges */
 .badge-warning , .badge-success {height:25px;width: 80px;border-radius: 10px;position: relative;padding: .25em .65em; }
@@ -281,10 +282,7 @@ tbody, th, thead {border-style: none;}
     display: block !important;
 }
 }
-.table {vertical-align: initial;}
-
 .dropdown-item.active, .dropdown-item:active {color: #354053;text-decoration: none;background-color: #EFF3F7;}
-.btn-outline-primary:hover {
-  background-color: #0070D2;
-  color: white!important;
-}
+.btn-outline-primary:hover {background-color: #0070D2;color: white!important;}
+.page-item.active .page-link {background-color: #AEB4BF;border-color: #AEB4BF;}.page-link{color:#AEB4BF ;}
+.card-header_border :before {border-top-left-radius: 80px;top: 0; content: ''; position: absolute;left: 0;width: 6px; height: 58px; background-color: #00D9CC; margin-top: 0;}
