@@ -293,3 +293,34 @@ tbody, th, thead {border-style: none;}
 .btn-outline-primary:hover {background-color: #0070D2;color: white!important;}
 .page-item.active .page-link {background-color: #AEB4BF;border-color: #AEB4BF;}.page-link{color:#AEB4BF ;}
 .card-header_border :before {border-top-left-radius: 80px;top: 0; content: ''; position: absolute;left: 0;width: 6px; height: 58px; background-color: #00D9CC; margin-top: 0;}
+
+.button {
+  position: relative;
+  transition: background-color 0.6s ease;
+  overflow: hidden;
+}.button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  transform-style: flat;
+  transform: translate3d(-50%, -50%, 0);
+  background: rgba(255, 255, 255, .1);
+  border-radius: 100%;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.button:active:after {
+  width: 200px;
+  height: 200px;
+}
+
+td .body2{
+  display: inline-block;
+  max-width: 200px; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;;
+  }
+

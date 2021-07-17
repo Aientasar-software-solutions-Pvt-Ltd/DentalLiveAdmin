@@ -15,6 +15,11 @@
     integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <style>
+    .form-check-input {
+    width: 15px;
+    height: 15px;}
+    </style>
 </head>
 <body style="background-color: #F7F9FB;">
   <div  class="container-fluid p-0 overflow-hidden">
@@ -50,7 +55,7 @@
               <ul  class="navbar-nav d-md-none me-auto mb-2 mb-md-0">
                 <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Dashboard.html" style="color:#282C33">Dashboard</a></li>
                 <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="CustomerList.html" style="color:#282C33">Customer</a></li>
-                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Products.html" style="color:#282C33">Products</a></li>   </ul>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="ProductList.html" style="color:#282C33">Products</a></li>   </ul>
           </div>
       </div>
   </nav>
@@ -63,7 +68,7 @@
             <a href="Dashboard.html" class="nav_link "><i class='bx bx-tachometer nav_icon' ></i><span class="nav_name">DashBoard</span>
             </a>
             <a href="CustomerList.html" class="nav_link active "> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
-            <a href="Products.html" class="nav_link"> <i class='bx bx-layer nav_icon' ></i><span class="nav_name">Products</span> </a>
+            <a href="ProductList.html" class="nav_link"> <i class='bx bx-layer nav_icon' ></i><span class="nav_name">Products</span> </a>
           
         </div>
       </nav>
@@ -83,7 +88,7 @@
             <div class="card border-0 pb-5" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
               <div class="card-header border-bottom-0" style="background-color:#ffff;">
                 <div class="col-md-5">
-                  <div class="search">
+                  <div class="search my-2">
                       <i class="fa fa-search" style="color: rgba(208, 214, 222, 0.5); font-size: 16px;"></i>
                       <input type="text" class="form-control" placeholder="Search "  style="font-weight: 400; height: 40px ;                     ;"/>
                   </div>
@@ -102,10 +107,10 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr style="vertical-align: middle;">
                       <td>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault">
+                          <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
                       </div></td>
                       <td>
                         <div class="d-flex mt-1">
@@ -118,9 +123,9 @@
                       </td>
                       <td>
                         <span class="badge badge-pill badge-warning body2 mt-2">Inactive</span> </td>                     
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div>
-                        <span class="body2" style="color: #354053;">Colin Sik</span>
+                        <span class="body2 mt-2" style="color: #354053;">Colin Sik</span>
                       </div>
                       </td>
                       <td style="vertical-align:middle;">
@@ -131,7 +136,7 @@
                         </div> 
                       </div> 
                       </td>
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
                             <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
@@ -164,10 +169,10 @@
                          </div>
                       </td>
                     </tr>
-                    <tr>
+                    <tr style="vertical-align: middle;">
                       <td>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault">
+                          <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
                       </div></td>
                       <td>
                         <div class="d-flex mt-1">
@@ -181,12 +186,12 @@
                       <td>
                         <span class="badge badge-pill badge-success body2 mt-2">Active</span> 
                       </td>                     
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div>
-                        <span class="body2" style="color: #354053;" >Simon Sais</span>
+                        <span class="body2 mt-2" style="color: #354053;" >Simon Sais</span>
                       </div>
                       </td>
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div>                        
                           <div class="form-check form-switch ">
                           <input class="form-check-input border-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
@@ -194,7 +199,7 @@
                         </div> 
                       </div> 
                       </td>
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
                             <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
@@ -227,10 +232,10 @@
                          </div>
                       </td>
                     </tr>
-                    <tr>
+                    <tr style="vertical-align: middle;">
                       <td>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault">
+                          <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
                       </div></td>
                       <td>
                         <div class="d-flex mt-1">
@@ -244,12 +249,12 @@
                       </td>
                       <td>
                         <span class="badge badge-pill badge-warning body2 mt-2">Inactive</span> </td>                     
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div>
-                        <span class="body2" style="color: #354053;" >Mario Speedwagon</span>
+                        <span class="body2 mt-2" style="color: #354053;" >Mario Speedwagon</span>
                       </div>
                       </td>
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div>                        
                           <div class="form-check form-switch ">
                           <input class="form-check-input border-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
@@ -257,7 +262,7 @@
                         </div> 
                       </div> 
                       </td>
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
                             <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
@@ -290,10 +295,10 @@
                          </div>
                       </td>
                     </tr>
-                    <tr>
+                    <tr style="vertical-align: middle;">
                       <td>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault">
+                          <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
                       </div></td>
                       <td>
                         <div class="d-flex mt-1">
@@ -308,12 +313,12 @@
                       <td>
                         <span class="badge badge-pill badge-success body2 mt-2">Active</span> 
                        </td>                     
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div>
-                        <span class="body2" style="color: #354053;" >Colin Sik</span>
+                        <span class="body2 mt-2" style="color: #354053;" >Colin Sik</span>
                       </div>
                       </td>
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div>                        
                           <div class="form-check form-switch ">
                           <input class="form-check-input border-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
@@ -321,7 +326,7 @@
                         </div> 
                       </div> 
                       </td>
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
                             <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
@@ -354,10 +359,10 @@
                          </div>
                       </td>
                     </tr>
-                    <tr>
+                    <tr style="vertical-align: middle;">
                       <td>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault">
+                          <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
                       </div></td>
                       <td>
                         <div class="d-flex mt-1">
@@ -371,12 +376,12 @@
                       </td>
                       <td>
                         <span class="badge badge-pill badge-warning body2 mt-2">Inactive</span> </td>                     
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div>
-                        <span class="body2" style="color: #354053;" >Colin Sik</span>
+                        <span class="body2 mt-2" style="color: #354053;" >Colin Sik</span>
                       </div>
                       </td>
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div>                        
                           <div class="form-check form-switch ">
                           <input class="form-check-input border-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
@@ -384,7 +389,7 @@
                         </div> 
                       </div> 
                       </td>
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
                             <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
@@ -417,28 +422,28 @@
                          </div>
                       </td>
                     </tr>
-                    <tr>
+                    <tr style="vertical-align: middle;">
                       <td>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault">
+                          <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
                       </div></td>
                       <td>
                         <div class="d-flex mt-1">
                              <img alt="..." src="assets/image2.png" class="avatar avatar-xs rounded-circle ">
                              <div class="ps-2 email">
-                              <span class="body2" style="color: #354053;">Aida Bugg </span>
-                              <span class="body2" style="color: #354053;">aida.bugg@gmail.com</span>
+                              <span class="body2" style="color: #354053;">Aida Bugg Aida BuggAida Bugg Aida Bugg </span>
+                              <span class="body2" style="color: #354053;">aida.bugg@gmail.comaida.bugg@gmail.com</span>
                               </div>
                             </div>
                       </td>
                       <td>
                         <span class="badge badge-pill badge-warning body2 mt-2">Inactive</span> </td>                     
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div>
-                        <span class="body2" style="color: #354053;" >Colin Sik</span>
+                        <span class="body2 mt-2" style="color: #354053;" >Colin SikColin SikColin SikColin Sik</span>
                       </div>
                       </td>
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div>                        
                           <div class="form-check form-switch ">
                           <input class="form-check-input border-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
@@ -446,7 +451,7 @@
                         </div> 
                       </div> 
                       </td>
-                      <td style="vertical-align: middle;">
+                      <td >
                         <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
                             <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>

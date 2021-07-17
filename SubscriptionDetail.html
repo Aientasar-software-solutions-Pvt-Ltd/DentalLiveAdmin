@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dental-Live Mail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .avatar-group .avatar-lg+.avatar-lg {
+    margin-left: -1.9rem;}
+    .avatar.avatar-circle .avatar-img, .avatar.avatar-circle .avatar-initials {
+    border-radius: 50%;}
+    .avatar.avatar-lg {
+    width: 4.25rem;
+    min-width: 4.25rem;
+    height: 4.25rem;}
+    </style>
+</head>
+<body style="background-color: #F7F9FB;">
+  <div  class="container-fluid p-0 overflow-hidden">
+    <nav  class="navbar navbar-expand-md navbar-dark border-bottom px-2" style="box-shadow: 0 1px 3px 0 rgb(54 74 99 / 5%);background-color: white;">
+      <div  class="container-fluid">
+        <a class="navbar-brand logo" href="#">
+          <img src="assets/Logo_Dark.png">
+        </a>
+        <ul class="navbar-nav me-auto mt-1 mb-md-0">
+          <li class="nav-item">
+              <a class="nav-link "  style="color:#5D6A7E;font-size:20px;">Admin</a>
+          </li>
+      </ul>          
+      <button  class="navbar-toggler collapsed" data-bs-target="#collapsibleNavbar" data-bs-toggle="collapse" type="button" aria-expanded="false">
+              <span  class="navbar-toggler-icon"><i  class="fa fa-bars"></i></span>
+          </button>
+          <div  class="navbar-collapse collapse" id="collapsibleNavbar" >
+              <ul  class="navbar-nav ms-auto my-2 my-md-0">
+              <li class="nav-item">
+                <a class="nav-link align-items-center  p-0">
+                  <img alt="..." src="assets/tesimonial-2.png" class="avatar avatar-xs rounded-circle " style="border: 1px dotted #00D9CC;">
+                </a>
+              </li>
+              <li class="nav-item">
+                <label  class="nav-link body2"  style="color:#282C33">Hi,Emma</label>
+               </li>
+              <li class="nav-item">
+                <a class="nav-link body2" href="#" style="color:#282C33">Logout</a>
+              </li>
+             
+              </ul>
+              <div class="dropdown-divider"></div>
+              <ul  class="navbar-nav d-md-none me-auto mb-2 mb-md-0">
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Dashboard.html" style="color:#282C33">Dashboard</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="CustomerList.html" style="color:#282C33">Customer</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="ProductList.html" style="color:#282C33">Products</a></li>   </ul>
+          </div>
+      </div>
+  </nav>
+    <div  class="left_nav row">
+    <div class=" l-navbar d-none d-md-block col-md-3 col-lg-2 min-vh-100 ">
+       <div class="" id="nav-bar">
+        
+        <nav class="nav">
+          <div class="nav_list">
+            <a href="Dashboard.html" class="nav_link "><i class='bx bx-tachometer nav_icon' ></i><span class="nav_name">DashBoard</span> </a>
+            <a href="CustomerList.html" class="nav_link "> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
+            <a href="ProductList.html" class="nav_link active "> <i class='bx bx-layer nav_icon' ></i><span class="nav_name">Products</span> </a>
+          
+        </div>
+      </nav>
+       </div>
+     </div>
+     <div class="col-md-9 col-lg-10 p-4 mx-auto">
+          <div class="page-header d-flex">
+            <ol class="breadcrumb">
+              <!-- breadcrumb --> 
+              <li class="breadcrumb-item">
+                <h5 class="fw-bold" style="color: #011A3E;">Subscription Detail</h5>
+            </li> 
+          </ol>
+          <div class="ml-auto" style="margin-left: auto !important;"> 
+            <div> 
+              <a href="#" class="btn btn-primary  mb-2  border-0" style="background: #F7517F;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #FEB3B1;"> 
+                Disable Subscription 
+              </a>
+              </div> 
+             </div>
+          </div>
+        
+
+         <div class="row  pt-2">
+           <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div class="card border-0 mb-3 p-2" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-7 col-7">
+                    <p class="body1 mb-3 pt-1 fw-bold" style="color: #011A3E;">Total Users Active</p>
+                    <span style="color:#aeb4bf;;">Increased by <span style="color: #00D9CC;">15%</span><i class='bx bx-up-arrow-alt' style="color: #00D9CC;"></i></span>
+                    <div class="avatar-group d-flex my-3 py-md-2">
+                      <span class="avatar avatar-lg avatar-circle">
+                      <img class="avatar-img" src="assets/Ellipse 63.png" alt="Avatar">
+                      </span>
+                      <span class="avatar avatar-lg avatar-circle">
+                      <img class="avatar-img" src="assets/Ellipse 64.png" alt="Avatar">
+                      </span>
+                      <span class="avatar avatar-lg avatar-circle">
+                      <img class="avatar-img" src="assets/Ellipse 65.png" alt="Avatar">
+                      </span>
+
+                      </div>
+                  </div>
+                  <div class="col-md-5 col-5" >
+                    <div class="mt-5">
+                      <h2 class="pb-0 mb-0 fw-bold" style="color:#011A3E">50</h2>
+                      <p class="pt-0" style="color: #AEB4BF;">Users</p>
+                  </div>
+
+                  </div>
+
+                </div>
+                </div>
+             
+            </div>
+            <div class="card border-0 p-2 mb-1" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-7 col-7">
+                    <p class="body1 mb-3 pt-1 fw-bold" style="color: #011A3E;">Total Vendors Active</p>
+                    <span style="color:#aeb4bf;;">Increased by <span style="color: #00D9CC;">15%</span><i class='bx bx-up-arrow-alt' style="color: #00D9CC;"></i></span>
+                    <div class="avatar-group d-flex my-3 py-md-2">
+                      <span class="avatar avatar-lg avatar-circle">
+                      <img class="avatar-img" src="assets/Ellipse 63.png" alt="Avatar">
+                      </span>
+                      <span class="avatar avatar-lg avatar-circle">
+                      <img class="avatar-img" src="assets/Ellipse 64.png" alt="Avatar">
+                      </span>
+                      <span class="avatar avatar-lg avatar-circle">
+                      <img class="avatar-img" src="assets/Ellipse 65.png" alt="Avatar">
+                      </span>
+
+                      </div>
+                  </div>
+                  <div class="col-md-5 col-5">
+                    <div class="mt-5">
+                    <h2 class="pb-0 mb-0 fw-bold" style="color:#011A3E">25</h2>
+                    <p class="pt-0" style="color: #AEB4BF;">Users</p>
+                  </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+           </div>
+          <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+            <div class="card border-0 mb-1" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+              <div class="card-header card-header_border " style="background-color:#ffff;">
+                <p class="body1 card-title mt-2" style="color: #354053;">Edit Subscription Details</p>
+                </div>
+                <div class="card-body">
+                  <div class="row mt-2">
+                    <div class="col-md-12">
+                      <div class="row">
+                      <div class="col-md-4"> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Subscription Name</label>
+                          <input type="text"  class="form-control" >
+                        </div>
+                      </div>
+                      <div class="col-md-2 ">
+                        <label  class="form-label body2" style="color: #011A3E;">Price</label>
+                          <input type="text"  class="form-control" > 
+                      </div>
+                      <div class="col-md-3">
+                        <label  class="form-label body2" style="color: #011A3E;">Total Users</label>
+                          <input type="text"  class="form-control" > 
+                      </div>
+                      <div class="col-md-3">
+                        <label  class="form-label body2" style="color: #011A3E;">Storage Allocated</label>
+                          <input type="text"  class="form-control" > 
+                      </div>
+                      <div class="col-md-6 "> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Expiration Date</label>
+                          <input type="date"  class="form-control" >
+                        </div>
+                      </div>
+                      <div class="col-md-6 "> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Activation Date</label>
+                          <input type="date"  class="form-control" >
+                        </div>
+                      </div>
+                      <div class="col-md-6"> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Deactivation Date</label>
+                          <input type="date"  class="form-control" >
+                        </div>
+
+                      </div>
+                      <div class="col-md-6"> 
+                      </div>
+                      <div class="col-md-6"> 
+                        <div class="mb-4">
+                          <p  class="form-label body2" style="color: #011A3E;">Date on Creation :  
+                            <span style="color: #0070D2;"> 22/7/21</span></p>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-6"> 
+                        <div class="mb-4">
+                          <p  class="form-label body2 d-flex" style="color: #011A3E;">Status : &nbsp;&nbsp;
+                              <span style="color: #0070D2;"> Active</span>
+                            <span class="form-check form-switch ms-2">
+                              <input class="form-check-input border-0 mt-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
+                              width:44px;">
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-md-6"> 
+                        <a href="#" class="btn btn-primary   me-3   border-0" style="background-color:#0070D2;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #C3D2FF;">
+                          Save
+                        </a> 
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center pt-2">
+            <div class="col-md-12">
+              <div class="card border-0 " style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+                <div class="card-header card-header_border  border-bottom-0" style="background-color:#ffff;">
+                  <div class="row">
+                    <div class="col-5">
+                      <p class="body1 card-title mt-2" style="color: #354053;">Features List</p>
+                  </div> 
+                  <div class="col-7">
+                    <a id="addNewRow" class="btn btn-primary border-0" style="float:right;background-color:#0070D2;height:40px;padding:10px 18px;text-transform: uppercase;">
+                     Add features
+                    </a>
+                </div>
+              </div>
+                  </div>
+                <div class="table-responsive">
+                  <table class="table table-hover table-nowrap align-items-center" id="DyanmicTable" style="min-width: 768px;">
+                    <thead class="thead-light">
+                      <tr style="text-transform:uppercase;">
+                        <th  class="body2" >Order</th>
+                        <th  class="body2" >FEATURES NAME</th>
+                        <th  class="body2" >DESCRIPTION </th>
+                        <th  class="body2" >CREATED ON </th>
+                        <th  class="body2" >Actions </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="vertical-align: middle;">
+                          <span class="body2">1</span>
+                        </td>
+                        <td style="vertical-align: middle;">
+                                <span class="body2 my-2" style="color: #354053;">Multi Location </span>
+                         </td>
+                        <td style="vertical-align: middle;">
+                          <span class="body2 my-2" style="color: #354053;">Multi Location upto 3  </span>
+                         </td>
+                         <td style="vertical-align: middle;">
+                        
+                          <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
+                       
+                         </td>                      
+
+
+                      </tr>
+                      <tr>
+                        <td style="vertical-align: middle;">
+                          <span class="body2">1</span>
+                        </td>
+                        <td style="vertical-align: middle;">
+                                <span class="body2 my-2" style="color: #354053;">Multi Location </span>
+                         </td>
+                        <td style="vertical-align: middle;">
+                          <span class="body2 my-2" style="color: #354053;">Multi Location upto 3  </span>
+                         </td>
+                         <td style="vertical-align: middle;">
+                        
+                          <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
+                       
+                         </td>                      
+
+
+                      </tr>
+                      <tr>
+                        <td style="vertical-align: middle;">
+                          <span class="body2">1</span>
+                        </td>
+                        <td style="vertical-align: middle;">
+                                <span class="body2 my-2" style="color: #354053;">Multi Location </span>
+                         </td>
+                        <td style="vertical-align: middle;">
+                          <span class="body2 my-2" style="color: #354053;">Multi Location upto 3  </span>
+                         </td>
+                         <td style="vertical-align: middle;">
+                        
+                          <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
+                       
+                         </td>                      
+
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row align-items-center pt-2">
+          <div class="col-md-12">
+            <div class="card border-0 " style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+              <div class="card-header card-header_border  " style="background-color:#ffff;">
+                <div class="row">
+                  <div class="col-5">
+                    <p class="body1 card-title mt-2" style="color: #354053;">Add-On List </p>
+                </div> 
+                <div class="col-7">
+                  <a id="addNewRow" class="btn btn-primary border-0" style="float:right;background-color:#0070D2;height:40px;padding:10px 18px;text-transform: uppercase;">
+                    Add Add-On
+                  </a>
+              </div>
+            </div>
+                </div>
+                <div class="card-body">
+                  <div class="row mt-2">
+                    <div class="col-md-12">
+                      <div class="row">
+                      <div class="col-md-4"> 
+                        <div class="mb-4">
+                          <label class="form-label body2" style="color: #011A3E;">Add-On Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+
+                      </div>
+                      <div class="col-md-3">
+                        <div class="mb-4">
+                        <label class="form-label body2" style="color: #011A3E;">Price</label>
+                          <input type="text" class="form-control"> 
+                        </div>
+                      </div>
+                      <div class="col-md-5 mt-md-5"> 
+                       
+                          <p class="form-label body2" style="color: #011A3E;">Date on Creation :  
+                            <span style="color: #0070D2;"> 22/7/21</span></p>
+                       
+                      </div>
+                      <div class="col-md-5">
+                        <div class="mb-4">
+                        <label class="form-label body2" style="color: #011A3E;">Add-On Parameter</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Parameter 1</option>
+                          <option value="1">Parameter 2</option>
+                        </select></div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="mb-4">
+                        <label class="form-label body2" style="color: #011A3E;">Add-On Value</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Value</option>
+                          <option value="1">Value 2</option>
+                        </select></div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="mb-4">
+                        <label class="form-label body2" style="color: #011A3E;">Description</label>
+                          <input type="text" class="form-control"> 
+                      </div>
+                    </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 mb-2">
+                        <a href="#" class="btn btn-primary mt-1  me-2 border-0" style="background-color:#0070D2;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #C3D2FF;">
+                          Save
+                        </a> 
+                        <a href="#" class="btn btn-primary mt-1   me-2 border-0" style="background-color:#F7517F;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #C3D2FF;">
+                          Delete
+                        </a> 
+                        <a href="#" class="btn btn-outline-primary  mt-1  " style="height:40px;padding:10px 31px;">
+                          Reset
+                        </a> 
+                    </div>
+                  </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              
+              <div class="table-responsive">
+                <table class="table table-hover table-nowrap align-items-center" style="min-width: 768px;" id="DyanmicTable">
+                  <thead class="thead-light">
+                    <tr style="text-transform:uppercase;">
+                      <th  class="body2" >ADD ON NAME</th>
+                      <th  class="body2" >DESCRIPTION  </th>
+                      <th  class="body2" >CREATED ON </th>
+                      <th  class="body2" >Actions </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: middle;">
+                           <span class="body2 my-2" style="color: #354053;">Support </span>
+                       </td>
+                      <td style="vertical-align: middle;">
+                        <span class="body2 my-2" style="color: #354053;">24/7 support service available </span>
+                       </td>
+                       <td style="vertical-align: middle;">
+                        <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
+                       </td>
+                       <td style="vertical-align: middle;">
+                        <div class="mt-1 d-flex">
+                          <a href="#" class="me-2">
+                            <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
+                          </a>
+                        <a href="#" class="me-1">
+                          <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>                        </a>
+                         </div>
+                      </td>                      
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">
+                            <span class="body2 my-2" style="color: #354053;">Sub - Users</span>
+                       </td>
+                      <td style="vertical-align: middle;">
+                        <span class="body2 my-2" style="color: #354053;">User can add more sub user </span>
+                       </td>
+                       <td style="vertical-align: middle;"> 
+                        <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
+                       </td>
+                       <td style="vertical-align: middle;">
+                        <div class="mt-1 d-flex">
+                          <a href="#" class="me-2">
+                            <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
+                          </a>
+                        <a href="#" class="me-1">
+                          <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>
+                        </a>
+                         </div>
+                      </td>                      
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">
+                              <span class="body2 my-2" style="color: #354053;">Add GB available </span>
+                       </td>
+                      <td style="vertical-align: middle;">
+                        <span class="body2 my-2" style="color: #354053;">User can increase the space </span>
+                       </td>
+                       <td style="vertical-align: middle;">
+                        <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
+                       </td> <td style="vertical-align: middle;">
+                        <div class="mt-1 d-flex">
+                          <a href="#" class="me-2">
+                            <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
+                          </a>
+                        <a href="#" class="me-1">
+                          <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>                        </a>
+                         </div>
+                      </td>                      
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">
+                              <span class="body2 my-2" style="color: #354053;"> Location </span>
+                       </td>
+                      <td style="vertical-align: middle;">
+                        <span class="body2 my-2" style="color: #354053;">User can add location</span>
+                       </td>
+                       <td style="vertical-align: middle;">                      
+                        <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>                     
+                       </td> 
+                       <td style="vertical-align: middle;">
+                        <div class="mt-1 d-flex">
+                          <a href="#" class="me-2">
+                            <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
+                          </a>
+                        <a href="#" class="me-1">
+                          <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>                        </a>
+                         </div>
+                      </td>                    
+                    
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+      </div>
+     
+
+
+     
+    
+     
+
+</div>
+
+<script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+<script src="bootstable.min.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+<script>
+  /* chart.js chart examples */
+
+// chart colors
+var colors = ['#00D9CC','#0070D2'];
+
+/* 3 donut charts */
+var donutOptions = {
+  cutoutPercentage:60, 
+  legend: {position:'bottom', padding:5, labels: {pointStyle:'circle', usePointStyle:true}}
+};
+
+// donut 1
+var chDonutData1 = {
+    labels: ['Data used', 'Available'],
+    datasets: [
+      {
+        backgroundColor: colors.slice(0,2),
+        borderWidth: 0,
+        data: [1, 5]
+      }
+    ]
+};
+
+var chDonut1 = document.getElementById("chDonut1");
+if (chDonut1) {
+  new Chart(chDonut1, {
+      type: 'pie',
+      data: chDonutData1,
+      options: donutOptions
+  });
+}
+
+</script>
+<script>
+  $('#DyanmicTable').SetEditable({ $addButton: $('#addNewRow')});
+ </script>
+ <script>
+   
+ </script>
+</body>
+
+</html>
