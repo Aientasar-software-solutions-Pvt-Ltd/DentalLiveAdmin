@@ -79,14 +79,12 @@ body {
   height: 50px;
 }
 
-.form-control:focus {
-  background: #FFFFFF;
+.form-control:focus , .form-select:focus {
   border: 2px solid #00D9CC;
   box-sizing: border-box;
   box-shadow: 0px 2px 4px #B4FFFA;
   border-radius: 6px;
-  outline: 0;
-}
+  outline:0;}
 
 h1 {
   font-style: normal;
@@ -218,7 +216,6 @@ app-view-mail blockquote {
   font-size: 16px;
   height: 47px;
   /* width: 180px; */
-  border-radius: 6px;
   display: grid;
   grid-template-columns: max-content max-content;
   align-items: center;
@@ -243,6 +240,7 @@ app-view-mail blockquote {
   margin-top: .25rem;
 }
 .l-navbar .active {
+  border-radius: 6px;
   color: white;
   background-color: #0070D2;
 }
@@ -300,7 +298,7 @@ tbody, th, thead {border-style: none;}
 
 td .body2{
   display: inline-block;
-  max-width: 200px; 
+  max-width: 260px; 
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;;
@@ -321,11 +319,7 @@ td .body2{
 .btn-1:active {transform: translateY(-0.25em);background: #07D5E8!important;color: white!important;border: none!important;}
 .btn-2:hover {background: #F7517F!important;color: white!important;-webkit-transition: all 0.35s ease;transition: all 0.35s ease;}
 .btn-2:active {transform: translateY(-0.25em);background: #f7517fdb!important;color: white;outline: none;}
-
-.tooltip-inner {
-  background-color:red;
+.form-check-input:focus{
+  outline:none;
+  box-shadow: 0px 2px 4px #ffffff;
 }
-.tooltip.top .tooltip-arrow { border-top-color: #FF9900; }
-.tooltip.right .tooltip-arrow { border-right-color: #FF9900; }
-.tooltip.bottom .tooltip-arrow { border-bottom-color: #FF9900; }
-.tooltip.left .tooltip-arrow { border-left-color: #FF9900; }
