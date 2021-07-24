@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
     <style>
+    .form-check-input {
+    width: 15px;
+    height: 15px;}
     .avatar-group .avatar-lg+.avatar-lg {
     margin-left: -1.9rem;}
     .avatar.avatar-circle .avatar-img, .avatar.avatar-circle .avatar-initials {
@@ -70,8 +73,8 @@
           <div class="nav_list">
             <a href="Dashboard.html" class="nav_link "><i class='bx bx-tachometer nav_icon' ></i><span class="nav_name">DashBoard</span> </a>
             <a href="CustomerList.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
-            <a href="ProductList.html" class="nav_link active "> <i class='bx bx-layer nav_icon' ></i><span class="nav_name">Products</span> </a>
-            <a href="PackagesList.html" class="nav_link"> <i class='bx bxs-coupon nav_icon'></i> <span class="nav_name">Packages</span> </a>
+            <a href="ProductList.html" class="nav_link  "> <i class='bx bx-layer nav_icon' ></i><span class="nav_name">Products</span> </a>
+            <a href="PackagesList.html" class="nav_link active"> <i class='bx bxs-coupon nav_icon'></i> <span class="nav_name">Packages</span> </a>
             <a href="VendorList.html" class="nav_link "> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Vendor</span> </a>
         </div>
       </nav>
@@ -82,13 +85,16 @@
             <ol class="breadcrumb">
               <!-- breadcrumb --> 
               <li class="breadcrumb-item">
-                <h5 class="fw-bold" style="color: #011A3E;">Subscription Detail</h5>
+                <h5 class="fw-bold" style="color: #011A3E;">Package Details</h5>
             </li> 
           </ol>
           <div class="ml-auto" style="margin-left: auto !important;"> 
             <div> 
+              <a href="#" class="btn btn-primary btn-1  me-3 mb-2  border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background-color:#0070D2;height:40px;padding:10px 31px;">
+                Add New Package
+              </a>
               <a href="#" class="btn btn-primary btn-2  mb-2  border-0" style="background: #F7517F;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #FEB3B1;"> 
-                Disable Subscription 
+                Disable Package 
               </a>
               </div> 
              </div>
@@ -96,6 +102,114 @@
         
 
          <div class="row  pt-2">
+          <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+            <div class="card border-0 mb-1" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+              <div class="card-header card-header_border " style="background-color:#ffff;">
+                <p class="body1 card-title mt-2" style="color: #354053;">Edit Package Details</p>
+                </div>
+                <div class="card-body">
+                  <div class="row mt-2">
+                    <div class="col-md-12">
+                      <div class="row">
+                      <div class="col-md-4"> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Package Name</label>
+                          <input type="text"  class="form-control" >
+                        </div>
+                      </div>
+                      <div class="col-md-2 ">
+                        <div class="mb-4">
+                        <label  class="form-label body2" style="color: #011A3E;">Price</label>
+                          <input type="text"  class="form-control" > 
+                      </div>
+                    </div>
+                      <div class="col-md-3">
+                        <div class="mb-4">
+                        <label  class="form-label body2" style="color: #011A3E;">Tenure</label>
+                          <input type="text"  class="form-control" > 
+                      </div>
+                    </div>
+                      <div class="col-md-3">
+                        <div class="mb-4">
+                        <label  class="form-label body2" style="color: #011A3E;">Storage Allocated</label>
+                          <input type="text"  class="form-control" > 
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="mb-4">
+                      <label  class="form-label body2" style="color: #011A3E;">Products</label>
+                        <input type="text"  class="form-control" > 
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-4">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Dental Mail </label>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Dental Meet </label>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Dental Planner</label>
+                  </div>
+                </div>
+                      <div class="col-md-6 "> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Activation Date</label>
+                          <input type="date"  class="form-control classic" >
+                        </div>
+                      </div>
+                      <div class="col-md-6 "> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Deactivation Date</label>
+                          <input type="date"  class="form-control classic" >
+                        </div>
+                      </div>
+                      <div class="col-md-6"> 
+                        <div class="mb-4">
+                          <label  class="form-label body2" style="color: #011A3E;">Expiration Date</label>
+                          <input type="date"  class="form-control classic" >
+                        </div>
+
+                      </div>
+                     
+                      <div class="col-md-6"> 
+                        <div class="mt-md-5">
+                          <p  class="form-label body2" style="color: #011A3E;">Date on Creation :  
+                            <span style="color: #0070D2;"> 22/7/21</span></p>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-6"> 
+                        <div class="mb-4">
+                          <p  class="form-label body2 d-flex" style="color: #011A3E;">Status : &nbsp;&nbsp;
+                              <span style="color: #0070D2;"> Active</span>
+                            <span class="form-check form-switch ms-2">
+                              <input class="form-check-input border-0 mt-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
+                              width:44px;">
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-md-6"> 
+                        <a href="#" class="btn btn-primary   me-3  btn-1  border-0" style="background-color:#0070D2;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #C3D2FF;">
+                          Save
+                        </a> 
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
             <div class="card border-0 mb-3 p-2" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
               <div class="card-body">
@@ -157,202 +271,9 @@
                 </div>
             </div>
            </div>
-          <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
-            <div class="card border-0 mb-1" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
-              <div class="card-header card-header_border " style="background-color:#ffff;">
-                <p class="body1 card-title mt-2" style="color: #354053;">Edit Subscription Details</p>
-                </div>
-                <div class="card-body">
-                  <div class="row mt-2">
-                    <div class="col-md-12">
-                      <div class="row">
-                      <div class="col-md-4"> 
-                        <div class="mb-4">
-                          <label  class="form-label body2" style="color: #011A3E;">Subscription Name</label>
-                          <input type="text"  class="form-control" >
-                        </div>
-                      </div>
-                      <div class="col-md-2 ">
-                        <div class="mb-4">
-                        <label  class="form-label body2" style="color: #011A3E;">Price</label>
-                          <input type="text"  class="form-control" > 
-                      </div>
-                    </div>
-                      <div class="col-md-3">
-                        <div class="mb-4">
-                        <label  class="form-label body2" style="color: #011A3E;">Total Users</label>
-                          <input type="text"  class="form-control" > 
-                      </div>
-                    </div>
-                      <div class="col-md-3">
-                        <div class="mb-4">
-                        <label  class="form-label body2" style="color: #011A3E;">Storage Allocated</label>
-                          <input type="text"  class="form-control" > 
-                      </div>
-                    </div>
-                      <div class="col-md-6 "> 
-                        <div class="mb-4">
-                          <label  class="form-label body2" style="color: #011A3E;">Expiration Date</label>
-                          <input type="date"  class="form-control classic" >
-                        </div>
-                      </div>
-                      <div class="col-md-6 "> 
-                        <div class="mb-4">
-                          <label  class="form-label body2" style="color: #011A3E;">Activation Date</label>
-                          <input type="date"  class="form-control classic" >
-                        </div>
-                      </div>
-                      <div class="col-md-6"> 
-                        <div class="mb-4">
-                          <label  class="form-label body2" style="color: #011A3E;">Deactivation Date</label>
-                          <input type="date"  class="form-control classic" >
-                        </div>
-
-                      </div>
-                      <div class="col-md-6"> 
-                      </div>
-                      <div class="col-md-6"> 
-                        <div class="mb-4">
-                          <p  class="form-label body2" style="color: #011A3E;">Date on Creation :  
-                            <span style="color: #0070D2;"> 22/7/21</span></p>
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-6"> 
-                        <div class="mb-4">
-                          <p  class="form-label body2 d-flex" style="color: #011A3E;">Status : &nbsp;&nbsp;
-                              <span style="color: #0070D2;"> Active</span>
-                            <span class="form-check form-switch ms-2">
-                              <input class="form-check-input border-0 mt-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
-                              width:44px;">
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row mt-2">
-                      <div class="col-md-6"> 
-                        <a href="#" class="btn btn-primary   me-3  btn-1  border-0" style="background-color:#0070D2;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #C3D2FF;">
-                          Save
-                        </a> 
-                      </div>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+         
           </div>
-          <div class="row align-items-center pt-2">
-            <div class="col-md-12">
-              <div class="card border-0 " style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
-                <div class="card-header   border-bottom-0" style="background-color:#ffff;">
-                  <div class="row">
-                    <div class="col-5 card-header_border">
-                      <p class="body1 card-title mt-2" style="color: #354053;">Features List</p>
-                  </div> 
-                  <div class="col-7">
-                    <a  class="btn btn-primary border-0 add-new btn-1" style="float:right;background-color:#0070D2;height:40px;padding:10px 18px;">
-                     Add features
-                    </a>
-                </div>
-              </div>
-                  </div>
-                <div class="table-responsive">
-                  <table class="table table-hover table-nowrap align-items-center"  style="min-width: 768px;">
-                    <thead class="thead-light">
-                      <tr style="text-transform:uppercase;">
-                        <th  class="body2" >Order</th>
-                        <th  class="body2" >FEATURES NAME</th>
-                        <th  class="body2" >DESCRIPTION </th>
-                        <th  class="body2" >CREATED ON </th>
-                        <th  class="body2" >Actions </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: middle;">
-                            <a href="javascript:void()" class="badge badge-circle " style=" border-radius: 100px;font-size:14px;background-color: #FFA26B;">1</a>
-                         <td style="vertical-align: middle;">
-                                <span class="body2 my-2" style="color: #354053;"> Video calling</span>
-                         </td>
-                        <td style="vertical-align: middle;">
-                          <span class="body2 my-2" style="color: #354053;">MyDentist Mail and  Face2Face </span>
-                         </td>
-                         <td style="vertical-align: middle;">
-                        
-                          <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
-                       
-                         </td>
-                         <td style="vertical-align: middle;">
-                          <div class="mt-1 d-flex">
-                            <span class="material-icons me-2" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
-                            <i class="bx bxs-trash me-1" style="font-size: 1.55rem;color:#FA9FBD;"></i>  
-                           </div>
-                        </td>                      
-
-
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">
-                          <a href="javascript:void()" class="badge badge-circle " style=" border-radius: 100px;font-size:14px;background-color: #F6E444;">2</a>
-                        </td>
-                        <td style="vertical-align: middle;">
-                                <span class="body2 my-2" style="color: #354053;">     Add GB available </span>
-                         </td>
-                        <td style="vertical-align: middle;">
-                          <span class="body2 my-2" style="color: #354053;">User can increase the space  </span>
-                         </td>
-                         <td style="vertical-align: middle;">
-                        
-                          <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
-                       
-                         </td> 
-                         <td style="vertical-align: middle;">
-                          <div class="mt-1 d-flex">
-                            <a href="#" class="me-2">
-                              <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
-                            </a>
-                          <a href="#" class="me-1">
-                            <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i> </a>
-                           </div>
-                        </td>                     
-
-
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">
-                          <a href="javascript:void()" class="badge badge-circle " style=" border-radius: 100px;font-size:14px;background-color: #B0A1E9;">3</a>
-                        </td>
-                        <td style="vertical-align: middle;">
-                                <span class="body2 my-2" style="color: #354053;">Sub user account </span>
-                         </td>
-                        <td style="vertical-align: middle;">
-                          <span class="body2 my-2" style="color: #354053;">Sub User account with permissions </span>
-                         </td>
-                         <td style="vertical-align: middle;">
-                        
-                          <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
-                       
-                         </td> 
-                         <td style="vertical-align: middle;">
-                        <div class="mt-1 d-flex">
-                          <a href="#" class="me-2">
-                            <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
-                          </a>
-                        <a href="#" class="me-1">
-                          <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>                        </a>
-                         </div>
-                      </td>                     
-
-
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-            </div>
-            </div>
-        </div>
+         
         <div class="row align-items-center pt-2">
           <div class="col-md-12">
             <div class="card border-0" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
