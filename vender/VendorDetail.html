@@ -54,7 +54,7 @@
                 <label  class="nav-link body2"  style="color:#282C33">Hi,Emma</label>
                </li>
               <li class="nav-item">
-                <a class="nav-link body2" href="#" style="color:#282C33">Logout</a>
+                <a class="nav-link body2" href="vendorlogin.html" style="color:#282C33">Logout</a>
               </li>
              
               </ul>
@@ -74,7 +74,6 @@
             <a href="Dashboard.html" class="nav_link "><i class='bx bx-tachometer nav_icon' ></i><span class="nav_name">DashBoard</span></a>
             <a href="VendorCustomerList.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
             <a href="CouponList.html" class="nav_link "> <i class='bx bx-layer nav_icon' ></i><span class="nav_name">Coupons</span> </a>
-            <a href="VendorList.html" class="nav_link "> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Vendor</span> </a>
          </div>
       </nav>
        </div>
@@ -226,14 +225,14 @@
                       
                       <div class="col-md-12 justify-content-center">
                         <div>
-                          <p class=" body2">Total Earning </p>
+                          <p class=" body2">Total Customer Count </p>
                         </div>
                           <div class="card border-0">
                               <div class="card-body">
                                   <canvas id="chDonut1"></canvas>
                               </div>
                       </div>
-                      <p class=" body2">Earning of July</p>
+                      <p class=" body2">All Packages and Products</p>
                                          
                       </div>
                     </div>
@@ -245,14 +244,14 @@
                       
                       <div class="col-md-12 justify-content-center">
                         <div>
-                          <p class=" body2">Total Earning</p>
+                          <p class=" body2">New Customer Monthly </p>
                         </div>
                           <div class="card border-0">
                               <div class="card-body">
                                   <canvas id="chDonut2"></canvas>
                               </div>
                       </div> 
-                       <p class=" body2">Earning of July</p>
+                       <p class=" body2">Last 3 months</p>
                                          
                       </div>
                     </div>
@@ -386,12 +385,12 @@ var donutOptions = {
 
 // donut 1
 var chDonutData1 = {
-    labels: ['Data used', 'Available'],
+    labels: ['', 'Total Users'],
     datasets: [
       {
         backgroundColor: colors.slice(0,2),
         borderWidth: 0,
-        data: [1, 5]
+        data: [1000, 20000]
       }
     ]
 };
@@ -417,7 +416,7 @@ var donutOptions = {
 };
 
 // donut 1
-var chDonutData2 = {
+var chDonutData = {
     labels: ['Data used', 'Available'],
     datasets: [
       {
