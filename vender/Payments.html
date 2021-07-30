@@ -75,9 +75,9 @@
           <div class="nav_list">
             <a href="Dashboard.html" class="nav_link "><i class='bx bx-tachometer nav_icon' ></i><span class="nav_name">DashBoard</span></a>
             <a href="VendorCustomerList.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
-            <a href="CouponList.html" class="nav_link active"> <i class="material-icons nav_icon"> local_offer</i><span class="nav_name">Coupons</span> </a>
+            <a href="CouponList.html" class="nav_link "> <i class="material-icons nav_icon"> local_offer</i><span class="nav_name">Coupons</span> </a>
             <a href="Transactionslist.html" class="nav_link "><i class='bx bx-dollar nav_icon'></i><span class="nav_name">Finance</span> </a>
-            </div>
+           </div>
       </nav>
        </div>
      </div>
@@ -86,118 +86,160 @@
         <ol class="breadcrumb">
           <!-- breadcrumb --> 
           <li class="breadcrumb-item">
-            <h5 class="fw-bold" style="color: #011A3E;">Coupon List</h5>
+            <h5 class="fw-bold" style="color: #011A3E;">Payments</h5>
         </li> 
       </ol>
-      <div class="ml-auto" style="margin-left: auto !important;"> 
-        <div> 
-          <a href="CouponDetail.html" class="btn btn-primary btn-1  mb-2  border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background-color:#0070D2;height:40px;padding:10px 31px;"> 
-            Add Coupon 
-          </a>
-          </div> 
-         </div>
       </div>
       <div class="row align-items-center pt-2">
           <div class="col-md-12">
-            <div class="card border-0 " style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
-              <div class="card-header border-bottom-0" style="background-color:#ffff;">
-                <div class="col-md-5">
-                  <div class="search my-2">
-                      <i class="fa fa-search" style="color: rgba(208, 214, 222, 0.5); font-size: 16px;"></i>
-                      <input type="text" class="form-control" placeholder="Search "  style="font-weight: 400; height: 40px ;"/>
-                  </div>
-              </div>            
-              </div>
+            <div class="card border-0  p-2" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+             
               <div class="table-responsive">
                 <table class="table table-hover table-nowrap align-items-center" style="min-width: 768px;">
                   <thead class="thead-light">
                     <tr style="text-transform:uppercase;">
-                      <th class="body2">DISCOUNT%</th>
-                      <th class="body2">COUPON NAME</th>
-                      <th class="body2">VALID FROM </th>
-                      <th class="body2">VALID TO</th>
-                      <th class="body2">Actions  </th>
+                     
+                      <th  class="body2" >Payment ID</th>
+                      <th  class="body2" >DATE RAISED </th>
+                      <th  class="body2" >Total Commision Due </th>
+                      <th  class="body2" >INVOICE </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td style="vertical-align: middle;">
-                          <a href="javascript:void()" class="badge badge-circle " style=" border-radius: 100px;font-size:14px;background-color: #FFA26B;">10 %</a>
-                       </td><td style="vertical-align: middle;">
-                           <span class="body2 my-2" style="color: #354053;">WELCOME COUPON</span>
-                       </td>
-                      <td style="vertical-align: middle;">
-                        <span class="body2 my-2" style="color: #354053;">14/APR/2020</span>
-                       </td>
-                       <td style="vertical-align: middle;">
-                      
-                        <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
+                    <tr style="vertical-align: middle;">
+                    
+                      <td>
                      
-                       </td>
-                       <td style="vertical-align: middle;">
-                        <div class="mt-1 d-flex">
-                          <a href="CouponDetail.html" class="me-2">
-                            <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
-                          </a>
-                        <a href="#" class="me-1">
-                          <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i> </a> 
-                         </div>
-                      </td>                      
-                    </tr>
-                    <tr>
-                      <td style="vertical-align: middle;">
-                        <a href="javascript:void()" class="badge badge-circle " style=" border-radius: 100px;font-size:14px;background-color: #F6E444;">5%</a>
+                        <span class="body2 my-2" style="color: #354053;"># 21 DL 256</span>
+
                       </td>
-                      <td style="vertical-align: middle;">
-                              <span class="body2 my-2" style="color: #354053;"> MEET-PROMO</span>
+                      <td>
+                        <span class="body2 mt-2" style="color: #354053;"> 5/21/2021</span>
                        </td>
                       <td style="vertical-align: middle;">
-                        <span class="body2 my-2" style="color: #354053;">14/APR/2020  </span>
-                       </td>
-                       <td style="vertical-align: middle;">
-                      
-                        <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
+                        
+                        <span class="body2 my-2 fw-bold" style="color: #354053;">$ 190 USD</span>
                      
-                       </td> 
-                       <td style="vertical-align: middle;">
-                        <div class="mt-1 d-flex">
-                          <a href="#" class="me-2">
-                            <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
-                          </a>
-                        <a href="#" class="me-1">
-                          <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i> </a>
-                         </div>
-                      </td>                     
-
-
-                    </tr>
-                    <tr>
-                      <td style="vertical-align: middle;">
-                        <a href="javascript:void()" class="badge badge-circle " style=" border-radius: 100px;font-size:14px;background-color: #B0A1E9;">15%</a>
+                       </td>
+                       <td>
+                        <div>
+                        <span class="body2 mt-2" style="color: #0070D2;" ># 54897</span>
+                      </div>
                       </td>
-                      <td style="vertical-align: middle;">
-                              <span class="body2 my-2" style="color: #354053;">     TRY PLANNER</span>
-                       </td>
-                      <td style="vertical-align: middle;">
-                        <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
-                       </td>
-                       <td style="vertical-align: middle;">
-                      
-                        <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
                      
-                       </td> 
-                       <td style="vertical-align: middle;">
-                      <div class="mt-1 d-flex">
-                        <a href="#" class="me-2">
-                          <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
-                        </a>
-                      <a href="#" class="me-1">
-                        <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>                        </a>
-                       </div>
-                    </td>                     
-
-
+                     
                     </tr>
+                    <tr style="vertical-align: middle;">
+                    
+                      <td>
+                        <span class="body2 my-2" style="color: #354053;"># 21 DL 256</span>
+
+                      </td>
+                                          
+                      <td>
+                        <span class="body2 mt-2" style="color: #354053;"> 5/21/2021</span>
+                       </td>
+                      <td style="vertical-align: middle;">
+                        
+                        <span class="body2 my-2 fw-bold" style="color: #354053;">$ 190 USD</span>
+                     
+                       </td>
+                       <td>
+                        <div>
+                          <span class="body2 mt-2" style="color: #0070D2;" ># 54897</span>
+                        </div>
+                      </td>
+                   
+                    </tr>
+                    <tr style="vertical-align: middle;">
+                     
+                      <td>
+                        <span class="body2 my-2" style="color: #354053;"># 21 DL 256 </span>
+
+                      </td>
+                      <td>
+                        <span class="body2 mt-2" style="color: #354053;"> 5/21/2021</span>
+                       </td>
+                      <td style="vertical-align: middle;">
+                        
+                        <span class="body2 my-2 fw-bold" style="color: #354053;">$ 190 USD</span>
+                     
+                       </td>
+                       <td>
+                        <div>
+                          <span class="body2 mt-2" style="color: #0070D2;" ># 54897</span>
+                        </div>
+                      </td>
+                     
+                    </tr>
+                    <tr style="vertical-align: middle;">
+                     
+                      <td>
+                        <span class="body2 my-2" style="color: #354053;"># 21 DL 256</span>
+
+                      </td>
+                                         
+                      <td>
+                        <span class="body2 mt-2" style="color: #354053;"> 5/21/2021</span>
+                       </td>
+                      <td style="vertical-align: middle;">
+                        
+                        <span class="body2 my-2 fw-bold" style="color: #354053;">$ 190 USD</span>
+                     
+                       </td>
+                       <td>
+                        <div>
+                          <span class="body2 mt-2" style="color: #0070D2;" ># 54897</span>
+                        </div>
+                      </td>
+                    
+                    </tr>
+                    <tr style="vertical-align: middle;">
+                     
+                      <td>
+                        <span class="body2 my-2" style="color: #354053;"># 21 DL 256 </span>
+
+                      </td>
+                      <td>
+                        <span class="body2 mt-2" style="color: #354053;"> 5/21/2021</span>
+                       </td>
+                      <td style="vertical-align: middle;">
+                        
+                        <span class="body2 my-2 fw-bold" style="color: #354053;">$ 190 USD</span>
+                     
+                       </td>
+                       <td>
+                        <div>
+                          <span class="body2 mt-2" style="color: #0070D2;" ># 54897</span>
+                        </div>
+                      </td>
+                     
+                    </tr>
+                    <tr style="vertical-align: middle;">
+                     
+                      <td>
+                        <span class="body2 my-2" style="color: #354053;"># 21 DL 256</span>
+
+                      </td>
+                      <td>
+                        <span class="body2 mt-2" style="color: #354053;"> 5/21/2021</span>
+                       </td>
+                      <td style="vertical-align: middle;">
+                        
+                          <span class="body2 my-2 fw-bold" style="color: #354053;">$ 190 USD</span>
+                       
+                         </td>
+
+                         <td>
+                          <div>
+                            <span class="body2 mt-2" style="color: #0070D2;" ># 54897</span>
+                          </div>
+                        </td>
+                     
+                    </tr>
+                    
+                
+                  
                   </tbody>
                 </table>
               </div>

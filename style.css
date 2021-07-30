@@ -266,12 +266,14 @@ tbody, th, thead {border-style: none;}
 .table tbody td .email span { display: block;}
 
 /* badges */
-.badge-warning , .badge-success {height:25px;width: 80px;border-radius: 10px;position: relative;padding: .25em .65em; }
+.badge-warning , .badge-success, .badge-info {height:25px;width: 80px;border-radius: 10px;position: relative;padding: .25em .65em; }
 .badge-success{background-color: #E6FBFD;color: #1991EB;}
 .badge-warning{background-color: #FEEEF2;color: #F7517F;}
+.badge-info{background: rgba(0, 182, 128, 0.3);color: #00B680;}
 .badge-warning:before {background: #F7517F;}
 .badge-success:before { background: #1991EB;}
-.badge-warning:before , .badge-success:before {border-radius: 50%;content: "";height: 6px;left:6px;margin-top: -2px;position: absolute;top: 50%;width: 6px;}
+.badge-info:before { background: #00B680;}
+.badge-warning:before , .badge-success:before , .badge-info:before  {border-radius: 50%;content: "";height: 6px;left:6px;margin-top: -2px;position: absolute;top: 50%;width: 6px;}
 
 /* switch */
 .form-switch .form-check-input {background-image: url(assets/Ellipse.png)!important;}
@@ -322,4 +324,8 @@ td .body2{
 .form-check-input:focus{
   outline:none;
   box-shadow: 0px 2px 4px #ffffff;
+}
+.form-control:disabled, .form-control:read-only {
+  background-color: #EFF3F7;
+  opacity: 1;
 }
