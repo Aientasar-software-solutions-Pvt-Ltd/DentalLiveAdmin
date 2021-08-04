@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Dental-Live Mail</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+  <link rel="icon" href="assets/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,7 +14,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
     <style>
     .form-check-input {
     width: 15px;
@@ -26,11 +26,11 @@
     <nav  class="navbar navbar-expand-md navbar-dark border-bottom px-2" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);background-color: white;">
       <div  class="container-fluid">
         <a class="navbar-brand logo" href="#">
-          <img src="../assets/Logo_Dark.png">
+          <img src="assets/Logo_Dark.png">
         </a>
         <ul class="navbar-nav me-auto mt-1 mb-md-0">
           <li class="nav-item">
-              <a class="nav-link "  style="color:#5D6A7E;font-size:20px;">Vendor</a>
+              <a class="nav-link "  style="color:#5D6A7E;font-size:20px;">Admin</a>
           </li>
       </ul>          
       <button  class="navbar-toggler collapsed" data-bs-target="#collapsibleNavbar" data-bs-toggle="collapse" type="button" aria-expanded="false">
@@ -38,59 +38,75 @@
           </button>
           <div  class="navbar-collapse collapse" id="collapsibleNavbar" >
               <ul  class="navbar-nav ms-auto my-2 my-md-0">
-              <li>
-                  <a class="nav-link align-items-center d-flex  p-0">                
-                    <img alt="..." src="../assets/tesimonial-2.png" class="avatar avatar-xs rounded-circle" style="border: 1px dotted #00D9CC;">
-                  <label  class="nav-link body2 pe-0"  style="color:#282C33">Hi,Emma Addison</label>
+              <li class="nav-item">
+                <a class="nav-link align-items-center  p-0">
+                  <img alt="..." src="assets/tesimonial-2.png" class="avatar avatar-xs rounded-circle " style="border: 1px dotted #00D9CC;">
                 </a>
               </li>
+              <li class="nav-item">
+                <label  class="nav-link body2"  style="color:#282C33">Hi,Emma</label>
+               </li>
+
               </ul>
               <div class="dropdown-divider"></div>
               <ul  class="navbar-nav d-md-none me-auto mb-2 mb-md-0">
                 <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Dashboard.html" style="color:#282C33">Dashboard</a></li>
-                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="VendorCustomerList.html" style="color:#282C33">Customer</a></li>
-                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="CouponList.html" style="color:#282C33">Coupons</a></li>
-              </ul>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="CustomerList.html" style="color:#282C33">Customer</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="ProductList.html" style="color:#282C33">Products</a></li>   </ul>
           </div>
       </div>
   </nav>
     <div  class="left_nav row">
       <div class=" l-navbar d-none d-md-block col-md-3 col-lg-2 min-vh-100 ">
         <div class="" id="nav-bar">
-         <nav class="nav">
-           <div class="nav_list">
-             <div id="nav_accordion">
-             <a href="Dashboard.html" class="nav_link "><i class='bx bx-tachometer nav_icon' ></i><span class="nav_name">DashBoard</span></a>
-             <a href="VendorCustomerList.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
-             <a href="CouponList.html" class="nav_link "> <i class="material-icons nav_icon"> local_offer</i><span class="nav_name">Coupons</span> </a>
-             <a href="#" class="nav_link active" data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#">
-               <i class='bx bx-dollar nav_icon'></i><div class="d-flex"><span class="nav_name">Finance</span> 
-               <span class="material-icons pt-1">keyboard_arrow_down</span></div>
-             </a> 
-           <ul id="menu_item2" class="submenu collapse" data-bs-parent="#nav_accordion">
-           <li><a href="Transactionslist.html" class="nav_link">
-             <span class="nav_name">Transaction</span></a></li>
-           <li><a href="Invoices.html" class="nav_link"> <span class="nav_name">Invoices </span> </a></li>
-          </ul> 
-         </div>
-         </div>
-       </nav>
-       <nav class="nav mt-5">   
-         <div class="nav_list" >
-           <span class="body2 ms-4" style="color:#5D6A7E;">SETTINGS</span>
-           <div id="nav_accordion">
-           <a href="AccountDetail.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Account Settings </span> </a>
-           <a href="vendorlogin.html" class="nav_link"> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Logout</span> </a>
-       </div>
-     </nav>
+        <nav class="nav" style="padding-left: 10px;">
+            <div class="nav_list" >
+              <a href="Dashboard.html" class="nav_link border-0 active_view"><i class='bx bx-tachometer nav_icon' ></i><span class="nav_name">DashBoard</span></a>
+        </nav>
+          <nav class="nav mt-2">
+            <div class="nav_list" >
+              <div id="nav_accordion">
+              <a href="CustomerList.html" class="nav_link " > <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
+              <a href="ProductList.html" class="nav_link "> <i class='bx bx-layer nav_icon' ></i><span class="nav_name">Products</span> </a>
+              <a href="PackagesList.html" class="nav_link"> <i class='bx bxs-coupon nav_icon'></i> <span class="nav_name">Packages</span> </a>
+              <a href="VendorList.html" class="nav_link "> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Vendor</span> </a>
+              <a href="Transactionslist.html" class="nav_link active" data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#">
+                <i class='bx bx-dollar nav_icon'></i><div class="d-flex"><span class="nav_name">Finance</span> 
+                <span class="material-icons pt-1">keyboard_arrow_down</span></div>
+              </a> 
+            <ul id="menu_item2" class="submenu collapse" data-bs-parent="#nav_accordion">
+            <li><a href="Transactionslist.html" class="nav_link "><span class="nav_name">Transaction</span></a></li>
+            <li><a href="VendorOustandinglist.html" class="nav_link "> <span class="nav_name">Vendor outstanding</span> </a></li>
+           </ul>
+          </div>
+        </nav>
+        <nav class="nav mt-5"> 
+          <div class="nav_list" >
+            <span class="body2 ms-4" style="color:#5D6A7E;">SYSTEM</span>
+            <div id="nav_accordion">
+            <a href="UserList.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Users</span> </a>
+            <a href="Permissions.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Permissions</span> </a>
+            <a href="Integration.html" class="nav_link"><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Integration</span> </a>
+            <a href="ContactList.html" class="nav_link "><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Contacts</span> </a>
+            <a href="SocialMedia.html" class="nav_link "><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Social</span> </a>
         </div>
+      </nav>
+      <nav class="nav mt-5"> 
+        <div class="nav_list" >
+          <span class="body2 ms-4" style="color:#5D6A7E;">SETTINGS</span>
+          <div id="nav_accordion">
+          <a href="AccountDetail.html" class="nav_link"> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Account Settings </span> </a>
+          <a href="Adminlogin.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Logout</span> </a>
       </div>
+    </nav>
+         </div>
+       </div>
      <div class="col-md-9 col-lg-10 p-4 mx-auto">
       <div class="page-header d-flex">
         <ol class="breadcrumb">
           <!-- breadcrumb --> 
           <li class="breadcrumb-item">
-            <h5 class="fw-bold" style="color: #011A3E;">Invoices</h5>
+            <h5 class="fw-bold" style="color: #011A3E;">Vendor Oustanding list</h5>
         </li> 
       </ol>
       </div>
@@ -103,14 +119,18 @@
                   <thead class="thead-light">
                     <tr style="text-transform:uppercase;">
                      
-                      <th  class="body2" >Invoice ID</th>
-                      <th  class="body2" >STATUS </th>
+                      <th  class="body2" >Vendor name</th>
+                      <th  class="body2" >Payment id </th>
+                      <th  class="body2" >STATUS</th>
                       <th  class="body2" >INVOICE AMOUNT </th>
-                      <th  class="body2" >INVOICE PDF </th>
+                      <th  class="body2" >ACTION</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr style="vertical-align: middle;">
+                      <td>
+                        <span class="body2 my-2" style="color: #354053;">Colin Sik</span>
+                      </td>
                       <td>
                         <span class="body2 my-2" style="color: #354053;"># 21 DL 256</span>
                       </td>
@@ -124,13 +144,23 @@
                       <td style="vertical-align: middle;">
                         <span class="body2 my-2 fw-bold" style="color: #354053;">$ 190 USD</span>
                        </td>
-                       <td >
-                          <a href="#" class="me-2">
-                            <i class='bx bxs-file body2' style="font-size:1.55rem;color:#FA9FBD;"><span class="body2">Invoice</span></i>
+                       <td>
+                        <div class="mt-1 d-flex">
+                          <a href="Settlepayment.html" class="me-2">
+                            <i class='bx bx-dollar' style="font-size: 1.55rem;color: #0070D2;"><span class="body2">Make payment </span></i>
                           </a>
+                        <a href="PaymentDetails.html" class="me-1">
+                          <span class="material-icons" style="font-size: 1.55rem;color: #00D9CC;">
+                            visibility
+                          </span>
+                        </a>
+                     </div>
                      </td>
                     </tr>
                     <tr style="vertical-align: middle;">
+                      <td>
+                        <span class="body2 my-2" style="color: #354053;">Simon Sais</span>
+                      </td>
                       <td>
                         <span class="body2 my-2" style="color: #354053;"># 21 DL 256</span>
                       </td>
@@ -143,13 +173,23 @@
                       <td style="vertical-align: middle;">
                         <span class="body2 my-2 fw-bold" style="color: #354053;">$ 190 USD</span>
                        </td>
-                       <td >
+                       <td>
+                        <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
-                            <i class='bx bxs-file body2' style="font-size:1.55rem;color:#FA9FBD;"><span class="body2">Invoice</span></i>
+                            <i class='bx bx-dollar' style="font-size: 1.55rem;color: #0070D2;"><span class="body2">Make payment </span></i>
                           </a>
+                        <a href="#" class="me-1">
+                          <span class="material-icons" style="font-size: 1.55rem;color: #00D9CC;">
+                            visibility
+                          </span>
+                        </a>
+                     </div>
                      </td>
                     </tr>
                     <tr style="vertical-align: middle;">
+                      <td>
+                        <span class="body2 my-2" style="color: #354053;">Mario Speedwagon</span>
+                      </td>
                       <td>
                         <span class="body2 my-2" style="color: #354053;"># 21 DL 256</span>
                       </td>
@@ -162,13 +202,23 @@
                       <td style="vertical-align: middle;">
                         <span class="body2 my-2 fw-bold" style="color: #354053;">$ 190 USD</span>
                        </td>
-                       <td >
+                       <td>
+                        <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
-                            <i class='bx bxs-file body2' style="font-size:1.55rem;color:#FA9FBD;"><span class="body2">Invoice</span></i>
+                            <i class='bx bx-dollar' style="font-size: 1.55rem;color: #0070D2;"><span class="body2">Make payment </span></i>
                           </a>
+                        <a href="#" class="me-1">
+                          <span class="material-icons" style="font-size: 1.55rem;color: #00D9CC;">
+                            visibility
+                          </span>
+                        </a>
+                     </div>
                      </td>
                     </tr>
                     <tr style="vertical-align: middle;">
+                      <td>
+                        <span class="body2 my-2" style="color: #354053;">Dee End</span>
+                      </td>
                       <td>
                         <span class="body2 my-2" style="color: #354053;"># 21 DL 256</span>
                       </td>
@@ -181,13 +231,23 @@
                       <td style="vertical-align: middle;">
                         <span class="body2 my-2 fw-bold" style="color: #354053;">$ 190 USD</span>
                        </td>
-                       <td >
+                       <td>
+                        <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
-                            <i class='bx bxs-file body2' style="font-size:1.55rem;color:#FA9FBD;"><span class="body2">Invoice</span></i>
+                            <i class='bx bx-dollar' style="font-size: 1.55rem;color: #0070D2;"><span class="body2">Make payment </span></i>
                           </a>
+                        <a href="#" class="me-1">
+                          <span class="material-icons" style="font-size: 1.55rem;color: #00D9CC;">
+                            visibility
+                          </span>
+                        </a>
+                     </div>
                      </td>
                     </tr>
                     <tr style="vertical-align: middle;">
+                      <td>
+                        <span class="body2 my-2" style="color: #354053;">Liza Doolittle</span>
+                      </td>
                       <td>
                         <span class="body2 my-2" style="color: #354053;"># 21 DL 256</span>
                       </td>
@@ -200,13 +260,23 @@
                       <td style="vertical-align: middle;">
                         <span class="body2 my-2 fw-bold" style="color: #354053;">$ 190 USD</span>
                        </td>
-                       <td >
+                       <td>
+                        <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
-                            <i class='bx bxs-file body2' style="font-size:1.55rem;color:#FA9FBD;"><span class="body2">Invoice</span></i>
+                            <i class='bx bx-dollar' style="font-size: 1.55rem;color: #0070D2;"><span class="body2">Make payment </span></i>
                           </a>
+                        <a href="#" class="me-1">
+                          <span class="material-icons" style="font-size: 1.55rem;color: #00D9CC;">
+                            visibility
+                          </span>
+                        </a>
+                     </div>
                      </td>
                     </tr>
                     <tr style="vertical-align: middle;">
+                      <td>
+                        <span class="body2 my-2" style="color: #354053;">Colin Sik</span>
+                      </td>
                       <td>
                         <span class="body2 my-2" style="color: #354053;"># 21 DL 256</span>
                       </td>
@@ -219,10 +289,17 @@
                       <td style="vertical-align: middle;">
                         <span class="body2 my-2 fw-bold" style="color: #354053;">$ 190 USD</span>
                        </td>
-                       <td >
+                       <td>
+                        <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
-                            <i class='bx bxs-file body2' style="font-size:1.55rem;color:#FA9FBD;"><span class="body2">Invoice</span></i>
+                            <i class='bx bx-dollar' style="font-size: 1.55rem;color: #0070D2;"><span class="body2">Make payment </span></i>
                           </a>
+                        <a href="#" class="me-1">
+                          <span class="material-icons" style="font-size: 1.55rem;color: #00D9CC;">
+                            visibility
+                          </span>
+                        </a>
+                     </div>
                      </td>
                     </tr>
                     
@@ -239,6 +316,8 @@
      
 </div>
 </div>
+  </div>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>

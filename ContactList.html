@@ -46,6 +46,7 @@
               <li class="nav-item">
                 <label  class="nav-link body2"  style="color:#282C33">Hi,Emma</label>
                </li>
+
               </ul>
               <div class="dropdown-divider"></div>
               <ul  class="navbar-nav d-md-none me-auto mb-2 mb-md-0">
@@ -65,32 +66,38 @@
           <nav class="nav mt-2">
             <div class="nav_list" >
               <div id="nav_accordion">
-              <a href="CustomerList.html" class="nav_link " > <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
+              <a href="CustomerList.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
               <a href="ProductList.html" class="nav_link "> <i class='bx bx-layer nav_icon' ></i><span class="nav_name">Products</span> </a>
               <a href="PackagesList.html" class="nav_link"> <i class='bx bxs-coupon nav_icon'></i> <span class="nav_name">Packages</span> </a>
-              <a href="VendorList.html" class="nav_link active"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Vendor</span> </a>
+              <a href="VendorList.html" class="nav_link "> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Vendor</span> </a>
               <a href="Transactionslist.html" class="nav_link " data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#">
                 <i class='bx bx-dollar nav_icon'></i><div class="d-flex"><span class="nav_name">Finance</span> 
                 <span class="material-icons pt-1">keyboard_arrow_down</span></div>
               </a> 
             <ul id="menu_item2" class="submenu collapse" data-bs-parent="#nav_accordion">
-            <li><a href="Transactionslist.html" class="nav_link "><span class="nav_name">Transaction</span></a></li>
-            <li><a href="VendorOustandinglist.html" class="nav_link "> <span class="nav_name">Vendor outstanding</span> </a></li>
+            <li><a href="Transactionslist.html" class="nav_link">
+              
+              
+              <span class="nav_name">Transaction</span></a></li>
+            <li><a href="VendorOustandinglist.html" class="nav_link"> <span class="nav_name">Vendor outstanding</span> </a></li>
            </ul>
           </div>
         </nav>
-        <nav class="nav mt-5"> 
+        <nav class="nav mt-5">
+            
           <div class="nav_list" >
             <span class="body2 ms-4" style="color:#5D6A7E;">SYSTEM</span>
             <div id="nav_accordion">
-            <a href="UserList.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Users</span> </a>
+            <a href="UserList.html" class="nav_link"> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Users</span> </a>
             <a href="Permissions.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Permissions</span> </a>
             <a href="Integration.html" class="nav_link"><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Integration</span> </a>
-            <a href="ContactList.html" class="nav_link "><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Contacts</span> </a>
+            <a href="ContactList.html" class="nav_link active"><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Contacts</span> </a>
             <a href="SocialMedia.html" class="nav_link "><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Social</span> </a>
+  
         </div>
       </nav>
-      <nav class="nav mt-5"> 
+      <nav class="nav mt-5">
+            
         <div class="nav_list" >
           <span class="body2 ms-4" style="color:#5D6A7E;">SETTINGS</span>
           <div id="nav_accordion">
@@ -98,6 +105,7 @@
           <a href="Adminlogin.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Logout</span> </a>
       </div>
     </nav>
+      
          </div>
        </div>
      <div class="col-md-9 col-lg-10 p-4 mx-auto">
@@ -105,9 +113,16 @@
         <ol class="breadcrumb">
           <!-- breadcrumb --> 
           <li class="breadcrumb-item">
-            <h5 class="fw-bold" style="color: #011A3E;">Vendor List</h5>
+            <h5 class="fw-bold" style="color: #011A3E;">Contact List</h5>
         </li> 
       </ol>
+      <div class="ml-auto" style="margin-left: auto !important;"> 
+        <div> 
+          <a href="ContactDetail.html" class="btn btn-primary btn-1  mb-2  border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background-color:#0070D2;height:40px;padding:10px 31px;"> 
+            Add Contact 
+          </a>
+          </div> 
+         </div>
       </div>
       <div class="row align-items-center pt-2">
           <div class="col-md-12">
@@ -125,10 +140,9 @@
                   <thead class="thead-light">
                     <tr style="text-transform:uppercase;">
                       <th>&nbsp;</th>
-                      <th  class="body2" >VENDOR NAME</th>
-                      <th  class="body2" >STATUS</th>
-                      <th  class="body2" >Clinic/ Org</th>
-                      <th  class="body2" >Earning </th>
+                      <th  class="body2" >CONTACT NAME</th>
+                      <th  class="body2" >Clinic /Name   </th>
+                      <th  class="body2" >Phone Number </th>
                       <th  class="body2" >Actions   </th>
                     </tr>
                   </thead>
@@ -147,25 +161,21 @@
                               </div>
                             </div>
                       </td>
+                                         
                       <td>
-                        <span class="badge badge-pill badge-warning body2 mt-2">Inactive</span> </td>                     
-                      <td >
                         <div class="ps-2 email">
                         <span class="body2 " style="color: #354053;">Dental Clinic  </span>
                         <span class="body2 " style="color: #6E6893;font-size: 12px;">Toronto  </span>
                       </div>
                       </td>
-                      <td style="vertical-align:middle;">
-                        <span class="body2 " style="color: #354053;">$ 256  </span>
+                      <td >
+                        <span class="body2 mt-2" style="color: #354053;" >+14378861569</span>
                       </td>
                       <td >
                         <div class="mt-1 d-flex">
-                          <a href="VendorDetail.html" class="me-2">
+                          <a href="ContactDetail.html" class="me-2">
                             <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
                           </a>
-                        <a href="#" class="me-1">
-                          <i class="bx bx-loader" style="font-size: 1.55rem;color:#FA9FBD;"></i>
-                        </a>
                           <div class="dropdown">
                             <a href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="">
                               <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
@@ -203,29 +213,22 @@
                               </div>
                             </div>
                       </td>
+                                          
                       <td>
-                        <div class=" email">
-                          <span class="badge badge-pill badge-success body2 ">Active</span>
-                          <span class="body2" style="color: #6E6893;font-size: 12px;">Created on : 14/APR/2020</span>
-                        </div>                     
-                       </td>                     
-                      <td >
                         <div class="ps-2 email">
-                          <span class="body2 " style="color: #354053;">Tenth Line Dental </span>
-                          <span class="body2 " style="color: #6E6893;font-size: 12px;">Vancouver</span>
-                        </div>
+                        <span class="body2 " style="color: #354053;">Dental Clinic  </span>
+                        <span class="body2 " style="color: #6E6893;font-size: 12px;">Toronto  </span>
+                      </div>
                       </td>
                       <td >
-                        <span class="body2 " style="color: #354053;">$ 256  </span>
+                        <span class="body2 mt-2" style="color: #354053;" >+14378861569</span>
                       </td>
                       <td >
                         <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
                             <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
                           </a>
-                        <a href="#" class="me-1">
-                          <i class="bx bx-loader" style="font-size: 1.55rem;color:#FA9FBD;"></i>
-                        </a>
+
                           <div class="dropdown">
                             <a href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="">
                               <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
@@ -264,28 +267,22 @@
                               </div>
                             </div>
                       </td>
+                                         
                       <td>
-                        <div class=" email">
-                          <span class="badge badge-pill badge-success body2 ">Active</span>
-                          <span class="body2" style="color: #6E6893;font-size: 12px;">Created on : 14/APR/2020</span>
-                        </div>                      
-                        <td >
                         <div class="ps-2 email">
-                          <span class="body2 " style="color: #354053;">St. Laurent Dental Centre </span>
-                          <span class="body2 " style="color: #6E6893;font-size: 12px;">Calgary</span>
+                          <span class="body2 " style="color: #354053;">Tenth Line Dental </span>
+                          <span class="body2 " style="color: #6E6893;font-size: 12px;">Vancouver</span>
                         </div>
                       </td>
                       <td >
-                        <span class="body2 " style="color: #354053;">$ 256  </span>
+                        <span class="body2 mt-2" style="color: #354053;" >+14378861569</span>
                       </td>
                       <td >
                         <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
                             <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
                           </a>
-                        <a href="#" class="me-1">
-                          <i class="bx bx-loader" style="font-size: 1.55rem;color:#FA9FBD;"></i>
-                        </a>
+
                           <div class="dropdown">
                             <a href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="">
                               <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
@@ -324,29 +321,21 @@
                               </div>
                             </div>
                       </td>
+                                         
                       <td>
-                        <div class=" email">
-                          <span class="badge badge-pill badge-success body2 ">Active</span>
-                          <span class="body2" style="color: #6E6893;font-size: 12px;">Created on : 14/APR/2020</span>
-                        </div>                       
-                      </td>                     
-                      <td >
                         <div class="ps-2 email">
-                          <span class="body2 " style="color: #354053;">The Downtown Dental Clinic </span>
-                          <span class="body2 " style="color: #6E6893;font-size: 12px;">Winnipeg </span>
+                          <span class="body2 " style="color: #354053;">Tenth Line Dental </span>
+                          <span class="body2 " style="color: #6E6893;font-size: 12px;">Vancouver</span>
                         </div>
                       </td>
                       <td >
-                        <span class="body2 " style="color: #354053;">$ 256  </span>
+                        <span class="body2 mt-2" style="color: #354053;" >+14378861569</span>
                       </td>
                       <td >
                         <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
                             <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
                           </a>
-                        <a href="#" class="me-1">
-                          <i class="bx bx-loader" style="font-size: 1.55rem;color:#FA9FBD;"></i>
-                        </a>
                           <div class="dropdown">
                             <a href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="">
                               <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
@@ -374,8 +363,7 @@
                       <td>
                         <div class="form-check form-check-inline">
                           <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
-                      </div>
-                    </td>
+                      </div></td>
                       <td>
                         <div class="d-flex mt-1">
                              <img alt="..." src="assets/image.png" class="avatar avatar-xs rounded-circle ">
@@ -386,30 +374,21 @@
                               </div>
                             </div>
                       </td>
+                                          
                       <td>
-                        <div class=" email">
-                          <span class="badge badge-pill badge-success body2 ">Active</span>
-                          <span class="body2" style="color: #6E6893;font-size: 12px;">Created on : 14/APR/2020</span>
-                        </div>                    
-                          <td >
                         <div class="ps-2 email">
-                          <span class="body2 " style="color: #354053;">Alta Vista Dental Clinic </span>
-                          <span class="body2 " style="color: #6E6893;font-size: 12px;">Toronto </span>
+                          <span class="body2 " style="color: #354053;">Trillium Dental </span>
+                          <span class="body2 " style="color: #6E6893;font-size: 12px;">Ottawa</span>
                         </div>
                       </td>
                       <td >
-                        <span class="body2 " style="color: #354053;">$ 256  </span>
+                        <span class="body2 mt-2" style="color: #354053;" >+14378861569</span>
                       </td>
                       <td >
                         <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
                             <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
                           </a>
-                        <a href="#" class="me-1">
-                          <i class="bx bx-loader" style="font-size: 1.55rem;color:#FA9FBD;"></i>
-                        </a>
-    
-                        
                           <div class="dropdown">
                             <a href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="">
                               <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
@@ -442,33 +421,27 @@
                         <div class="d-flex mt-1">
                              <img alt="..." src="assets/image2.png" class="avatar avatar-xs rounded-circle ">
                              <div class="ps-2 email">
-                              <span class="body2" style="color: #354053;">Aida Bugg Aida BuggAida Bugg Aida Bugg </span>
-                              <span class="body2" style="color: #354053;">aida.bugg@gmail.comaida.bugg@gmail.com</span>
+                              <span class="body2" style="color: #354053;">Aida Bugg Aida Bugg </span>
+                              <span class="body2" style="color: #354053;">aida.bugg@gmail.com</span>
                               </div>
                             </div>
                       </td>
+                                         
                       <td>
-                        <div class=" email">
-                          <span class="badge badge-pill badge-success body2 ">Active</span>
-                          <span class="body2" style="color: #6E6893;font-size: 12px;">Created on : 14/APR/2020</span>
-                        </div>                     
-                         <td >
                         <div class="ps-2 email">
                           <span class="body2 " style="color: #354053;">Trillium Dental </span>
                           <span class="body2 " style="color: #6E6893;font-size: 12px;">Ottawa</span>
                         </div>
                       </td>
                       <td >
-                        <span class="body2 " style="color: #354053;">$ 256  </span> 
+                        <span class="body2 mt-2" style="color: #354053;" >+14378861569</span>
                       </td>
                       <td >
                         <div class="mt-1 d-flex">
                           <a href="#" class="me-2">
                             <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
                           </a>
-                        <a href="#" class="me-1">
-                          <i class="bx bx-loader" style="font-size: 1.55rem;color:#FA9FBD;"></i>
-                        </a>
+                       
                           <div class="dropdown">
                             <a href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="">
                               <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
@@ -531,8 +504,6 @@
      
 </div>
 </div>
-  </div>
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>

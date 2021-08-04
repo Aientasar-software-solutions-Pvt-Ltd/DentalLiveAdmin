@@ -223,13 +223,16 @@ app-view-mail blockquote {
   padding: .5rem 0 .5rem 1.5rem
 }
 .l-navbar .nav_link:hover{
-  color: #FFFFFF;
+  color: #D0D6DE;
   /* background-color: #0070D2; */
+}
+.l-navbar .submenu{
+  list-style: none;
 }
 .l-navbar .nav_link, .left_icon {
   margin-left: 15px;
   position: relative;
-  color: #FFFFFF;
+  color: #D0D6DE;
   /* margin-bottom: 1rem; */
   transition: .3s
 }
@@ -241,9 +244,15 @@ app-view-mail blockquote {
 }
 .l-navbar .active {
   border-radius: 6px;
-  color: white;
+  color: #E6FBFD;
   background-color: #0070D2;
 }
+.l-navbar .active_view{
+  border-radius: 6px;
+  color: #E6FBFD;
+  background: #0070d24f;
+}
+
 .l-navbar .active:hover {
   color: white;
   background-color: #0070D2;
@@ -274,6 +283,12 @@ tbody, th, thead {border-style: none;}
 .badge-success:before { background: #1991EB;}
 .badge-info:before { background: #00B680;}
 .badge-warning:before , .badge-success:before , .badge-info:before  {border-radius: 50%;content: "";height: 6px;left:6px;margin-top: -2px;position: absolute;top: 50%;width: 6px;}
+
+.badge-purple {background-color: #B0A1E9;color: #ffffff;font-size: 14px;}
+.badge-red{background-color: #F7517F;color: #ffffff;font-size: 14px;}
+.badge-blue{background-color: #07D5E8;color: #ffffff;font-size: 14px;}
+.badge-green{background-color: #00D9CC;color: #ffffff;font-size: 14px;}
+
 
 /* switch */
 .form-switch .form-check-input {background-image: url(assets/Ellipse.png)!important;}

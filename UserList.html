@@ -68,7 +68,7 @@
               <a href="CustomerList.html" class="nav_link " > <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
               <a href="ProductList.html" class="nav_link "> <i class='bx bx-layer nav_icon' ></i><span class="nav_name">Products</span> </a>
               <a href="PackagesList.html" class="nav_link"> <i class='bx bxs-coupon nav_icon'></i> <span class="nav_name">Packages</span> </a>
-              <a href="VendorList.html" class="nav_link active"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Vendor</span> </a>
+              <a href="VendorList.html" class="nav_link "> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Vendor</span> </a>
               <a href="Transactionslist.html" class="nav_link " data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#">
                 <i class='bx bx-dollar nav_icon'></i><div class="d-flex"><span class="nav_name">Finance</span> 
                 <span class="material-icons pt-1">keyboard_arrow_down</span></div>
@@ -83,7 +83,7 @@
           <div class="nav_list" >
             <span class="body2 ms-4" style="color:#5D6A7E;">SYSTEM</span>
             <div id="nav_accordion">
-            <a href="UserList.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Users</span> </a>
+            <a href="UserList.html" class="nav_link active"> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Users</span> </a>
             <a href="Permissions.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Permissions</span> </a>
             <a href="Integration.html" class="nav_link"><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Integration</span> </a>
             <a href="ContactList.html" class="nav_link "><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Contacts</span> </a>
@@ -105,7 +105,7 @@
         <ol class="breadcrumb">
           <!-- breadcrumb --> 
           <li class="breadcrumb-item">
-            <h5 class="fw-bold" style="color: #011A3E;">Vendor List</h5>
+            <h5 class="fw-bold" style="color: #011A3E;">User List</h5>
         </li> 
       </ol>
       </div>
@@ -125,10 +125,9 @@
                   <thead class="thead-light">
                     <tr style="text-transform:uppercase;">
                       <th>&nbsp;</th>
-                      <th  class="body2" >VENDOR NAME</th>
-                      <th  class="body2" >STATUS</th>
-                      <th  class="body2" >Clinic/ Org</th>
-                      <th  class="body2" >Earning </th>
+                      <th  class="body2" >USER NAME</th>
+                      <th  class="body2" >ROLE</th>
+                      <th  class="body2" >Primary  </th>
                       <th  class="body2" >Actions   </th>
                     </tr>
                   </thead>
@@ -148,24 +147,27 @@
                             </div>
                       </td>
                       <td>
-                        <span class="badge badge-pill badge-warning body2 mt-2">Inactive</span> </td>                     
-                      <td >
-                        <div class="ps-2 email">
-                        <span class="body2 " style="color: #354053;">Dental Clinic  </span>
-                        <span class="body2 " style="color: #6E6893;font-size: 12px;">Toronto  </span>
-                      </div>
-                      </td>
+                        <span class="badge badge-pill badge-purple  mt-2"> Owner</span>
+                       </td>                     
+                     
                       <td style="vertical-align:middle;">
-                        <span class="body2 " style="color: #354053;">$ 256  </span>
+                        <div>                        
+                          <div class="form-check form-switch ">
+                          <input class="form-check-input border-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
+                          width:44px;">
+                        </div> 
+                      </div> 
                       </td>
                       <td >
                         <div class="mt-1 d-flex">
-                          <a href="VendorDetail.html" class="me-2">
+                          <a href="UserDetail.html" class="me-2">
                             <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
                           </a>
                         <a href="#" class="me-1">
                           <i class="bx bx-loader" style="font-size: 1.55rem;color:#FA9FBD;"></i>
                         </a>
+    
+                        
                           <div class="dropdown">
                             <a href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="">
                               <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
@@ -204,19 +206,16 @@
                             </div>
                       </td>
                       <td>
-                        <div class=" email">
-                          <span class="badge badge-pill badge-success body2 ">Active</span>
-                          <span class="body2" style="color: #6E6893;font-size: 12px;">Created on : 14/APR/2020</span>
-                        </div>                     
-                       </td>                     
+                        <span class="badge badge-pill badge-red  mt-2">Editor</span> 
+                      </td>                     
+                     
                       <td >
-                        <div class="ps-2 email">
-                          <span class="body2 " style="color: #354053;">Tenth Line Dental </span>
-                          <span class="body2 " style="color: #6E6893;font-size: 12px;">Vancouver</span>
-                        </div>
-                      </td>
-                      <td >
-                        <span class="body2 " style="color: #354053;">$ 256  </span>
+                        <div>                        
+                          <div class="form-check form-switch ">
+                          <input class="form-check-input border-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
+                          width:44px;">
+                        </div> 
+                      </div> 
                       </td>
                       <td >
                         <div class="mt-1 d-flex">
@@ -226,6 +225,8 @@
                         <a href="#" class="me-1">
                           <i class="bx bx-loader" style="font-size: 1.55rem;color:#FA9FBD;"></i>
                         </a>
+    
+                        
                           <div class="dropdown">
                             <a href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="">
                               <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
@@ -265,18 +266,15 @@
                             </div>
                       </td>
                       <td>
-                        <div class=" email">
-                          <span class="badge badge-pill badge-success body2 ">Active</span>
-                          <span class="body2" style="color: #6E6893;font-size: 12px;">Created on : 14/APR/2020</span>
-                        </div>                      
-                        <td >
-                        <div class="ps-2 email">
-                          <span class="body2 " style="color: #354053;">St. Laurent Dental Centre </span>
-                          <span class="body2 " style="color: #6E6893;font-size: 12px;">Calgary</span>
-                        </div>
-                      </td>
+                        <span class="badge badge-pill badge-blue  mt-2">Reader</span> </td>                     
+                      
                       <td >
-                        <span class="body2 " style="color: #354053;">$ 256  </span>
+                        <div>                        
+                          <div class="form-check form-switch ">
+                          <input class="form-check-input border-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
+                          width:44px;">
+                        </div> 
+                      </div> 
                       </td>
                       <td >
                         <div class="mt-1 d-flex">
@@ -286,6 +284,8 @@
                         <a href="#" class="me-1">
                           <i class="bx bx-loader" style="font-size: 1.55rem;color:#FA9FBD;"></i>
                         </a>
+    
+                        
                           <div class="dropdown">
                             <a href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="">
                               <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
@@ -325,19 +325,16 @@
                             </div>
                       </td>
                       <td>
-                        <div class=" email">
-                          <span class="badge badge-pill badge-success body2 ">Active</span>
-                          <span class="body2" style="color: #6E6893;font-size: 12px;">Created on : 14/APR/2020</span>
-                        </div>                       
-                      </td>                     
+                        <span class="badge badge-pill badge-green  mt-2">Office Manager </span> 
+                       </td>                     
+                     
                       <td >
-                        <div class="ps-2 email">
-                          <span class="body2 " style="color: #354053;">The Downtown Dental Clinic </span>
-                          <span class="body2 " style="color: #6E6893;font-size: 12px;">Winnipeg </span>
-                        </div>
-                      </td>
-                      <td >
-                        <span class="body2 " style="color: #354053;">$ 256  </span>
+                        <div>                        
+                          <div class="form-check form-switch ">
+                          <input class="form-check-input border-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
+                          width:44px;">
+                        </div> 
+                      </div> 
                       </td>
                       <td >
                         <div class="mt-1 d-flex">
@@ -347,6 +344,8 @@
                         <a href="#" class="me-1">
                           <i class="bx bx-loader" style="font-size: 1.55rem;color:#FA9FBD;"></i>
                         </a>
+    
+                        
                           <div class="dropdown">
                             <a href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="">
                               <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
@@ -374,8 +373,7 @@
                       <td>
                         <div class="form-check form-check-inline">
                           <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
-                      </div>
-                    </td>
+                      </div></td>
                       <td>
                         <div class="d-flex mt-1">
                              <img alt="..." src="assets/image.png" class="avatar avatar-xs rounded-circle ">
@@ -387,18 +385,15 @@
                             </div>
                       </td>
                       <td>
-                        <div class=" email">
-                          <span class="badge badge-pill badge-success body2 ">Active</span>
-                          <span class="body2" style="color: #6E6893;font-size: 12px;">Created on : 14/APR/2020</span>
-                        </div>                    
-                          <td >
-                        <div class="ps-2 email">
-                          <span class="body2 " style="color: #354053;">Alta Vista Dental Clinic </span>
-                          <span class="body2 " style="color: #6E6893;font-size: 12px;">Toronto </span>
-                        </div>
-                      </td>
+                        <span class="badge badge-pill badge-blue mt-2">Reader</span> </td>                     
+                     
                       <td >
-                        <span class="body2 " style="color: #354053;">$ 256  </span>
+                        <div>                        
+                          <div class="form-check form-switch ">
+                          <input class="form-check-input border-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
+                          width:44px;">
+                        </div> 
+                      </div> 
                       </td>
                       <td >
                         <div class="mt-1 d-flex">
@@ -448,18 +443,16 @@
                             </div>
                       </td>
                       <td>
-                        <div class=" email">
-                          <span class="badge badge-pill badge-success body2 ">Active</span>
-                          <span class="body2" style="color: #6E6893;font-size: 12px;">Created on : 14/APR/2020</span>
-                        </div>                     
-                         <td >
-                        <div class="ps-2 email">
-                          <span class="body2 " style="color: #354053;">Trillium Dental </span>
-                          <span class="body2 " style="color: #6E6893;font-size: 12px;">Ottawa</span>
-                        </div>
-                      </td>
+                        <span class="badge badge-pill badge-purple  mt-2"> Owner</span>
+                      </td>                    
+                     
                       <td >
-                        <span class="body2 " style="color: #354053;">$ 256  </span> 
+                        <div>                        
+                          <div class="form-check form-switch ">
+                          <input class="form-check-input border-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
+                          width:44px;">
+                        </div> 
+                      </div> 
                       </td>
                       <td >
                         <div class="mt-1 d-flex">
@@ -532,7 +525,6 @@
 </div>
 </div>
   </div>
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>

@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dental-Live Mail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <style>
+   .profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;}
+    .capture::after {
+    content: "";
+    display: inline-block;
+    background: url(assets/img.png) no-repeat;
+    width: 45px;
+    height: 85px;
+    margin-left: -40px;}
+    </style>
+</head>
+<body style="background-color: #F7F9FB;">
+  <div  class="container-fluid p-0 overflow-hidden">
+    <nav  class="navbar navbar-expand-md navbar-dark border-bottom px-2" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);background-color: white;">
+      <div  class="container-fluid">
+        <a class="navbar-brand logo" href="#">
+          <img src="assets/Logo_Dark.png">
+        </a>
+        <ul class="navbar-nav me-auto mt-1 mb-md-0">
+          <li class="nav-item">
+              <a class="nav-link "  style="color:#5D6A7E;font-size:20px;">Admin</a>
+          </li>
+      </ul>          
+      <button  class="navbar-toggler collapsed" data-bs-target="#collapsibleNavbar" data-bs-toggle="collapse" type="button" aria-expanded="false">
+              <span  class="navbar-toggler-icon"><i  class="fa fa-bars"></i></span>
+          </button>
+          <div  class="navbar-collapse collapse" id="collapsibleNavbar" >
+              <ul  class="navbar-nav ms-auto my-2 my-md-0">
+              <li class="nav-item">
+                <a class="nav-link align-items-center  p-0">
+                  <img alt="..." src="assets/tesimonial-2.png" class="avatar avatar-xs rounded-circle" style="border: 1px dotted #00D9CC;">
+                </a>
+              </li>
+              <li class="nav-item">
+                <label  class="nav-link body2"  style="color:#282C33">Hi,Emma</label>
+               </li>
+              </ul>
+              <div class="dropdown-divider"></div>
+              <ul  class="navbar-nav d-md-none me-auto mb-2 mb-md-0">
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Dashboard.html" style="color:#282C33">Dashboard</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="CustomerList.html" style="color:#282C33">Customer</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Productl.html" style="color:#282C33">Products</a></li>   </ul>
+          </div>
+      </div>
+  </nav>
+    <div  class="left_nav row">
+      <div class=" l-navbar d-none d-md-block col-md-3 col-lg-2 min-vh-100 ">
+        <div class="" id="nav-bar">
+        <nav class="nav" style="padding-left: 10px;">
+            <div class="nav_list" >
+              <a href="Dashboard.html" class="nav_link border-0 active_view"><i class='bx bx-tachometer nav_icon' ></i><span class="nav_name">DashBoard</span></a>
+        </nav>
+          <nav class="nav mt-2">
+            <div class="nav_list" >
+              <div id="nav_accordion">
+              <a href="CustomerList.html" class="nav_link " > <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
+              <a href="ProductList.html" class="nav_link "> <i class='bx bx-layer nav_icon' ></i><span class="nav_name">Products</span> </a>
+              <a href="PackagesList.html" class="nav_link"> <i class='bx bxs-coupon nav_icon'></i> <span class="nav_name">Packages</span> </a>
+              <a href="VendorList.html" class="nav_link "> <i class='bx bx-user nav_icon'></i><span class="nav_name">Vendor</span> </a>
+              <a href="Transactionslist.html" class="nav_link " data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#">
+                <i class='bx bx-dollar nav_icon'></i><div class="d-flex"><span class="nav_name">Finance</span> 
+                <span class="material-icons pt-1">keyboard_arrow_down</span></div>
+              </a> 
+            <ul id="menu_item2" class="submenu collapse" data-bs-parent="#nav_accordion">
+            <li><a href="Transactionslist.html" class="nav_link "><span class="nav_name">Transaction</span></a></li>
+            <li><a href="VendorOustandinglist.html" class="nav_link "> <span class="nav_name">Vendor outstanding</span> </a></li>
+           </ul>
+          </div>
+        </nav>
+        <nav class="nav mt-5"> 
+          <div class="nav_list" >
+            <span class="body2 ms-4" style="color:#5D6A7E;">SYSTEM</span>
+            <div id="nav_accordion">
+            <a href="UserList.html" class="nav_link"> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Users</span> </a>
+            <a href="Permissions.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Permissions</span> </a>
+            <a href="Integration.html" class="nav_link"><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Integration</span> </a>
+            <a href="ContactList.html" class="nav_link "><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Contacts</span> </a>
+            <a href="SocialMedia.html" class="nav_link active"><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Social</span> </a>
+        </div>
+      </nav>
+      <nav class="nav mt-5"> 
+        <div class="nav_list" >
+          <span class="body2 ms-4" style="color:#5D6A7E;">SETTINGS</span>
+          <div id="nav_accordion">
+          <a href="AccountDetail.html" class="nav_link"> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Account Settings </span> </a>
+          <a href="Adminlogin.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Logout</span> </a>
+      </div>
+    </nav>
+         </div>
+       </div>
+     <div class="col-md-9 col-lg-10 p-4 mx-auto">
+          <div class="page-header d-flex">
+            <ol class="breadcrumb">
+              <!-- breadcrumb --> 
+              <li class="breadcrumb-item">
+                <h5 class="fw-bold" style="color: #011A3E;">Social Media</h5>
+            </li> 
+          </ol>
+          <div class="ml-auto" style="margin-left: auto !important;"> 
+            <div> 
+              <a href="#" class="btn btn-primary btn-1  mb-2  border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background-color:#0070D2;height:40px;padding:10px 31px;"> 
+                Add New media 
+              </a>
+              </div> 
+             </div>
+        
+          </div>    
+         
+          <div class="row align-items-center pt-2">
+            <div class="col-md-12">
+              <div class="card border-0" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+               
+                  <div class="card-body">
+                    <div class="row mt-2">
+                      <div class="col-md-8">
+                        <div class="row">
+
+                        <div class="col-md-8"> 
+                          <div class="mb-4">
+                            <label class="form-label body2" style="color: #011A3E;">Social Media Platform</label>
+                            <input type="text" class="form-control">
+                          </div>
+  
+                        </div>
+                        <div class="col-md-12"> 
+                          <div class="mb-4">
+                            <label class="form-label body2" style="color: #011A3E;">Link</label>
+                            <input type="text" class="form-control">
+                          </div>
+  
+                        </div>
+                        <div class="col-md-8"> 
+                          <div class="mb-4">
+                            <label class="form-label body2" style="color: #011A3E;">Login Name</label>
+                            <input type="text" class="form-control">
+                          </div>
+  
+                        </div>
+                        <div class="col-md-4"> 
+                          <div class="mb-4">
+                            <label class="form-label body2" style="color: #011A3E;">Password</label>
+                            <input type="text" class="form-control">
+                          </div>
+  
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="profile-img justify-content-center mt-2  p-md-2">
+                          <div class="capture">
+                          <img src="assets/avatar3.png" alt="" class="mb-2"></div>
+                          <a class="body2" href="#" style="color:#0070D2;">Logo image</a>
+                      </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 mb-2">
+                          <a href="#" class="btn btn-primary mt-1 btn-1 me-2 border-0" style="background-color:#0070D2;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #C3D2FF;">
+                            Save
+                          </a> 
+                          <a href="#" class="btn btn-primary mt-1 btn-2   me-2 border-0" style="background-color:#F7517F;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #C3D2FF;">
+                            Delete
+                          </a> 
+                          <a href="#" class="btn btn-outline-primary  btn-1 mt-1" style="height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #c3d2ff00;">
+                            Reset
+                          </a> 
+                      </div>
+                    </div>
+                      
+                     
+                    </div>
+                  </div>
+                
+                <div class="table-responsive">
+                  <table class="table table-hover table-nowrap align-items-center" style="min-width: 768px;" id="DyanmicTable">
+                    <thead class="thead-light">
+                      <tr style="text-transform:uppercase;">
+                        <th class="body2">NAME</th>
+                        <th class="body2">Link </th>
+                        <th class="body2">Login ID  </th>
+                        <th class="body2">Password </th>
+                        <th class="body2">Actions </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="vertical-align: middle;">
+                        <td>
+                          <div class=" mt-1">
+                               <img alt="..." src="assets/Facebook.png" class="avatar avatar-xs rounded-circle mb-3">
+                                <span class="body2 mt-3" style="color: #354053;">Facebook</span>
+                              </div>
+                         </td>
+                        <td >
+                          <span class="body2 my-2" style="color: #354053;">https://www.w3.org/Provider/Style/dummy.html </span>
+                         </td>
+                         <td >
+                          <span class="body2 my-2" style="color: #354053;">Dental live</span>
+                         </td>
+                         <td > 
+                          <span class="body2 my-2" style="color: #354053;">easter@123</span>
+                         </td>
+                         
+                         <td >
+                          <div class="mt-1 d-flex">
+                            <a href="#" class="me-2">
+                              <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
+                            </a>
+                            <a href="#">
+                              <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
+                            </a>
+                           </div>
+                        </td>                      
+                      </tr>
+                      <tr style="vertical-align: middle;">
+                        <td>
+                          <div class=" mt-1">
+                               <img alt="..." src="assets/twitter.png" class="avatar avatar-xs rounded-circle mb-3">
+                                <span class="body2 mt-3" style="color: #354053;">Twitter</span>
+                              </div>
+                         </td>
+                        <td >
+                          <span class="body2 my-2" style="color: #354053;">https://www.w3.org/Provider/Style/dummy.html</span>
+                         </td>
+                         <td > 
+                          <span class="body2 my-2" style="color: #354053;">Dental live</span>
+                         </td>
+                         <td > 
+                          <span class="body2 my-2" style="color: #354053;">easter@123</span>
+                         </td>
+                         <td >
+                          <div class="mt-1 d-flex">
+                            <a href="#" class="me-2">
+                              <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
+                            </a>
+                            <a href="#">
+                              <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
+                            </a>
+                           </div>
+                        </td>                      
+                      </tr>
+                      <tr style="vertical-align: middle;">
+                        <td>
+                          <div class=" mt-1">
+                               <img alt="..." src="assets/linkedin.png" class="avatar avatar-xs rounded-circle mb-3">
+                                <span class="body2 mt-3" style="color: #354053;">Linkedin</span>
+                              </div>
+                         </td>
+                        <td >
+                          <span class="body2 my-2" style="color: #354053;">https://www.linkedin.com/feed/ </span>
+                         </td>
+                         <td>
+                          <span class="body2 my-2" style="color: #354053;">Dental live </span>
+                         </td>
+                         <td > 
+                          <span class="body2 my-2" style="color: #354053;">easter@123</span>
+                         </td>
+                         
+                         <td >
+                          <div class="mt-1 d-flex">
+                            <a href="#" class="me-2">
+                              <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
+                            </a>
+                            <a href="#">
+                              <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
+                            </a>
+                           </div>
+                        </td>                      
+                      </tr>
+                      <tr style="vertical-align: middle;">
+                        <td>
+                          <div class=" mt-1">
+                               <img alt="..." src="assets/telegram.png" class="avatar avatar-xs rounded-circle mb-3">
+                                <span class="body2 mt-3" style="color: #354053;">Telegram</span>
+                              </div>
+                         </td>
+                        <td >
+                          <span class="body2 my-2" style="color: #354053;">https://icons8.com/icons/set/telegram</span>
+                         </td>
+                         <td >                      
+                          <span class="body2 my-2" style="color: #354053;">Dental live </span>                     
+                         </td>
+                         <td > 
+                          <span class="body2 my-2" style="color: #354053;">easter@123</span>
+                         </td>
+                        
+                         <td >
+                          <div class="mt-1 d-flex">
+                            <a href="#" class="me-2">
+                              <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
+                            </a>
+                           
+                              <a href="#">
+                                <i class="bx bx-dots-vertical-rounded" style="font-size: 1.55rem;color:#5D6A7E;"></i>  
+                              </a>
+                           
+                            </div>
+                           </div>
+                        </td>                    
+                      
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+
+     
+    
+     
+
+</div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
