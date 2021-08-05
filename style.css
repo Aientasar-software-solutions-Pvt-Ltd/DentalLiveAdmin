@@ -196,7 +196,7 @@ app-view-mail blockquote {
 .l-navbar {
   top: 118px;
   /* width: 272px; */
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #011A3E  ;
   padding: .5rem 1rem 0 0;
   z-index: 100;
@@ -213,7 +213,7 @@ app-view-mail blockquote {
 }
 .l-navbar .nav_link {
   border-bottom: 1px solid #354053;
-  font-size: 16px;
+  font-size: 14px;
   height: 47px;
   /* width: 180px; */
   display: grid;
