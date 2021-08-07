@@ -302,13 +302,13 @@ tbody, th, thead {border-style: none;}
     display: block !important;
 }
 }
-@media (min-width: 1200px){
+/* @media (min-width: 1200px){
   #chDonut1 {
     display: block;
     height: 263px!important;
     width: 263px!important;
   }
-  }
+  } */
 .dropdown-item.active, .dropdown-item:active {color: #354053;text-decoration: none;background-color: #EFF3F7;}
 .page-item.active .page-link {background-color: #AEB4BF;border-color: #AEB4BF;}.page-link{color:#AEB4BF ;}
 .card-header_border :before {border-top-left-radius: 80px;top: 0; content: ''; position: absolute;left: 0;width: 6px; height: 58px; background-color: #00D9CC; margin-top: 0;}

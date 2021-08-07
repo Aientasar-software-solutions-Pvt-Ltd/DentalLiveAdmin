@@ -15,6 +15,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
     <style>
+  .wrapper{
+  width:100%;
+  display:block;
+  overflow:hidden;
+  margin:0 auto;
+  background:#fff;
+  border-radius:4px;
+}
+      .absolute-center {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
    .profile-img img {
     width: 150px;
     height: 150px;
@@ -254,14 +268,18 @@
                       
                       <div class="col-md-12 justify-content-center">
                         <div>
-                          <p class=" body2">Total Earning </p>
+                          <p class=" body2">Total Customer Count</p>
                         </div>
                           <div class="card border-0">
                               <div class="card-body">
                                   <canvas id="chDonut1"></canvas>
+                                  <div class="absolute-center text-center">
+                                    <h5 class="fw-bold">200</h5>
+                                    <p>Users</p>
+                                  </div>
                               </div>
                       </div>
-                      <p class=" body2">Earning of July</p>
+                      <p class=" body2">All Packages and Products</p>
                                          
                       </div>
                     </div>
@@ -269,22 +287,14 @@
                 </div>
                 <div class="card border-0 mt-2" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
                   <div class="card-body">
-                    <div class="row mt-2">
-                      
-                      <div class="col-md-12 justify-content-center">
-                        <div>
-                          <p class=" body2">Total Earning</p>
-                        </div>
-                          <div class="card border-0">
-                              <div class="card-body">
-                                  <canvas id="chDonut2"></canvas>
-                              </div>
-                      </div> 
-                       <p class=" body2">Earning of July</p>
-                                         
-                      </div>
+                    <div class="row">
+                     <p class="body1 mb-0 fw-bold" style="color: #011A3E;">New Customer Monthly  </p>
+                     <p class="body2 mb-3 pt-0 " style="color: #5D6A7E;">Last 5 months </p>                 
+                      <div class="wrapper">
+                         <canvas id="myChart"></canvas>
+                         </div> 
                     </div>
-                  </div>
+                    </div>
                 </div>
               </div>
           </div>
@@ -411,17 +421,19 @@ var colors = ['#00D9CC','#0070D2'];
 /* 3 donut charts */
 var donutOptions = {
   cutoutPercentage:60, 
-  legend: {position:'bottom', padding:5, labels: {pointStyle:'circle', usePointStyle:true}}
+  legend: {position:'bottom',display:false, padding:5, labels: {pointStyle:'circle', usePointStyle:true}}
 };
+
 
 // donut 1
 var chDonutData1 = {
-    labels: ['Data used', 'Available'],
+    labels: ['Users', 'Users'],
+    display:false,
     datasets: [
       {
         backgroundColor: colors.slice(0,2),
         borderWidth: 0,
-        data: [1, 5]
+        data: [100, 200]
       }
     ]
 };
@@ -434,38 +446,65 @@ if (chDonut1) {
       options: donutOptions
   });
 }
+var ctx = document.getElementById('myChart').getContext("2d");
 
-/* chart.js chart examples */
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL"],
+        datasets: [{
+            label: "Data",
+            borderColor: "#80b6f4",
+            pointBorderColor: "#00D9CC",
+            pointBackgroundColor: "#ffffff",
+            pointHoverBackgroundColor: "#80b6f4",
+            pointHoverBorderColor: "#80b6f4",
+            pointBorderWidth: 2,
+            pointHoverRadius: 2,
+            pointHoverBorderWidth: 1,
+            pointRadius:2,
+            fill: true,
+            backgroundColor:"#C9E2FF",
+            borderWidth: 0,
+            data: [80, 140, 100, 170, 140, 300, 140]
+        }]
+    },
+    options: {
+        legend: {
+            display:false,
+            position: "top"
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    fontColor: "rgba(0,0,0,0.5)",
+                    beginAtZero: true,
+                    maxTicksLimit: 5,
+                    padding: 20
+                },
+                gridLines: {
+                    drawTicks: false,
+                    display : false
+                }
 
-// chart colors
-var colors = ['#00D9CC','#0070D2'];
+            }],
+            xAxes: [{
+                gridLines: {
+                    zeroLineColor: "transparent",
+                    drawTicks: false,
+                    display : false
+                },
+                ticks: {
+                    padding: 20,
+                    fontColor: "rgba(0,0,0,0.5)",
+                    fontStyle: "bold"
+                }
+            }]
+        }
+    }
+});
 
-/* 3 donut charts */
-var donutOptions = {
-  cutoutPercentage:60, 
-  legend: {position:'bottom', padding:5, labels: {pointStyle:'circle', usePointStyle:true}}
-};
 
-// donut 1
-var chDonutData2 = {
-    labels: ['Data used', 'Available'],
-    datasets: [
-      {
-        backgroundColor: colors.slice(0,2),
-        borderWidth: 0,
-        data: [1, 5]
-      }
-    ]
-};
-
-var chDonut2 = document.getElementById("chDonut2");
-if (chDonut2) {
-  new Chart(chDonut2, {
-      type: 'pie',
-      data: chDonutData1,
-      options: donutOptions
-  });
-}
 
 </script>
 </body>
