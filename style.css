@@ -14,6 +14,9 @@ html,
 body {
   height: 100%;
 }
+img{
+  max-width: 100%;
+}
 
 .vjs-record .vjs-pip-button.vjs-control {
   display: none !important;
