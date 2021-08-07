@@ -1,0 +1,1376 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dental-Live Mail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  <script src="https://cdn.tiny.cloud/1/9glvfp8ck80pke8n1gr9jqqja2jllqeojcb6wvhrhvrt913n/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+      toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table',
+      toolbar_mode: 'floating',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+   });
+  </script>
+  <style>
+    
+    .avatar-xs {
+    width: 35px;
+    height: 35px;
+}
+    .form-check .fa {
+    margin-top: 5px;
+    float: left;
+    margin-left: -1.5em;
+    margin-right: 5px;
+    color: #3ed7ff;
+    font-size: smaller;
+}
+.fa-facebook-square, .fa-linkedin-square, .fa-twitter {
+    color: #5D6A7E;
+    font-size: x-large;
+    width: 34px;
+    height: 34px;
+}
+  .btn {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.002em;
+    padding: 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+  .ul {
+    padding-inline-start: 5px;
+    list-style-type: none;
+}
+ .nav-pills .nav-link.active {
+    background-color: #0070D2!important;
+}
+@media (min-width: 576px){
+     .card-group>.card:not(:first-child) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    }
+    .card-group>.card:not(:last-child) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}}
+  section {
+  padding: 5rem 0;
+  }
+  @media screen and (min-width:1400px) {.box .nav-pills .nav-link {width: 235px!important;  } }
+  @media (min-width: 768px){.flex-md-row { flex-direction: row!important;}}
+  @media (min-width: 576px){.card-group {flex-flow: row wrap;}}
+  .card-group { display: flex; flex-direction: column;}
+  #carouselExampleCaptions  .carousel-indicators .active {
+    opacity: 1!important;
+}
+    #carouselExampleCaptions  .carousel-indicators [data-bs-target] {
+    opacity: 0.8;
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: auto;
+}  
+     .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover, .carousel-control-prev-icon:focus, .carousel-control-next-icon:focus {
+	 text-decoration: none;
+     border-radius: 20px;
+     background-color: #00d9cc;
+	 opacity: 1;
+    }
+    .carousel-control-next, .carousel-control-prev ,.owl-prev,.owl-next  {
+     position: initial;
+    display: inline;
+    width: auto;}
+      .carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+    filter: none;
+    }
+     .carousel-control-prev,  .carousel-control-next {
+	color: #3d3d3d ;
+	opacity: 1;
+    }
+   .carousel-control-prev-icon, .carousel-control-next-icon , .owl-prev, .owl-next {
+    border-radius: 20px;
+	background-image: none;
+	color: #fff;
+	font-size: 14px;
+	background-color: #dedee4;
+	height: 32px;
+	line-height: 32px;
+	width: 32px;
+   }
+   
+   .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+	opacity: 0.85;
+   }
+.carousel-control-prev, .owl-prev {
+	left: 40%;
+	top: 110%;
+}
+.carousel-control-next ,.owl-next {
+	right: 40%;
+	top: 110%;
+}
+  .carousel-dark .carousel-indicators [data-bs-target] {
+    opacity: 1;
+    background-color:transparent;}
+     .carousel-indicators {
+      justify-content: initial;
+      position: relative;
+       margin-left: 0px;
+      margin-right: 0px;
+      top: 0;}
+    .carousel-indicators [data-bs-target] {
+      box-sizing: border-box;
+      height:auto !important;
+      text-indent:0;  }
+      
+::-webkit-scrollbar { width:4px;}
+::-webkit-scrollbar-thumb { background: #0170d2;border-radius: 50px;}
+   .owl-prev .fa, .owl-next .fa ,  .carousel-control-prev-icon .fa,  .carousel-control-next-icon .fa{
+     font-size: smaller;
+     color: white;
+    }
+    .owl-theme .owl-nav [class*=owl-] {
+        border-radius: 50%;
+        background: #D6D6D6!important;
+}
+#owl-demo-four .owl-nav [class*='owl-']:hover ,#owl-demo-four .owl-nav [class*='owl-']:focus {
+    border: 2px solid #07D5E8;
+    background: #07D5E8!important;
+    color: #ffffff!important
+}
+
+     
+.nav-pills .nav-link{
+  font-family: Sintony;
+  font-size: 16px;
+  font-style: normal;
+  color: #5D6A7E;
+  text-align: center;
+  padding: 20px;
+  height: 65px;
+  width: 200px;
+  border-radius: 5px;
+  font-weight: 400;
+  text-transform: capitalize;
+  border: 1px solid #C9D6D5!important;
+ }
+.nav-pills .nav-link:hover{
+ color:#fdfdfd!important;
+ background-color:#0070D2!important; 
+}
+.nav-pills .nav-link img:last-child,
+.nav-pills .nav-link.active img:first-child,
+.nav-pills .nav-link:hover img:first-child {
+        display: none;}
+.nav-pills .nav-link.active img:last-child,
+.nav-pills .nav-link:hover img:last-child {
+        display: inline-block; }
+
+
+    .scrolling-wrapper::-webkit-scrollbar {
+        display: none;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+    }
+    .avatar.avatar-lg {
+        width: 4.25rem;
+        min-width: 4.25rem;
+        height: 4.25rem;
+    }
+    .avatar.avatar-circle {
+        border-radius: 50%;
+    }
+    .avatar {
+        position: relative;
+        display: inline-block;
+        width: 3.125rem;
+        height: 3.125rem;
+        min-width: 3.125rem;
+        border-radius: 0.375rem;
+    }
+    .avatar.avatar-circle .avatar-img,
+    .avatar.avatar-circle .avatar-initials {
+        border-radius: 50%;
+    }
+    .avatar-group .avatar-lg .avatar-img,
+    .avatar-group .avatar-lg .avatar-initials {
+        border: 0.1875rem solid #fff;
+        font-size: 1.75rem;
+        font-weight: 700;
+    }
+    .avatar .avatar-img {
+        border-radius: 0.375rem;
+        max-width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .avatar-ex-lg {
+        width: 6.25rem;
+        min-width: 6.25rem;
+        height: 6.25rem;
+        border: 1px solid #00d9cc;
+    }
+    .pricing-table {
+      position: relative;
+      z-index: 1;
+      background-color: #ffffff;
+      border-radius: 10px;
+      transition: 0.5s all ease;
+  }
+
+  .pricing-table:hover {
+      transform: translate(0px, -10px);
+      background-color: #0070d2;
+      color: #ffffff;
+  }
+  .pricing-table:hover a:nth-last-of-type(even)  {
+        background-color: #f7517f !important;
+    }
+   
+  .pricing-table .active a:nth-last-of-type(even)  {
+        background-color: #f7517f !important;
+    }
+    
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+        background-color: #00d9cc;
+        width: 25px;
+    }
+    #owl-demo-six .owl-dots .owl-dot span,
+    #owl-demo-six .owl-dots .owl-dot.active span,
+    #owl-demo-six .owl-dots .owl-dot:hover span {
+        background-color: #fff; }
+
+</style>
+</head>
+<body style="background-color: #F7F9FB;">
+  <div  class="container-fluid p-0 overflow-hidden">
+    <nav  class="navbar navbar-expand-md navbar-dark border-bottom px-2" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);background-color: white;">
+      <div  class="container-fluid">
+        <a class="navbar-brand logo" href="#">
+          <img src="assets/Logo_Dark.png">
+        </a>
+        <ul class="navbar-nav me-auto mt-1 mb-md-0">
+          <li class="nav-item">
+              <a class="nav-link "  style="color:#5D6A7E;font-size:20px;">Admin</a>
+          </li>
+      </ul>          
+      <button  class="navbar-toggler collapsed" data-bs-target="#collapsibleNavbar" data-bs-toggle="collapse" type="button" aria-expanded="false">
+              <span  class="navbar-toggler-icon"><i  class="fa fa-bars"></i></span>
+          </button>
+          <div  class="navbar-collapse collapse" id="collapsibleNavbar" >
+              <ul  class="navbar-nav ms-auto my-2 my-md-0">
+              <li class="nav-item">
+                <a class="nav-link align-items-center  p-0">
+                  <img alt="..." src="assets/tesimonial-2.png" class=" avatar-xs rounded-circle " style="border: 1px dotted #00D9CC;">
+                </a>
+              </li>
+              <li class="nav-item">
+                <label  class="nav-link body2"  style="color:#282C33">Hi,Emma</label>
+               </li>
+              </ul>
+              <div class="dropdown-divider"></div>
+              <ul  class="navbar-nav d-md-none me-auto mb-2 mb-md-0">
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Dashboard.html" style="color:#282C33">Dashboard</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="CustomerList.html" style="color:#282C33">Customer</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Productl.html" style="color:#282C33">Products</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="PackagesList.html" style="color:#282C33">Packages</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="VendorList.html" style="color:#282C33">Vendor</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Transactionslist.html" style="color:#282C33">Transaction</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="VendorOustandinglist.html" style="color:#282C33">Vendor outstanding</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Cms.html" style="color:#282C33">CMS</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="UserList.html" style="color:#282C33">Users</a></li>
+                <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Permissions.html" style="color:#282C33">Permissions</a></li>
+                  <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Integration.html" style="color:#282C33">Integration</a></li>
+                  <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="ContactList.html" style="color:#282C33">Contacts</a></li>
+                  <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="SocialMedia.html" style="color:#282C33">Social</a></li>
+                  <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="AccountDetail.html" style="color:#282C33">Account Settings </a></li>
+                  <li  class="nav-item"><a  class="nav-link body2" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"  href="Adminlogin.html" style="color:#282C33">Logout</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+    <div  class="left_nav row">
+      <div class=" l-navbar d-none d-md-block col-md-3 col-lg-2 min-vh-100 ">
+        <div class="" id="nav-bar">
+        <nav class="nav" style="padding-left: 10px;">
+            <div class="nav_list" >
+              <a href="Dashboard.html" class="nav_link border-0 active_view active" ><i class='bx bx-tachometer nav_icon' ></i><span class="nav_name">DashBoard</span></a>
+        </nav>
+          <nav class="nav mt-2">
+            <div class="nav_list" >
+              <div id="nav_accordion">
+              <a href="CustomerList.html" class="nav_link " > <i class='bx bx-user nav_icon'></i> <span class="nav_name">Customer</span> </a>
+              <a href="ProductList.html" class="nav_link "> <i class='bx bx-layer nav_icon' ></i><span class="nav_name">Products</span> </a>
+              <a href="PackagesList.html" class="nav_link"> <i class='bx bxs-coupon nav_icon'></i> <span class="nav_name">Packages</span> </a>
+              <a href="VendorList.html" class="nav_link "> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Vendor</span> </a>
+              <a href="Transactionslist.html" class="nav_link " data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#">
+                <i class='bx bx-dollar nav_icon'></i><div class="d-flex"><span class="nav_name">Finance</span> 
+                <span class="material-icons pt-1">keyboard_arrow_down</span></div>
+              </a> 
+            <ul id="menu_item2" class="submenu collapse" data-bs-parent="#nav_accordion">
+            <li><a href="Transactionslist.html" class="nav_link">
+              
+              
+              <span class="nav_name">Transaction</span></a></li>
+            <li><a href="VendorOustandinglist.html" class="nav_link"> <span class="nav_name">Vendor outstanding</span> </a></li>
+           </ul>
+           <a href="Cms.html" class="nav_link "> <i class='bx bx-cog nav_icon'></i> <span class="nav_name">CMS</span> </a>
+
+          </div>
+        </nav>
+        <nav class="nav mt-5">
+            
+          <div class="nav_list" >
+            <span class="body2 ms-4" style="color:#5D6A7E;">SYSTEM</span>
+            <div id="nav_accordion">
+            <a href="UserList.html" class="nav_link"> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Users</span> </a>
+            <a href="Permissions.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Permissions</span> </a>
+            <a href="Integration.html" class="nav_link"><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Integration</span> </a>
+            <a href="ContactList.html" class="nav_link "><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Contacts</span> </a>
+            <a href="SocialMedia.html" class="nav_link "><i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Social</span> </a>
+  
+        </div>
+      </nav>
+      <nav class="nav mt-5">
+            
+        <div class="nav_list" >
+          <span class="body2 ms-4" style="color:#5D6A7E;">SETTINGS</span>
+          <div id="nav_accordion">
+          <a href="AccountDetail.html" class="nav_link"> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Account Settings </span> </a>
+          <a href="Adminlogin.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Logout</span> </a>
+      </div>
+    </nav>
+      
+         </div>
+       </div>
+ <div class="col-md-9 col-lg-10 p-4 mx-auto">
+  <header
+  class="w-100 overflow-hidden main_landing"
+  style="background: linear-gradient(180deg ,#0070D2 7.17%, #80E8DB 94.81%);height: auto; padding-bottom: 3em; position: relative; margin-bottom: 10vh; background-image: url('assets/imgs/landingMainbg.png'); background-size: 100% 100%; background-position: center top; background-repeat: no-repeat;" >
+  <nav class="navbar navbar-expand-md navbar-dark border-bottom "  style="box-shadow: 0 0 20px 0 rgb(0 0 0 / 5%); background-color: #fff !important;">
+      <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/Logo_Dark.png" /></a>
+          <button class="navbar-toggler collapsed" data-bs-target="#collapsibleNavbarweb" data-bs-toggle="collapse" type="button" aria-expanded="false">
+              <span class="navbar-toggler-icon"> <i class="fa fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse mt-1" id="collapsibleNavbarweb">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                      <a class="nav-link bold" href="#Products" style="color:#282c33;">Products</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link bold" href="#Solutions" style="color: #282c33;">Solutions</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link bold" href="#Plans" style="color: #282c33;">Plans</a>
+                  </li>
+              </ul>
+              <div class="dropdown-divider"></div>
+              <ul class="navbar-nav mb-md-0 ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link bold" href="https://d1eqbgsf09hz76.cloudfront.net/" target="_blank" style="color: #282c33;">Login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link bold" href="https://d1eqbgsf09hz76.cloudfront.net/signup" target="_blank" style="color: #f7517f;">Sign up</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <nav class="navbar-expand-md nav_bar pt-1 "   style="background-color: #09005d4d; height: 50px;">
+      <div class="container">
+          <div class="collapse navbar-collapse" id="collapsibleNavbarweb">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item me-5">
+                    <a class="nav-link bold" href="DentistMail.html" style="color: #ffffff;">MyDentistMail <i style="color: #00d9cc;font-size: smaller;" class="fa fa-plus"> </i> DentistLiveCall</a>
+                </li>
+                  <li class="nav-item me-2">
+                      <a class="nav-link bold" href="DentalLiveMail.html" style="color: #ffffff;">Dental Live Mail</a>
+                  </li>
+              </ul>
+              <div class="dropdown-divider"></div>
+              <ul class="navbar-nav pt-2 mb-2 mb-md-0 ml-auto" style="flex-direction: row;">
+                  <li class="nav-item">
+                      <i class="fa fa-facebook-square" style="color: #ffffff;" aria-hidden="true"></i>
+                  </li>
+                  <li class="nav-item ms-1">
+                      <i class="fa fa-linkedin-square" style="color: #ffffff;" aria-hidden="true"></i>
+                  </li>
+                  <li class="nav-item ms-1">
+                      <i class="fa fa-twitter" style="color: #ffffff;" aria-hidden="true"></i>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <div class="container p-2 h-75">
+      <div class="d-flex row my-3 my-md-0 h-100 align-items-md-center justify-content-between">
+        <div id="owl-demo-six" class="owl-carousel owl-theme">
+            <div class="row d-flex row align-items-center justify-content-between item mt-4">
+                <div class="col-md-6 col-sm-12">
+                    <div class="" >
+                        <h1 class="display-5 text-light fw-bold contentEditable">Communication <br> re-defined.</h1>
+                        <h5 class="text-light contentEditable" > Discover the ease and efficiency of audiovisual communication within your professional ecosystem.</h5>
+                        <a href="https://d1eqbgsf09hz76.cloudfront.net/signup/dmail" target="_blank">
+                          <button type="button" class="btn btn-primary mt-4" style="color: #fff; background-color: #f7517f; border-color: #f7517f; width: 237px; font-size: 24px; height: 70px;">
+                          Try Now <br />
+                          <span class="body2 " >30 Days FREE Trial </span>
+                      </button></a>
+                      
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-6">
+                    <img src="assets/imgs/Slider img - 01 communication_1x.png" style="transform: translateZ(0)"  class="" />
+              </div>
+            </div>
+            <div class="row d-flex row align-items-center justify-content-between item mt-4">
+                <div class="col-md-6 col-sm-12">
+                    <div >
+                        <h1 class="display-5 text-light fw-bold">Evolve.</h1>
+                        <h5 class="text-light" >Remote communication can falter.<br> Reach your audience at your and their convenience through video/voice mailing.</h5>    
+                         <a href="https://d1eqbgsf09hz76.cloudfront.net/signup/dmail" target="_blank">
+                          <button type="button" class="btn btn-primary mt-4" style="color: #fff; background-color: #f7517f; border-color: #f7517f; width: 237px; font-size: 24px; height: 70px;">
+                          Try Now <br />
+                          <span class="body2 " >30 Days FREE Trial </span>
+                      </button></a>
+                      
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-6">
+                    <img src="assets/imgs/Sliderimg-02Evolve.png" style="transform: translateZ(0)"  class="animation-one"/>
+              </div>
+            </div>
+            <div class="row d-flex row align-items-center justify-content-between item mt-4">
+                <div class="col-md-6 col-sm-12">
+                    <div >
+                        <h1 class="display-5 text-light fw-bold " >Secure.</h1>
+                        <h5 class="text-light" >Patient-centric, HIPAA-compliant communication with patients, team and colleagues.</h5>
+                        <a href="https://d1eqbgsf09hz76.cloudfront.net/signup/dmail" target="_blank">
+                          <button type="button" class="btn btn-primary mt-4" style="color: #fff; background-color: #f7517f; border-color: #f7517f; width: 237px; font-size: 24px; height: 70px;">
+                          Try Now <br />
+                          <span class="body2 " >30 Days FREE Trial </span>
+                      </button></a>
+                      
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-6">
+                    <img src="assets/imgs/Slider-img03Secure.png" style="transform: translateZ(0)" class="animation-one"/>
+              </div>
+            </div>
+            <div class="row d-flex row align-items-center justify-content-between item mt-4">
+                <div class="col-md-6 col-sm-12">
+                    <div >
+                        <h1 class="display-5 text-light fw-bold " >Enhance.</h1>
+                        <h5 class="text-light" > Relationships are better <br> face-to-face. </h5>    
+                         <a href="https://d1eqbgsf09hz76.cloudfront.net/signup/dmail" target="_blank">
+                          <button type="button" class="btn btn-primary mt-4" style="color: #fff; background-color: #f7517f; border-color: #f7517f; width: 237px; font-size: 24px; height: 70px;">
+                          Try Now <br />
+                          <span class="body2 " >30 Days FREE Trial </span>
+                      </button></a>
+                      
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-6">
+                    <img src="assets/imgs/Slider-img04Facetoface.png" style="transform: translateZ(0)" class="animation-one"/>
+              </div>
+            </div>
+        </div>
+         
+      </div>
+  </div>
+</header>
+<!-- main section -->
+<main class="overflow-hidden w-100">
+<section class="pt-0" style="background: linear-gradient(0deg, rgba(128, 232, 219, 0.05) 7.81%, rgb(254 179 177 / 6%) 64.58%, rgba(255, 255, 255, 0.05) 100%);">
+    <div class="container" id="Solutions">
+        <div class="row">
+            <h5 class="h2 text-center mb-md-5 mb-5 contentEditable " style="font-weight:600;color:#354053">Solutions  For Everyone</h5>
+        </div>
+        <div class="row">
+          <div class="col-12">
+              <div class="box">
+               
+                  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                     <!-- Indicators -->
+
+                      <ul class="carousel-indicators nav nav-pills mb-20 scrolling-wrapper" style="overflow-x: scroll; flex-wrap: nowrap !important;scrollbar-width: none">
+                          <li class="nav-item tabs " >
+                              <a href="#navpills-1" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1" class="nav-link active btn-primary ms-2 tab-btn-1 "  data-bs-toggle="tab" aria-expanded="false" style="box-shadow: 0px 4px 20px #c3d2ff00;">
+                                  <img class="me-2" src="assets/imgs/icon.png" /><img class="me-2" src="assets/imgs/iconhover.png" />For Specialists
+                              </a>
+                          </li>
+                          <li class="nav-item tabs " >
+                              <a href="#navpills-2" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class="nav-link btn-primary ms-2 tab-btn-1 "  data-bs-toggle="tab" aria-expanded="false" style="box-shadow: 0px 4px 20px #c3d2ff00;">
+                                  <img class="me-2" src="assets/imgs/icon-one.png" /><img class="me-2" src="assets/imgs/icon-one-hover.png" />For Dentists
+                              </a>
+                          </li>
+                          <li class="nav-item tabs " >
+                              <a href="#navpills-3" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" class="nav-link btn-primary ms-2 tab-btn-1 "  data-bs-toggle="tab" aria-expanded="true" style="box-shadow: 0px 4px 20px #c3d2ff00;">
+                                  <img class="me-2" src="assets/imgs/icon-two.png" /><img class="me-2" src="assets/imgs/icon-two-hover.png" />For Students
+                              </a>
+                          </li>
+                          <li class="nav-item tabs ">
+                              <a href="#navpills-4" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4" class="nav-link btn-primary ms-2 tab-btn-1 "  data-bs-toggle="tab" aria-expanded="true" style="box-shadow: 0px 4px 20px #c3d2ff00;">
+                                  <img class="me-2" src="assets/imgs/icon-three.png" /><img class="me-2" src="assets/imgs/icon-three-hover.png" />For Labs
+                              </a>
+                          </li>
+                          <li class="nav-item tabs ">
+                              <a href="#navpills-5" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5" class="nav-link btn-primary ms-2 tab-btn-1 "  data-bs-toggle="tab" aria-expanded="true" style="box-shadow: 0px 4px 20px #c3d2ff00;">
+                                  <img class="me-2" src="assets/imgs/icon-four.png" /><img class="me-2" src="assets/imgs/icon-four-hover.png" />For Vendors
+                              </a>
+                          </li>
+                      </ul>
+                    
+                      <div class="tab-content carousel-inner " >
+                          <div  class="carousel-item active ">
+                              <div>
+                                  <div class="row d-flex row align-items-center justify-content-between item mt-4">
+                                      <div class="col-md-6 ">
+                                        <h1 class="h4 contentEditable" style="color: #16305B;">
+                                            Increase treatment acceptance. An <span style="color: #f680a1;">audiovisual platform</span>  to help you illustrate your most complex treatment plans to patients.   
+                                          </h1>
+                                          <ul class="list-group my-4 ">
+                                            <li class="p-0 d-flex align-items-center border-0 my-3">
+                                                <img src="assets/svg/video.svg" class="me-2 mb-2" />
+                                                <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Share post-operative surgery, dietary and medication instructions in a visual manner.</p>
+                                            </li>
+                                            <li class="p-0 d-flex align-items-center border-0 my-2">
+                                              <img src="assets/svg/layers.svg" class="me-2 mb-2" />
+                                              <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Organize all previous communication and follow-ups pertaining to a specific patient.</p>
+                                          </li>
+                                              <li class="p-0 d-flex align-items-center border-0 my-2">
+                                                  <img src="assets/svg/send.svg" class="me-2 mb-2" />
+                                                  <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Send audiovisual reports to update the referring dentists about treatment progress and
+                                                    case-specific instructions.</p>
+                                              </li>
+                                           
+                                        </ul>
+                                      </div>
+                                      <div class="d-none d-md-block col-md-6">
+                                          <img src="assets/imgs/Solutions-Specialists.png" />
+                                      </div>
+                                  </div>
+                                 
+                                  
+                              </div>
+                          </div>
+                          <div  class="carousel-item">
+                              <div >
+                                  <div class="row d-flex row align-items-center justify-content-between item mt-4">
+                                      <div class="col-md-6">
+                                          <h1 class="h4 contentEditable" style="color: #16305B;">
+                                            Have more time for the actual dentistry! Manage your <span style="color: #f680a1;"> business efficiently </span> through optimized communication internally and externally.
+                                              
+                                          </h1>
+                                          <ul class="list-group my-4 list">
+                                           
+                                            <li class="p-0 d-flex align-items-center border-0 my-2">
+                                                <img src="assets/svg/file-plus.svg" class="me-2" />
+                                                <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Add a personal touch to follow-ups with your patients' appointments.
+                                                </p>
+                                            </li>
+                                            <li class="p-0 d-flex align-items-center border-0 my-2">
+                                                <img src="assets/svg/video.svg" class="me-2 mb-2" />
+                                                <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Address patients queries regarding treatment plans and care via explanatory videos or screen-sharing messages.</p>
+                                            </li>
+                                            <li class="p-0 d-flex align-items-center border-0 my-2">
+                                                <img src="assets/svg/folder-plus.svg" class="me-2 mb-2" />
+                                                <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Keep an easy track of all past data and patient specific communication.</p>
+                                            </li>
+                                          
+                                        </ul>
+                                      </div>
+                                      <div class="d-none d-md-block col-md-6">
+                                          <img src="assets/imgs/Solutions-Dentists.png" />
+                                      </div>
+                                  </div>
+
+                                 
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div  >
+                                  <div class="row d-flex row align-items-center justify-content-between item mt-4">
+                                      <div class="col-md-6">
+                                          <h1 class="h4 contentEditable" style="color: #16305B;">
+                                            Enhance teaching and learning. An excellent platform that allows you to correspond with members of your <span style="color: #f680a1;">institution on the go.</span> 
+                                             
+                                          </h1>
+                                          <ul class="list-group my-4">
+                                            <li class="p-0 d-flex align-items-center border-0 my-2">
+                                                <img src="assets/svg/user-check.svg" class="me-2 mb-2" />
+                                                <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Share patient case guidance with students/residents to aid their learning process.
+                                              </p>
+                                            </li>
+                                              <li class="p-0 d-flex align-items-center border-0 my-3">
+                                                  <img src="assets/svg/video.svg" class="me-2 mb-3"  />
+                                                  <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Record lectures and case procedures and share with members of your institution.
+                                                    Work alongside your faculty on a case by case basis.</p>
+                                              </li>
+                                              <li class="p-0 d-flex align-items-center border-0 my-2">
+                                                  <img src="assets/svg/monitor.svg" class="me-2 mb-2" />
+                                                  <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Screen-share messaging to discuss patient cases more clearly with faculty and peers.
+                                                </p>
+                                              </li>
+                                              
+                                          </ul>
+                                      </div>
+                                      <div class="d-none d-md-block col-md-6">
+                                          <img src="assets/imgs/Solutions-Students.png" />
+                                      </div>
+                                  </div>
+                               
+                              </div>
+                          </div>
+                          <div  class="carousel-item">
+                              <div >
+                                 
+                                  <div class="row d-flex row align-items-center justify-content-between item mt-4">
+                                      <div class="col-md-6">
+                                          <h1 class="h4 contentEditable" style="color: #16305B;">
+                                            Your work is best when not left to your imagination. Use versatile <span style="color: #f680a1;">communication tools </span> to convey patient case information, down to the smallest detail.
+                                              
+                                          </h1>
+                                          <ul class="list-group my-4">
+                                            <li class="p-0 d-flex align-items-center border-0 my-2">
+                                                <img src="assets/svg/folder-plus.svg" class="me-2 mb-2" />
+                                                <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Review audio-visual mails to achieve greater clarity regarding patient case customizations.
+                                                </p>
+                                            </li>
+                                            <li class="p-0 d-flex align-items-center border-0 my-2">
+                                              <img src="assets/svg/file-plus.svg" class="me-2" />
+                                              <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Demonstrate aesthetic and functionality of a work in progress.</p>
+                                          </li>
+                                            
+                                                <li class="p-0 d-flex align-items-center border-0 my-2">
+                                                    <img src="assets/svg/layers.svg" class="me-2 mb-2" />
+                                                    <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Discuss guided surgery planning, CAD-CAM processes, accuracy of mounting and lab workflow data more efficiently.</p>
+                                                </li>
+                                               
+                                             
+                                          </ul>
+                                      </div>
+                                      <div class="d-none d-md-block col-md-6">
+                                          <img src="assets/imgs/Solutions-Labs.png" />
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div  class="carousel-item">
+                              <div>
+                                 
+                                  <div class="row d-flex row align-items-center justify-content-between item mt-4">
+                                      <div class="col-md-6">
+                                          <h1 class="h4 contentEditable" style="color: #16305B;">
+                                            Boost product sales. <span style="color: #f680a1;">A user-friendly communication platform </span> that allows you to showcase your products to anyone, from anywhere.
+                                             
+                                          </h1>
+                                          <ul class="list-group my-2">
+                                            <li class="p-0 d-flex align-items-center border-0 my-2">
+                                                <img src="assets/svg/monitor.svg" class="me-2 " />
+                                                <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Promote new and existing products effectively via visual demonstrations.
+
+                                                  </p>
+                                              </li>
+                                              <li class="p-0 d-flex align-items-center border-0 my-2">
+                                                  <img src="assets/svg/video.svg" class="me-2 mb-2" />
+                                                  <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Troubleshoot issues with equipment/instruments with dental professionals through instructional videos.</p>
+                                              </li>
+                                              <li class="p-0 d-flex align-items-center border-0 my-2">
+                                                <img src="assets/svg/user-check.svg" class="me-2" />
+                                                <p class="m-0 body2 contentEditable" style="font-size :16px;color:#5D6A7E;">Communicate directly with dentists/specialists with regards to patient specific needs.
+                                                  </p>
+                                            </li>
+                                              
+                                          </ul>
+                                      </div>
+                                      <div class="d-none d-md-block col-md-6">
+                                          <img src="assets/imgs/Solutions-Vendors.png" />
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    <a class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa fa-chevron-right"></i></span>
+              <span class="sr-only">Next</span>
+            </a>
+                    
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+</section>
+
+
+
+  <!-- Products  -->
+  <section>
+  <div class="container"  id="Products">
+      <div class="row">
+     <div class="col-lg-12 mb-4 pb-2">
+      <h1 class="h1 text-center mb-4  contentEditable"   style="font-weight: 600; color: #16305b;">Dental LIVE Products</h1>
+    </div>
+</div>
+    <div class="d-flex row align-items-center justify-content-between ">
+          <div class="col-md-6  mb-5 mb-lg-0">
+              <img src="assets/imgs/holding-medical-icon.jpg "   style="max-width:100%;" />
+          </div>
+          <div class="col-md-5  justify-content-between "  >
+              <h1 class="h1  fw-bold contentEditable"  style="color:#354053">
+                MyDentist<span style="color: #65b168;">Mail </span>+ <br />
+                DentistLive<span style="color: #f9ba3d;">Call</span>
+              </h1>
+              <p class="pt-2 body1 contentEditable"  style="margin-bottom:0.3rem!important;color:#5D6A7E;">
+               <span class="fw-bold contentEditable">My Dentist Mail</span> is a platform that elevates your professional mailing experience via video recording of your messages, for a more humane, personal touch.
+              </p>
+              <p class="body1 contentEditable"  style="color:#5D6A7E;"><span class="fw-bold contentEditable">Dentist Live Call </span> caters to today’s world, where we are moving from offices to homes. Experience video conferencing like never before.
+              </p>
+              <div >
+              <p class="body1 pb-1 ">
+             <a href="DentistMail.html" class="read-more-btn  underline" style="color: #0070d2;">
+                      Learn more about product
+                      <i class="fa fa-arrow-right" aria-hidden="true" style="font-size: small;"></i>
+                </a>
+              </p>
+              <div class="d-flex">
+              <a href="https://d1eqbgsf09hz76.cloudfront.net/signup/f2f" target="_blank" >
+                <button type="button" class="btn btn-primary me-2 btn-3 border-0 " style="background-color: #0070d2;Width:150px;Height:50px;box-shadow: 0px 4px 20px #c3d2ff00;">Try Now</button>
+              </a>
+             <a href="https://d1eqbgsf09hz76.cloudfront.net/signup/f2f" target="_blank" > <button type="button" class="btn btn-outline-primary " style="Width:150px;Height:50px;box-shadow: 0px 4px 20px #c3d2ff00;">Buy Now</button>
+            </a>
+        </div>
+        </div>
+          </div>
+      </div>
+     
+  </div>
+ 
+</section>
+<section class="pt-0">
+<div class="container">
+    <div class="d-flex row align-items-center justify-content-between">
+        <div class="col-12 col-md-5 order-md-first order-last  ">
+            <h1 class="h1 dentel_text  fw-bold contentEditable"  style="color:#354053">Dental <span style="color: #00d9cc;">LIVE</span><span class="Rakkas" style="font-weight: 300;"> Mail </span></h1>
+            <p class="pt-2 body1 text-justify contentEditable "  style="color:#5D6A7E;">
+              DentalLive Mail provides a HIPAA-compliant audio-video mailing solution for all your patient-centric dental correspondence. Audio, video and screen share recording features in one single platform.  
+            </p>
+            <div>
+            <p class="body1 pb-1 ">
+                <a href="DentalLiveMail.html" class="read-more-btn underline" style="color: #0070d2;">
+                    Learn more about product
+                    <i class="fa fa-arrow-right" aria-hidden="true" style="font-size: small;"></i>
+                </a>
+            </p>
+            <div class="d-flex">
+            <a href="https://d1eqbgsf09hz76.cloudfront.net/signup/dmail" target="_blank" ><button type="button" class="btn btn-primary me-2 btn-3 border-0" style="background-color: #0070d2;Width:150px;Height:50px;box-shadow: 0px 4px 20px #c3d2ff00;" >Try Now</button>
+            </a>
+             <a href="https://d1eqbgsf09hz76.cloudfront.net/signup/dmail" target="_blank" > <button type="button" class="btn btn-outline-primary " style="Width:150px;Height:50px;box-shadow: 0px 4px 20px #c3d2ff00;">Buy Now</button>
+             </a>
+            </div>
+        </div>
+      </div>
+        <div class="col-12 col-md-6  mb-5 mb-lg-0">
+            <img src="assets/imgs/dentallivemail.jpg"   style="transform: translateZ(0)" />
+        </div>
+    </div>
+
+  </div>
+</section>
+ 
+  <!-- Products End  -->
+  <!-- Plans and pricing -->
+  
+  <section class=" justify-content-center" style="background-image: linear-gradient(#feb3b11c, #a7f5dc1c);" id="Plans">
+     <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-4 pb-2">
+             <h1 class="h1 text-center mb-4   fw-bold"   style="font-weight: 600; color: #16305b;">Plans</h1>
+           </div>
+         </div> 
+      <div class="row justify-content-center " >
+        <div class="col-12 col-md-10">
+            <div class="pricing card-group flex-column  flex-md-row ">
+            <div class="card card-pricing border-0 mb-2 pricing-table mx-1 p-3 pb-3   bg-gradient-success "  style="box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);">
+                <div class="card-body ">
+                    <h5 class="card-title h2 mt-2 dentel_text fw-bold" >Dental <span style="color: #00d9cc;">LIVE</span> <span class="Rakkas" style="font-weight: 300;"> Mail </span></h5>
+                    <p class="card-text mt-2">Starter Plan</p>
+                    <p class="h5 mt-2 fw-bold">$8.99 –USD / Month</p>
+                    <p class="card-text mt-2 fw-bold">Plus Tax</p>
+                    <ul class="ul pb-5 mt-5" style="font-size: 16px;margin-left:-10px;">
+                        <li>
+                            <div class="form-check">
+                                <i class="fa fa-check "></i>
+                                <label class="form-check-label" for="price_check1">Single User</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                      
+                              <label class="form-check-label" for="price_check2">Single Practice Location</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                      
+                              <label class="form-check-label" for="price_check3">20 GB Of Data</label>
+                            </div>
+                        </li>
+                       
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                      
+                              <label class="form-check-label" for="price_check5">Dental Live Mail-Box</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                      
+                              <label class="form-check-label" for="price_check5">Unlimited Emails</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                      
+                              <label class="form-check-label" for="price_check5">Video, Audio, Screen Recording</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                    
+                              <label class="form-check-label" for="price_check5">Up to 25MB File size upload</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>
+                           <label class="form-check-label" for="price_check5">Auto forward to Private Email</label>
+                            </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                            <i class="fa fa-check "></i>
+                         <label class="form-check-label" for="price_check5">Access to User Community</label>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="form-check">
+                            <i class="fa fa-check "></i>
+                         <label class="form-check-label" for="price_check5">Standard Support</label>
+                          </div>
+                      </li>
+                      <li>
+                        <div class="form-check">
+                          <i></i>
+                       <label class="form-check-label" for="price_check5"></label>
+                        </div>
+                    </li>
+                  
+                   
+                    </ul>
+                    <div class="text-center mt-5 pt-5">
+                      <a href="https://d1eqbgsf09hz76.cloudfront.net/signup/dmail" target="_blank" class="btn btn-primary btn-4  w-100 mt-2 mb-2 border-0" style="background-color: #0070D2;">Buy Now</a>
+                      <a href="https://d1eqbgsf09hz76.cloudfront.net/signup/dmail" target="_blank" class="card-text fw-bold text-center " style="color: #00d9cc;text-decoration: underline;">30 Days FREE Trial. Try Now</a>
+                  </div> 
+              </div>
+            </div>
+            <div class="card card-pricing border-0  mb-2  pricing-table mx-1 p-3 "  style="box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);">
+                <div class="card-body">
+                    <h5 class="card-title h3 mt-2" style="font-weight: 600;">MyDentist<span style="color: #65b168;">Mail </span>+ <br>
+                      DentistLive<span style="color: #f9ba3d;">Call</span></h5>
+                    <p class="card-text mt-2">Standard  </p>
+                    <p class="h5 mt-2 fw-bold">$34.99 -USD / Month
+                  </p>
+                    <p class="card-text mt-2 fw-bold">Plus tax</p>
+                    <ul class="ul" style="font-size: 14px;margin-left: -10px;">
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                           
+                              <label class="form-check-label" for="price_check1">1-3 Users
+                              </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                          
+                               <label class="form-check-label" for="price_check2">Single Practice Location
+                              </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                          
+                               <label class="form-check-label" for="price_check3">1 Admin / 2 Sub Users
+                              </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                           
+                              <label class="form-check-label" for="price_check4">Unlimited Data (Combined)
+                              </label>
+                            </div>
+                        </li>
+                        <li>  <label class="form-check-label pb-2 fw-bold" for="price_check3">My Dentist Mail </label></li>
+
+                          <li>
+                        </li><li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                           
+                              <label class="form-check-label" for="price_check5">Separate Mailing Interfaces
+                              </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                          
+                              <label class="form-check-label" for="price_check5">Unlimited Dentist mails, Video Mail Recording
+                              </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                          
+                               <label class="form-check-label" for="price_check5">Video Preview, Documents(any file formats) video tutorials
+                              </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                              <i class="fa fa-check "></i>                                           
+                              <label class="form-check-label" for="price_check5">Video recording up to 5 mins
+                              </label>
+                            </div>
+                        </li>
+                        <li>  <label class="form-check-label pb-2 fw-bold" for="price_check3">Dentist Live Call  </label></li>
+                          <li>
+                       
+                        
+                      </li><li>
+                          <div class="form-check">
+                            <i class="fa fa-check "></i>                                          
+                             <label class="form-check-label" for="price_check5">Dentist Live Call Meetings 
+                          </label>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="form-check">
+                            <i class="fa fa-check "></i>                                          
+                             <label class="form-check-label" for="price_check5">Invite up to 100 attendees
+
+                          </label>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="form-check">
+                            <i class="fa fa-check "></i>                                          
+                             <label class="form-check-label" for="price_check5">Screen Sharing, Live Chat and Recordings
+
+                          </label>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="form-check">
+                            <i class="fa fa-check "></i>                                          
+                             <label class="form-check-label" for="price_check5">No Downloads/App required
+
+                          </label>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="form-check">
+                            <i class="fa fa-check "></i>                                          
+                             <label class="form-check-label" for="price_check5">   Fully Browser-based (Firefox, Chrome, Edge, Safari)
+
+                          </label>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="form-check">
+                            <i class="fa fa-check "></i>                                          
+                             <label class="form-check-label" for="price_check5">
+                              Standard Support
+
+                          </label>
+                          </div>
+                      </li>
+                      
+                    </ul>
+                    <div class="text-center mt-4 mb-3">
+                    <a href="https://d1eqbgsf09hz76.cloudfront.net/signup/f2f" target="_blank" class="btn btn-primary  w-100 mt-2 mb-1 border-0" style="background-color: #0070D2;">Buy Now</a>
+                    <a></a>
+                    </div> 
+              </div>
+            </div>
+        </div>
+        </div>
+       
+           
+       
+    </div> 
+</div>
+
+
+  </section>
+
+  <!-- Plans and pricing end -->
+  <!-- Testimonials -->
+  <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-4 pb-2">
+             <h1 class="h1 text-center mb-4  contentEditable"   style="font-weight: 600; color: #16305b;">Reviews</h1>
+           </div>
+         </div> 
+         <div class="row">
+     <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+
+         <ul class= "d-flex d-md-block d-none carousel-indicators text-center  mb-20" style="justify-content:center;">
+           
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class=" active p"  aria-current="true" aria-label="Slide 1">
+                <span class="avatar avatar-ex-lg avatar-circle">
+                    <img class="avatar-img" src="assets/imgs/tesimonial-1.png" alt="Avatar" />
+                </span>
+            </button>
+           
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+                <span class="avatar avatar-ex-lg avatar-circle">
+                    <img class="avatar-img" src="assets/imgs/tesimonial-2.png" alt="Avatar" />
+                </span>
+            </button>
+            
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"  aria-label="Slide 3">
+                <span class="avatar avatar-ex-lg avatar-circle">
+                    <img class="avatar-img" src="assets/imgs/tesimonial-3.png" alt="Avatar" />
+                </span>
+            </button> 
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"  aria-label="Slide 3">
+                <span class="avatar avatar-ex-lg avatar-circle">
+                    <img class="avatar-img" src="assets/imgs/tesimonial-1.png" alt="Avatar" />
+                </span>
+            </button> 
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"  aria-label="Slide 3">
+                <span class="avatar avatar-ex-lg avatar-circle">
+                    <img class="avatar-img" src="assets/imgs/tesimonial-2.png" alt="Avatar" />
+                </span>
+            </button> 
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"  aria-label="Slide 3">
+                <span class="avatar avatar-ex-lg avatar-circle">
+                    <img class="avatar-img" src="assets/imgs/tesimonial-3.png" alt="Avatar" />
+                </span>
+            </button> 
+        </li>
+           
+         </ul>
+       
+         <div  class="carousel-inner " >
+             <div class="carousel-item active ">
+            <div class="d-flex row align-items-center">
+                <div class="d-md-block col-md-6 ">
+                    <img src="assets/imgs/testi.png" style="width: 100%;" />
+                </div>
+                <div class="col-md-6">
+                    <h1 class="h3 contentEditable">
+                      I never realized, but my practice has been needing something like DentalLive Mail for a very long time! You probably also need it, you just don’t know it yet.                             </h1>
+                    <h5 class="h5 mt-4 contentEditable">
+                        Dr. Douglas Szeto<br />
+                        Dentist
+                    </h5>
+                </div>
+            </div>
+            </div>
+          
+                <div class="carousel-item">
+                    <div class="d-flex row align-items-center item ">
+                        <div class="d-md-block col-md-6">
+                            <img src="assets/imgs/testi.png" style="width: 100%;" />
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="h3 contentEditable">
+                           My work involves patients in multiple practices, and patients at two teaching institutions. I no longer need to memorize passwords to multiple email accounts, DentalLive keeps all my patient-centered communication in one place.                           </h1>
+                            <h5 class="h5 mt-4 contentEditable">
+                                Dr. Douglas Szeto<br />
+                                Dentist
+                            </h5>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex row align-items-center item">
+                            <div class="d-md-block col-md-6">
+                                <img src="assets/imgs/testi.png" style="width: 100%;" />
+                            </div>
+                            <div class="col-md-6">
+                                <h1 class="h3 contentEditable">
+                                  It is a very cost effective tool that has saved me a lot of time and the best part is that I get all my patient information organized! Thank you My Dentist Mail! 
+                                    </h1>
+                                  <h5 class="h5 mt-4 contentEditable">
+                                    Dr. Douglas Szeto<br />
+                                    Dentist
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex row align-items-center item ">
+                            <div class="d-md-block col-md-6">
+                                <img src="assets/imgs/testi.png" style="width: 100%;" />
+                            </div>
+                            <div class="col-md-6">
+                                <h1 class="h3 contentEditable">
+                                     With DentalLive Mail being HIPAA-compliant, I don’t have to worry about my patients’ data being unsecured. Surely recommend this to all health professionals who want peace of mind!                             </h1>
+                                
+                                  <h5 class="h5 mt-4 contentEditable">
+                                    Dr. Douglas Szeto<br />
+                                    Dentist
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex row align-items-center item ">
+                            <div class="d-md-block col-md-6">
+                                <img src="assets/imgs/testi.png" style="width: 100%;" />
+                            </div>
+                            <div class="col-md-6">
+                                <h1 class="h3 contentEditable">
+                                    The option of unlimited conferencing and live broadcasting with Dentist Live Call has opened up so many doors for our dental practice, we are now able to engage with a wider audience                             </h1>
+                                
+                                  <h5 class="h5 mt-4 contentEditable">
+                                    Dr. Douglas Szeto<br />
+                                    Dentist
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex row align-items-center item ">
+                            <div class="d-md-block col-md-6">
+                                <img src="assets/imgs/testi.png" style="width: 100%;" />
+                            </div>
+                            <div class="col-md-6">
+                                <h1 class="h3 contentEditable">
+                                    These tools are brilliant and have enabled us to give a human touch to remote communication. Thank you, I would highly recommend this product.                         
+                                  <h5 class="h5 mt-4 contentEditable">
+                                    Dr. Douglas Szeto<br />
+                                    Dentist
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+           
+          
+        </div>
+        <div  class="d-flex" style="justify-content:center;">
+        <a class="carousel-control-prev me-2" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa fa-chevron-right"></i></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+         
+         
+        
+       </div>
+       </div>
+   
+</div>
+
+</section>
+
+   
+
+  <!-- Testimonials end -->
+
+  <!-- Subscribe  -->
+  <div class="container-fluid  p-0 " style="background-image: url('assets/bg2.png'); background-size: 100% 100%; background-repeat: no-repeat;">
+      <div class="container ">
+          <div class="d-flex row align-items-center justify-content-between ">
+            <div class="col-md-5 d-none d-md-block ">
+              <img src="assets/imgs/subscribe.png"  style="width: 100%;">
+          </div>
+              <div class="d-md-block col-md-6 mt-4 mb-4">
+                  <h1 class="h4 contentEditable" >Subscribe to get <span  class="fw-bold"> FREE Trial DENTAL LIVE</span> planner special features!</h1>
+                  <form class="Subscribe_form d-flex pt-2">
+                      <input type="email" class="form-control w-50 " placeholder="Enter Your Email Address" style="height: 45px;" />
+                      <button type="submit" class="btn btn-info ms-2 Readmore_btn "  style="background-color: #f7517f; color: white;">Subscribe</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Subscribe end  -->
+</main>
+
+<!-- main section end -->
+<!-- Footer-->
+
+<footer class="container-fluid my-md-3">
+  <div class="container">
+  <div class="row py-4">
+      <div class="col-12 col-md-3">
+          <h5 class="footer-header contentEditable"  style="font-weight: 600;">Products</h5>
+          <ul class="list-unstyled text-small ">
+              <li><a class="text-muted body2 contentEditable" href="DentistMail.html">MyDentistMail + DentistLiveCall </a></li>
+              <li><a class="text-muted body2 contentEditable" href="DentalLiveMail.html">Dental LIVE Mail</a></li>
+          </ul>
+      </div>
+      <div class="col-12 col-md-3">
+          <h5 class="footer-header contentEditable"  style="font-weight: 600;">Contact</h5>
+          <ul class="list-unstyled text-small " >
+              <li><a class="text-muted body2 contentEditable" href="#">Call us @ 999 999 9999</a></li>
+              <li><a class="text-muted body2 contentEditable" href="#">support@ dental live .com</a></li>
+          </ul>
+      </div>
+      <div class="col-12 col-md-3">
+      
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="py-2 " >
+            <img src="assets/imgs/safe-and-secure.png"  />
+            <img src="assets/imgs/logo_footer3.png" />
+        </div>
+    </div>
+    <div>
+
+    </div>
+  </div>
+</div>
+  <div class="border-top my-2 footer-bottom">
+    <div class="container ">
+      <div class="row ">
+        <div class="col-md-4 ">
+          <div class="pt-2 " >
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+      </div>
+        <div class="col-md-8">
+          <div class="pt-2">
+           <p class="text-secondary small " >© All Rights Reserved  Terms of Use  Privacy Policy</p>
+      </div>
+      
+   </div>
+  </div>
+  </div>
+  </div>
+ 
+</div>
+</footer>
+    
+      
+</div>
+</div>
+  </div>
+</div>
+ 
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+   <script>
+     var myCarousel = document.querySelector('#carouselExampleDark')
+     var carousel = new bootstrap.Carousel(myCarousel, {
+         loop:true,
+         interval: 9000,
+         wrap: true
+     })
+     var myCarousel = document.querySelector('#carouselExampleCaptions')
+     var carousel = new bootstrap.Carousel(myCarousel, {
+         loop:true,
+         interval: 9000,
+         wrap: true
+     })
+     $(document).ready(function () {
+        $("#owl-demo-six").owlCarousel({
+          // animateIn: 'fadeIn',
+          //  animateOut: 'fadeOut',
+          autoplay:true,
+          autoplayTimeout:8000,
+         
+            dots: true,
+            items: 1,
+            itemsDesktop: false,
+            itemsDesktopSmall: false,
+            itemsTablet: false,
+            itemsMobile: false,
+            loop: true,
+        });
+    
+    });
+    $(function () {
+        $(window).on("scroll", function () {
+            var scrolled = $(window).scrollTop();
+            if (scrolled > 600) $(".go-top").addClass("active");
+            if (scrolled < 600) $(".go-top").removeClass("active");
+        });
+        $(".go-top").on("click", function () {
+            $("html, body").animate({ scrollTop: "0" }, 500);
+        });
+    });
+  
+ </script>
+
+<script>
+  var conentConfig= {
+  selector: '.contentEditable',
+  menubar: false,
+  inline: true,
+  plugins: [
+    'link',
+    'lists',
+    'powerpaste',
+    'autolink',
+    'tinymcespellchecker'
+  ],
+  toolbar: [
+    'undo redo | bold italic underline | fontselect fontsizeselect',
+    'forecolor backcolor | alignleft aligncenter alignright alignfull | numlist bullist outdent indent'
+  ],
+  valid_elements: 'p[style],strong,em,span[style],a[href],ul,ol,li',
+  valid_styles: {
+    '*': 'font-size,font-family,color,text-decoration,text-align'
+  },
+  powerpaste_word_import: 'clean',
+  powerpaste_html_import: 'clean',
+};
+tinymce.init(conentConfig);
+</script>
+
+</body>
+
+</html>

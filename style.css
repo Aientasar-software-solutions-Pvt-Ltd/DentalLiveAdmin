@@ -309,6 +309,21 @@ tbody, th, thead {border-style: none;}
     width: 263px!important;
   }
   } */
+  @media screen and (max-width: 768px){
+  .nav_bar {
+    padding-top: 0rem!important;
+    background-color: #ffffff!important;
+    border-bottom: 1px solid #dee2e64d!important;
+    height: auto!important;
+}}
+@media screen and (max-width: 768px){
+.navbar-expand-md {
+    box-shadow: none!important;
+}}
+@media screen and (max-width: 768px){
+.nav_bar .nav-link, .fa-facebook-square, .fa-linkedin-square, .fa-twitter {
+    color: #282C33!important;
+}}
 .dropdown-item.active, .dropdown-item:active {color: #354053;text-decoration: none;background-color: #EFF3F7;}
 .page-item.active .page-link {background-color: #AEB4BF;border-color: #AEB4BF;}.page-link{color:#AEB4BF ;}
 .card-header_border :before {border-top-left-radius: 80px;top: 0; content: ''; position: absolute;left: 0;width: 6px; height: 58px; background-color: #00D9CC; margin-top: 0;}
