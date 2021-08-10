@@ -362,3 +362,6 @@ td .body2{
   background-color: #EFF3F7;
   opacity: 1;
 }
+.progress .bg-success{ background-color: #00D9CC!important;}
+.progress .bg-info{background-color: #1991EB!important;}
+.progress .bg-danger{ background-color: #B0A1E9!important;}
