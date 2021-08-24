@@ -10,11 +10,24 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
     <style>
+      .select2-container--default .select2-selection--multiple {
+        border: 1px solid #EBEDED;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgb(208 214 222 / 20%);
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    color: #354053;
+    height: 50px;
+}
+
     .form-check-input {
     width: 15px;
     height: 15px;}
@@ -187,27 +200,20 @@
                     <div class="col-md-12">
                       <div class="mb-4">
                       <label  class="form-label body2" style="color: #011A3E;">Products</label>
-                        <input type="text"  class="form-control" > 
+                      <select class="js-select2 form-control" multiple="multiple">
+                        <option value="O1" data-badge="">Dental Mail</option>
+                        <option value="O2" data-badge="">Dental Meet</option>
+                        <option value="O3" data-badge="">Dental Planner</option>
+                      </select>
                     </div>
                   </div>
-                  <div class="col-md-3 mb-4">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Dental Mail </label>
-                  </div>
+                 
+                <div class="col-md-6">
+                  <div class="mb-4">
+                  <label class="form-label body2" style="color: #011A3E;">Users Allocated</label>
+                    <input type="text" class="form-control"> 
                 </div>
-                <div class="col-md-3 mb-4">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">Dental Meet </label>
-                  </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                    <label class="form-check-label" for="inlineCheckbox3">Dental Planner</label>
-                  </div>
-                </div>
+              </div>
                       <div class="col-md-6 "> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Activation Date</label>
@@ -229,14 +235,15 @@
                       </div>
                      
                       <div class="col-md-6"> 
-                        <div class="mt-md-5">
+                        <div class="mt-md-3">
                           <p  class="form-label body2" style="color: #011A3E;">Date on Creation :  
                             <span style="color: #0070D2;"> 22/7/21</span></p>
                         </div>
                       </div>
+
                       
                       <div class="col-md-6"> 
-                        <div class="mb-4">
+                        <div class="mt-md-3">
                           <p  class="form-label body2 d-flex" style="color: #011A3E;">Status : &nbsp;&nbsp;
                               <span style="color: #0070D2;"> Active</span>
                             <span class="form-check form-switch ms-2">
@@ -367,15 +374,14 @@
                         <select class="form-select classic" aria-label="Default select example">
                           <option selected>Parameter 1</option>
                           <option value="1">Parameter 2</option>
-                        </select></div>
+                        </select>
+                      </div>
                       </div>
                       <div class="col-md-5">
                         <div class="mb-4">
                         <label class="form-label body2" style="color: #011A3E;">Add-On Value</label>
-                        <select class="form-select classic" aria-label="Default select example">
-                          <option selected>Value</option>
-                          <option value="1">Value 2</option>
-                        </select></div>
+                        <input type="text" class="form-control"> 
+                      </div>
                       </div>
                       <div class="col-md-10">
                         <div class="mb-4">
@@ -514,7 +520,7 @@
 <script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
-<script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script><script>
   /* chart.js chart examples */
 
 // chart colors
@@ -548,6 +554,14 @@ if (chDonut1) {
 }
 
 </script>
+<script>
+ 	$(".js-select2").select2({
+			closeOnSelect : false,
+			allowHtml: true,
+			allowClear: true,
+			tags: true // создает новые опции на лету
+		});
+  </script>
 
 
 
