@@ -150,6 +150,7 @@
                 <p class="body1 card-title mt-2" style="color: #354053;">Personal Details</p>
                 </div>
                 <div class="card-body">
+                  <form #mainForm="ngForm" (ngSubmit)="onSubmit()">
                   <div class="row mt-2">
                     <div class="col-md-12" >
                       <div class="row">
@@ -157,31 +158,27 @@
                         <div class="mb-3 row">
                           <label for="staticEmail" class="col-sm-3 col-form-label body2" style="color:#011A3E">First Name </label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control body2" style="color: #5D6A7E;">
+                            <input type="text" class="form-control body2" style="color: #5D6A7E;" [(ngModel)]="User.firstName" name="firstName">
                           </div>
                         </div>
                         <div class="mb-3 row">
                           <label for="staticEmail" class="col-sm-3 col-form-label body2" style="color:#011A3E">Last Name </label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control body2" style="color: #5D6A7E;">
+                            <input type="text" class="form-control body2" style="color: #5D6A7E;" [(ngModel)]="User.lirstName" name="lirstName">
                           </div>
                         </div>
                         <div class="mb-3 row">
                           <label class="col-sm-3 col-form-label body2" style="color: #011A3E;">Role </label>
                           <div class="col-sm-9">
-                            <select class="form-select " aria-label="Default select example">
+                            <select class="form-select " aria-label="Default select example" [(ngModel)]="User.role" name="role">
                               <option selected="">Role  1</option>
                               <option value="1">Role  2</option>
                             </select>
                           </div>
                         </div>
-                       
-                        
-                       
                       </div>
-                     
                       <div class="col-md-6">
-                        <div class="profile-img justify-content-center  p-md-2">
+                        <div class="profile-img justify-content-center text-center  p-md-2">
                           <div class="capture">
                           <img src="assets/avatar3.png" alt="" class="mb-2">
                         </div>
@@ -192,37 +189,29 @@
                     <div class="row mt-2">
                       <div class="col-md-6">
                         <div class="mb-3 row">
-                          <label for="staticEmail" class="col-sm-3 col-form-label body2" style="color:#011A3E">Clinic Name</label>
+                          <label  class="col-sm-3 col-form-label body2" style="color:#011A3E">Clinic Name</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control body2" style="color: #5D6A7E;">
+                            <input type="text" class="form-control body2" style="color: #5D6A7E;" [(ngModel)]="User.clinicName" name="clinicName">
                           </div>
                         </div>
                        </div>  
                       </div>
                       <div class="row mt-2">
-                      <div class="col-md-6 "> 
-                        <div class="mb-4">
-                          <p  class="form-label body2" style="color: #011A3E;">Email :  <span >prerna.junejac@gmail.com </span></p>
-                        </div>
-                      </div>                    
-                      <div class="col-md-6"> 
+                        <div class="col-md-6"> 
+                          <div class="mb-3 row">
+                            <label  class="col-sm-3 col-form-label body2" style="color: #011A3E;">Email ID</label>
+                            <div class="col-sm-9">
+                              <input type="email"  class="form-control"  [(ngModel)]="User.emailID" name="emailID">
+                       </div> 
+                      </div>
+                        </div>                    
+                      <div class="col-md-12"> 
                         <div class="mb-4">
                           <p  class="form-label body2" style="color: #011A3E;">Status :
-                            <span style="color: #0070D2;"> Active</span></p>
+                            <span class="badge badge-pill badge-success body2 mt-2" >Active</span>
                         </div>
                       </div>
-                      <div class="col-md-6"> 
-                        <div class="mb-4">
-                          <p  class="form-label body2" style="color: #011A3E;">Date of Join : 
-                            <span >  25/2/21</span></p>
-                           </div>
-                      </div>
-                      <div class="col-md-6"> 
-                        <div class="mb-4">
-                          <p  class="form-label body2" style="color: #011A3E;">Date of Expiry : 
-                            <span >  25/2/21</span></p>
-                           </div>
-                      </div>
+                     
                       <div class="col-md-12 mt-2">
                         <a href="#" class="btn btn-primary btn-1  mb-2  border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background: #0070D2;height:40px;padding:10px 31px;"> 
                           Save
@@ -237,6 +226,7 @@
                     </div>
                    
                   </div>
+                  </form>
                 </div>
               </div>
             </div>

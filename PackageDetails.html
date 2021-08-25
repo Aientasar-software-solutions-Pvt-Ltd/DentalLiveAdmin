@@ -16,6 +16,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
     <style>
+  .select2-container--default.select2-container--focus .select2-selection--multiple{border: 2px solid #00D9CC!important;outline:0}
+      /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
       .select2-container--default .select2-selection--multiple {
         border: 1px solid #EBEDED;
     box-sizing: border-box;
@@ -161,46 +173,53 @@
               </div> 
              </div>
           </div>
-        
-
          <div class="row  pt-2">
           <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
             <div class="card border-0 mb-1" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
-              <div class="card-header card-header_border " style="background-color:#ffff;">
-                <p class="body1 card-title mt-2" style="color: #354053;">Edit Package Details</p>
+              <div class="card-header  " style="background-color:#ffff;">
+                <div class="row">
+                  <div class="col-7 card-header_border">
+                    <p class="body1 card-title mt-2" style="color: #354053;">Edit Package Details</p>
+                </div> 
+                <div class="col-5">
+                  <span class="badge badge-pill badge-success body2 mt-2" style="float:right;">Active</span>
+              </div>
+            </div>
                 </div>
+             
                 <div class="card-body">
+                  <form #mainForm="ngForm" (ngSubmit)="onSubmit()">
                   <div class="row mt-2">
                     <div class="col-md-12">
                       <div class="row">
                       <div class="col-md-4"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Package Name</label>
-                          <input type="text"  class="form-control" >
+                          <input type="text"  class="form-control" [(ngModel)]="Package.packageName" name="packageName">
                         </div>
                       </div>
                       <div class="col-md-2 ">
                         <div class="mb-4">
                         <label  class="form-label body2" style="color: #011A3E;">Price</label>
-                          <input type="text"  class="form-control" > 
+                          <input type="number"  class="form-control" [(ngModel)]="Package.price" name="price"> 
                       </div>
                     </div>
                       <div class="col-md-3">
                         <div class="mb-4">
                         <label  class="form-label body2" style="color: #011A3E;">Tenure</label>
-                          <input type="text"  class="form-control" > 
+                          <input type="text"  class="form-control" [(ngModel)]="Package.tenure" name="tenure"> 
                       </div>
                     </div>
                       <div class="col-md-3">
                         <div class="mb-4">
                         <label  class="form-label body2" style="color: #011A3E;">Storage Allocated</label>
-                          <input type="text"  class="form-control" > 
+                          <input type="text"  class="form-control" [(ngModel)]="Package.storageAllocated" name="storageAllocated"> 
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="mb-4">
                       <label  class="form-label body2" style="color: #011A3E;">Products</label>
-                      <select class="js-select2 form-control" multiple="multiple">
+                      <select class="js-select2 form-control" multiple="multiple" [(ngModel)]="Package.products" name="products">
                         <option value="O1" data-badge="">Dental Mail</option>
                         <option value="O2" data-badge="">Dental Meet</option>
                         <option value="O3" data-badge="">Dental Planner</option>
@@ -211,46 +230,25 @@
                 <div class="col-md-6">
                   <div class="mb-4">
                   <label class="form-label body2" style="color: #011A3E;">Users Allocated</label>
-                    <input type="text" class="form-control"> 
-                </div>
-              </div>
+                    <input type="number" class="form-control" [(ngModel)]="Package.usersAllocated" name="usersAllocated"> 
+                   </div>
+                 </div>
                       <div class="col-md-6 "> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Activation Date</label>
-                          <input type="date"  class="form-control classic" >
+                          <input type="date"  class="form-control classic" [(ngModel)]="Package.activationDate" name="activationDate">
                         </div>
                       </div>
                       <div class="col-md-6 "> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Deactivation Date</label>
-                          <input type="date"  class="form-control classic" >
+                          <input type="date"  class="form-control classic" [(ngModel)]="Package.deactivationDate" name="deactivationDate">
                         </div>
                       </div>
                       <div class="col-md-6"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Expiration Date</label>
-                          <input type="date"  class="form-control classic" >
-                        </div>
-
-                      </div>
-                     
-                      <div class="col-md-6"> 
-                        <div class="mt-md-3">
-                          <p  class="form-label body2" style="color: #011A3E;">Date on Creation :  
-                            <span style="color: #0070D2;"> 22/7/21</span></p>
-                        </div>
-                      </div>
-
-                      
-                      <div class="col-md-6"> 
-                        <div class="mt-md-3">
-                          <p  class="form-label body2 d-flex" style="color: #011A3E;">Status : &nbsp;&nbsp;
-                              <span style="color: #0070D2;"> Active</span>
-                            <span class="form-check form-switch ms-2">
-                              <input class="form-check-input border-0 mt-0" type="checkbox" id="flexSwitchCheckDefault" style="height: 22px;
-                              width:44px;">
-                            </span>
-                          </p>
+                          <input type="date"  class="form-control classic" [(ngModel)]="Package.expirationDate" name="expirationDate">
                         </div>
                       </div>
                     </div>
@@ -263,6 +261,7 @@
                     </div>
                     </div>
                   </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -291,12 +290,9 @@
                       <h2 class="pb-0 mb-0 fw-bold" style="color:#011A3E">50</h2>
                       <p class="pt-0" style="color: #AEB4BF;">Users</p>
                   </div>
-
                   </div>
-
                 </div>
                 </div>
-             
             </div>
             <div class="card border-0 p-2 mb-1" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
               <div class="card-body">
@@ -346,32 +342,27 @@
             </div>
                 </div>
                 <div class="card-body">
+                <form #mainForm="ngForm" (ngSubmit)="onSubmit()">
                   <div class="row mt-2">
                     <div class="col-md-12">
                       <div class="row">
-                      <div class="col-md-4"> 
+                      <div class="col-md-5"> 
                         <div class="mb-4">
                           <label class="form-label body2" style="color: #011A3E;">Add-On Name</label>
-                          <input type="text" class="form-control">
+                          <input type="text" class="form-control" [(ngModel)]="Addon.addonName" name="addonName">
                         </div>
 
                       </div>
                       <div class="col-md-3">
                         <div class="mb-4">
                         <label class="form-label body2" style="color: #011A3E;">Price</label>
-                          <input type="text" class="form-control"> 
+                          <input type="text" class="form-control" [(ngModel)]="Addon.price" name="price"> 
                         </div>
-                      </div>
-                      <div class="col-md-5 mt-md-5"> 
-                       
-                          <p class="form-label body2" style="color: #011A3E;">Date on Creation :  
-                            <span style="color: #0070D2;"> 22/7/21</span></p>
-                       
                       </div>
                       <div class="col-md-5">
                         <div class="mb-4">
                         <label class="form-label body2" style="color: #011A3E;">Add-On Parameter</label>
-                        <select class="form-select classic" aria-label="Default select example">
+                        <select class="form-select classic" aria-label="Default select example" [(ngModel)]="Addon.parameter" name="parameter">
                           <option selected>Parameter 1</option>
                           <option value="1">Parameter 2</option>
                         </select>
@@ -380,13 +371,13 @@
                       <div class="col-md-5">
                         <div class="mb-4">
                         <label class="form-label body2" style="color: #011A3E;">Add-On Value</label>
-                        <input type="text" class="form-control"> 
+                        <input type="text" class="form-control" [(ngModel)]="Addon.value" name="value"> 
                       </div>
                       </div>
                       <div class="col-md-10">
                         <div class="mb-4">
                         <label class="form-label body2" style="color: #011A3E;">Description</label>
-                          <input type="text" class="form-control"> 
+                          <input type="text" class="form-control" [(ngModel)]="Addon.description" name="description"> 
                       </div>
                     </div>
 
@@ -407,6 +398,7 @@
                     </div>
                    
                   </div>
+                </form>
                 </div>
               
               <div class="table-responsive">

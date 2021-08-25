@@ -162,17 +162,20 @@
                 <p class="body1 card-title mt-2" style="color: #354053;">Personal Details</p>
                 </div>
                 <div class="card-body">
+                  <form #mainForm="ngForm" (ngSubmit)="onSubmit()">
                   <div class="row mt-2">
                     <div class="col-md-12" >
                       <div class="row">
                       <div class="col-md-6"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">First Name </label>
-                          <input type="text"  class="form-control" >
+                          <input type="text"  class="form-control" [(ngModel)]="Vendor.firstName"
+                          name="firstName">
                         </div>
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Last Name </label>
-                          <input type="text"  class="form-control" >
+                          <input type="text"  class="form-control" [(ngModel)]="Vendor.lastName"
+                          name="lastName">
                         </div>
                       </div>
                       <div class="col-md-6   text-center">
@@ -185,7 +188,7 @@
                       <div class="col-md-6"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Email ID</label>
-                          <input type="text"  class="form-control" >
+                          <input type="email"  class="form-control"  [(ngModel)]="Vendor.emailID" name="emailID">
                         </div>
                       </div>
                       <div class="col-md-6"> 
@@ -197,7 +200,7 @@
                       <div class="col-md-6"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Phone Number </label>
-                          <input type="text"  class="form-control" >
+                          <input type="text"  class="form-control"  [(ngModel)]="Vendor.phoneNumber" name="phoneNumber">
                         </div>
                       </div>
                       <div class="col-md-6"> 
@@ -213,45 +216,45 @@
                       <div class="col-md-6"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Company Name</label>
-                          <input type="text"  class="form-control" >
+                          <input type="text"  class="form-control" [(ngModel)]="Vendor.companyName" name="companyName">
                         </div>
                       </div>
                       <div class="col-md-6"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Address 2</label>
-                          <input type="text"  class="form-control" >
+                          <input type="text"  class="form-control" [(ngModel)]="Vendor.addressTwo" name="addressTwo">
                         </div>
                       </div>
 
                       <div class="col-md-6"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Address 1</label>
-                          <input type="text"  class="form-control" >
+                          <input type="text"  class="form-control" [(ngModel)]="Vendor.addressOne" name="addressOne">
                         </div>
                       </div>
 
                       <div class="col-md-6"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Town/City</label>
-                          <input type="text"  class="form-control" >
+                          <input type="text"  class="form-control" [(ngModel)]="Vendor.city" name="city">
                         </div>
                       </div>
                       <div class="col-md-6"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Country</label>
-                          <input type="text"  class="form-control" >
+                          <input type="text"  class="form-control" [(ngModel)]="Vendor.country" name="country">
                         </div>
                       </div>
                       <div class="col-md-6"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Post Code</label>
-                          <input type="text"  class="form-control" >
+                          <input type="text"  class="form-control" [(ngModel)]="Vendor.postCode" name="postCode">
                         </div>
                       </div>
                       <div class="col-md-6"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">MAX % Commission</label>
-                          <input type="text"  class="form-control" >
+                          <input type="text"  class="form-control" [(ngModel)]="Vendor.commission" name="commission">
                         </div>
                       </div>
                     </div>
@@ -259,7 +262,7 @@
                       
                       <div class="col-md-12 mt-2">
                         <a href="#" class="btn btn-primary btn-1  mb-2 me-2 border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background: #0070D2;height:40px;padding:10px 31px;"> 
-                          Edit
+                         Update
                        </a> 
                        <a href="#" class="btn btn-primary btn-1  mb-2  me-2 border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background: #0070D2;height:40px;padding:10px 31px;"> 
                         Reset Password
@@ -273,6 +276,7 @@
                     </div>
                    
                   </div>
+                  </form>
                 </div>
               </div>
             </div>
