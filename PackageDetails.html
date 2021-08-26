@@ -163,18 +163,78 @@ input[type=number] {
             </li> 
           </ol>
           <div class="ml-auto" style="margin-left: auto !important;"> 
-            <div> 
-              <a href="#" class="btn btn-primary btn-1  me-3 mb-2  border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background-color:#0070D2;height:40px;padding:10px 31px;">
-                Add New Package
-              </a>
               <a href="#" class="btn btn-primary btn-2  mb-2  border-0" style="background: #F7517F;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #FEB3B1;"> 
                 Disable Package 
               </a>
-              </div> 
              </div>
           </div>
+          <div class="row mt-4">
+            <div class="col-md-6 col-xl-3">
+                <div class="card border-0 mb-3 p-2" style="box-shadow: 0px 5px 5px rgb(0 0 0 / 10%);">
+                    <div class="card-body">
+                        <div>
+                            <div class="flex-grow-1">
+                                <h5 class=" fw-bold mb-0" style="color:#354053;">1478 286</h5>
+                                <span class="mb-0 body2 " style="color: #AEB4BF;">Total Users Active
+                                </span>
+                            </div>
+                            <div class="align-self-center " style="position: relative;">
+                               <img src="assets/Path2.svg">
+                          
+                            </div>
+                            <div class="flex-grow-1">
+                              <span style="color:#aeb4bf;float: right;">Increased by <span style="color: #00D9CC;">15%</span><i class='bx bx-up-arrow-alt' style="color: #00D9CC;"></i></span>
+
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="col-md-6 col-xl-3">
+              <div class="card border-0 mb-3 p-2" style="box-shadow: 0px 5px 5px rgb(0 0 0 / 10%);">
+                  <div class="card-body">
+                      <div>
+                          <div>
+                              <h5 class="fw-bold mb-0" style="color:#354053;">478 520</h5>
+                              <span class="mb-0 body2 " style="color: #AEB4BF;">Total Vendors Active</span>
+                          </div>
+                          <div class="align-self-center mt-2" style="position: relative;">
+                             <img src="assets/Path3.svg">
+                        
+                          </div>
+                          <div>
+                            <span style="color:#aeb4bf;float: right;">Increased by <span style="color: #00D9CC;">15%</span><i class='bx bx-up-arrow-alt' style="color: #00D9CC;"></i></span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-6 col-xl-3">
+            <div class="card border-0 mb-3 p-2" style="box-shadow: 0px 5px 5px rgb(0 0 0 / 10%);">
+                <div class="card-body">
+                    <div>
+                        <div class="flex-grow-1">
+                            <h5 class=" fw-bold mb-0" style="color:#354053;">$3249</h5>
+                            <span class="mb-0 body2 " style="color: #AEB4BF;">Total Earnings</span>
+                        </div>
+                        <div class="align-self-center mt-1" style="position: relative;">
+                           <img src="assets/Path4.svg">
+                      
+                        </div>
+                        <div class="flex-grow-1">
+                          <span class="mb-0 body2 " style="color: #AEB4BF;float: right;">Last month</span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+      
+     </div>
          <div class="row  pt-2">
-          <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div class="card border-0 mb-1" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
               <div class="card-header  " style="background-color:#ffff;">
                 <div class="row">
@@ -186,7 +246,6 @@ input[type=number] {
               </div>
             </div>
                 </div>
-             
                 <div class="card-body">
                   <form #mainForm="ngForm" (ngSubmit)="onSubmit()">
                   <div class="row mt-2">
@@ -216,298 +275,216 @@ input[type=number] {
                           <input type="text"  class="form-control" [(ngModel)]="Package.storageAllocated" name="storageAllocated"> 
                       </div>
                     </div>
-                    <div class="col-md-12">
-                      <div class="mb-4">
-                      <label  class="form-label body2" style="color: #011A3E;">Products</label>
-                      <select class="js-select2 form-control" multiple="multiple" [(ngModel)]="Package.products" name="products">
-                        <option value="O1" data-badge="">Dental Mail</option>
-                        <option value="O2" data-badge="">Dental Meet</option>
-                        <option value="O3" data-badge="">Dental Planner</option>
-                      </select>
-                    </div>
-                  </div>
+                   
                  
-                <div class="col-md-6">
+                <div class="col-md-4">
                   <div class="mb-4">
                   <label class="form-label body2" style="color: #011A3E;">Users Allocated</label>
                     <input type="number" class="form-control" [(ngModel)]="Package.usersAllocated" name="usersAllocated"> 
                    </div>
                  </div>
-                      <div class="col-md-6 "> 
+                 <div class="col-md-4">
+                  <div class="mb-4">
+                  <label  class="form-label body2" style="color: #011A3E;">Products</label>
+                  <select class="js-select2 form-control" multiple="multiple" [(ngModel)]="Package.products" name="products">
+                    <option value="O1" data-badge="">Dental Mail</option>
+                    <option value="O2" data-badge="">Dental Meet</option>
+                    <option value="O3" data-badge="">Dental Planner</option>
+                  </select>
+                </div>
+              </div>
+                      <div class="col-md-4 "> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Activation Date</label>
                           <input type="date"  class="form-control classic" [(ngModel)]="Package.activationDate" name="activationDate">
                         </div>
                       </div>
-                      <div class="col-md-6 "> 
+                      <div class="col-md-4 "> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Deactivation Date</label>
                           <input type="date"  class="form-control classic" [(ngModel)]="Package.deactivationDate" name="deactivationDate">
                         </div>
                       </div>
-                      <div class="col-md-6"> 
+                      <div class="col-md-4"> 
                         <div class="mb-4">
                           <label  class="form-label body2" style="color: #011A3E;">Expiration Date</label>
                           <input type="date"  class="form-control classic" [(ngModel)]="Package.expirationDate" name="expirationDate">
                         </div>
                       </div>
-                    </div>
-                    <div class="row mt-2">
-                      <div class="col-md-6"> 
-                        <a href="#" class="btn btn-primary   me-3  btn-1  border-0" style="background-color:#0070D2;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #C3D2FF;">
-                          Save
-                        </a> 
+                      </div>
+                      <div class="card border-0 my-2">
+                        <div class="card-header border-bottom-0" style="background-color:#ffff;">
+                          <div class="row">
+                            <div class="col-5 card-header_border">
+                              <p class="body1 card-title mt-2" style="color: #354053;">Add-On List </p>
+                          </div> 
+                          <div class="col-7">
+                            <a  class="btn btn-primary border-0 btn-1" style="float:right;background-color:#0070D2;height:40px;padding:10px 18px;box-shadow: 0px 4px 20px #c3d2ff00;">
+                              Add New Add-On
+                            </a>
+                        </div>
+                      </div>
+                          </div>
+
+                         
+                            <div class="row mt-2">
+                                <div class="col-md-4"> 
+                                  <div class="mb-4">
+                                    <label class="form-label body2" style="color: #011A3E;">Add-On Name</label>
+                                    <input type="text" class="form-control" [(ngModel)]="Addon.addonName" name="addonName">
+                                  </div>
+          
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="mb-4">
+                                  <label class="form-label body2" style="color: #011A3E;">Price</label>
+                                    <input type="text" class="form-control" [(ngModel)]="Addon.price" name="price"> 
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="mb-4">
+                                  <label class="form-label body2" style="color: #011A3E;">Add-On Parameter</label>
+                                  <select class="form-select classic" aria-label="Default select example" [(ngModel)]="Addon.parameter" name="parameter">
+                                    <option selected>Parameter 1</option>
+                                    <option value="1">Parameter 2</option>
+                                  </select>
+                                </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="mb-4">
+                                  <label class="form-label body2" style="color: #011A3E;">Add-On Value</label>
+                                  <input type="text" class="form-control" [(ngModel)]="Addon.value" name="value"> 
+                                </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="mb-4">
+                                  <label class="form-label body2" style="color: #011A3E;">Description</label>
+                                    <input type="text" class="form-control" [(ngModel)]="Addon.description" name="description"> 
+                                </div>
+                              </div>
+          
+                              </div>
+                           
+                            
+                  
+                 <div class="table-responsive row">
+                            <table class="table table-hover table-nowrap align-items-center" style="min-width: 768px;" id="DyanmicTable">
+                              <thead class="thead-light">
+                                <tr style="text-transform:uppercase;">
+                                  <th  class="body2" >ADD ON NAME</th>
+                                  <th  class="body2" >DESCRIPTION  </th>
+                                  <th  class="body2" >CREATED ON </th>
+                                  <th  class="body2" >Actions </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td style="vertical-align: middle;">
+                                       <span class="body2 my-2" style="color: #354053;">Support </span>
+                                   </td>
+                                  <td style="vertical-align: middle;">
+                                    <span class="body2 my-2" style="color: #354053;">24/7 support service available </span>
+                                   </td>
+                                   <td style="vertical-align: middle;">
+                                    <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
+                                   </td>
+                                   <td style="vertical-align: middle;">
+                                    <div class="mt-1 d-flex">
+                                      <a href="#" class="me-2">
+                                        <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
+                                      </a>
+                                    <a href="#" class="me-1">
+                                      <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>                        </a>
+                                     </div>
+                                  </td>                      
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: middle;">
+                                        <span class="body2 my-2" style="color: #354053;">Sub - Users</span>
+                                   </td>
+                                  <td style="vertical-align: middle;">
+                                    <span class="body2 my-2" style="color: #354053;">User can add more sub user </span>
+                                   </td>
+                                   <td style="vertical-align: middle;"> 
+                                    <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
+                                   </td>
+                                   <td style="vertical-align: middle;">
+                                    <div class="mt-1 d-flex">
+                                      <a href="#" class="me-2">
+                                        <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
+                                      </a>
+                                    <a href="#" class="me-1">
+                                      <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>
+                                    </a>
+                                     </div>
+                                  </td>                      
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: middle;">
+                                          <span class="body2 my-2" style="color: #354053;">Add GB available </span>
+                                   </td>
+                                  <td style="vertical-align: middle;">
+                                    <span class="body2 my-2" style="color: #354053;">User can increase the space </span>
+                                   </td>
+                                   <td style="vertical-align: middle;">
+                                    <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
+                                   </td> <td style="vertical-align: middle;">
+                                    <div class="mt-1 d-flex">
+                                      <a href="#" class="me-2">
+                                        <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
+                                      </a>
+                                    <a href="#" class="me-1">
+                                      <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>                        </a>
+                                     </div>
+                                  </td>                      
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: middle;">
+                                          <span class="body2 my-2" style="color: #354053;"> Location </span>
+                                   </td>
+                                  <td style="vertical-align: middle;">
+                                    <span class="body2 my-2" style="color: #354053;">User can add location</span>
+                                   </td>
+                                   <td style="vertical-align: middle;">                      
+                                    <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>                     
+                                   </td> 
+                                   <td style="vertical-align: middle;">
+                                    <div class="mt-1 d-flex">
+                                      <a href="#" class="me-2">
+                                        <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
+                                      </a>
+                                    <a href="#" class="me-1">
+                                      <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>                        </a>
+                                     </div>
+                                  </td>                    
+                                
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                 <div class="row">
+                            <div class="col-md-12 mb-2">
+                              <a href="#" class="btn btn-primary mt-1 btn-1 me-2 border-0" style="background-color:#0070D2;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #C3D2FF;">
+                                Save
+                              </a> 
+                              <a href="#" class="btn btn-primary mt-1 btn-2   me-2 border-0" style="background-color:#F7517F;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #C3D2FF;">
+                                Delete
+                              </a> 
+                              <a href="#" class="btn btn-outline-primary  btn-1 mt-1" style="height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #c3d2ff00;">
+                                Reset
+                              </a> 
+                          </div>
+                     </div>
+                         
+                      </div>
                       </div>
                     </div>
-                    </div>
-                  </div>
                   </form>
+                    </div>
                 </div>
               </div>
-            </div>
-           <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-            <div class="card border-0 mb-3 p-2" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-7 col-7">
-                    <p class="body1 mb-3 pt-1 fw-bold" style="color: #011A3E;">Total Users Active</p>
-                    <span style="color:#aeb4bf;;">Increased by <span style="color: #00D9CC;">15%</span><i class='bx bx-up-arrow-alt' style="color: #00D9CC;"></i></span>
-                    <div class="avatar-group d-flex my-3 py-md-2">
-                      <span class="avatar avatar-lg avatar-circle">
-                      <img class="avatar-img" src="assets/Ellipse 63.png" alt="Avatar">
-                      </span>
-                      <span class="avatar avatar-lg avatar-circle">
-                      <img class="avatar-img" src="assets/Ellipse 64.png" alt="Avatar">
-                      </span>
-                      <span class="avatar avatar-lg avatar-circle">
-                      <img class="avatar-img" src="assets/Ellipse 65.png" alt="Avatar">
-                      </span>
-
-                      </div>
-                  </div>
-                  <div class="col-md-5 col-5" >
-                    <div class="mt-5">
-                      <h2 class="pb-0 mb-0 fw-bold" style="color:#011A3E">50</h2>
-                      <p class="pt-0" style="color: #AEB4BF;">Users</p>
-                  </div>
-                  </div>
-                </div>
-                </div>
-            </div>
-            <div class="card border-0 p-2 mb-1" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-7 col-7">
-                    <p class="body1 mb-3 pt-1 fw-bold" style="color: #011A3E;">Total Vendors Active</p>
-                    <span style="color:#aeb4bf;;">Increased by <span style="color: #00D9CC;">15%</span><i class='bx bx-up-arrow-alt' style="color: #00D9CC;"></i></span>
-                    <div class="avatar-group d-flex my-3 py-md-2">
-                      <span class="avatar avatar-lg avatar-circle">
-                      <img class="avatar-img" src="assets/Ellipse 63.png" alt="Avatar">
-                      </span>
-                      <span class="avatar avatar-lg avatar-circle">
-                      <img class="avatar-img" src="assets/Ellipse 64.png" alt="Avatar">
-                      </span>
-                      <span class="avatar avatar-lg avatar-circle">
-                      <img class="avatar-img" src="assets/Ellipse 65.png" alt="Avatar">
-                      </span>
-
-                      </div>
-                  </div>
-                  <div class="col-md-5 col-5">
-                    <div class="mt-5">
-                    <h2 class="pb-0 mb-0 fw-bold" style="color:#011A3E">25</h2>
-                    <p class="pt-0" style="color: #AEB4BF;">Vendors</p>
-                  </div>
-                  </div>
-                </div>
-                </div>
-            </div>
-           </div>
-         
           </div>
-         
-        <div class="row align-items-center pt-2">
-          <div class="col-md-12">
-            <div class="card border-0" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
-              <div class="card-header " style="background-color:#ffff;">
-                <div class="row">
-                  <div class="col-5 card-header_border">
-                    <p class="body1 card-title mt-2" style="color: #354053;">Add-On List </p>
-                </div> 
-                <div class="col-7">
-                  <a  class="btn btn-primary border-0 btn-1" style="float:right;background-color:#0070D2;height:40px;padding:10px 18px;box-shadow: 0px 4px 20px #c3d2ff00;">
-                    Add New Add-On
-                  </a>
-              </div>
-            </div>
-                </div>
-                <div class="card-body">
-                <form #mainForm="ngForm" (ngSubmit)="onSubmit()">
-                  <div class="row mt-2">
-                    <div class="col-md-12">
-                      <div class="row">
-                      <div class="col-md-5"> 
-                        <div class="mb-4">
-                          <label class="form-label body2" style="color: #011A3E;">Add-On Name</label>
-                          <input type="text" class="form-control" [(ngModel)]="Addon.addonName" name="addonName">
-                        </div>
 
-                      </div>
-                      <div class="col-md-3">
-                        <div class="mb-4">
-                        <label class="form-label body2" style="color: #011A3E;">Price</label>
-                          <input type="text" class="form-control" [(ngModel)]="Addon.price" name="price"> 
-                        </div>
-                      </div>
-                      <div class="col-md-5">
-                        <div class="mb-4">
-                        <label class="form-label body2" style="color: #011A3E;">Add-On Parameter</label>
-                        <select class="form-select classic" aria-label="Default select example" [(ngModel)]="Addon.parameter" name="parameter">
-                          <option selected>Parameter 1</option>
-                          <option value="1">Parameter 2</option>
-                        </select>
-                      </div>
-                      </div>
-                      <div class="col-md-5">
-                        <div class="mb-4">
-                        <label class="form-label body2" style="color: #011A3E;">Add-On Value</label>
-                        <input type="text" class="form-control" [(ngModel)]="Addon.value" name="value"> 
-                      </div>
-                      </div>
-                      <div class="col-md-10">
-                        <div class="mb-4">
-                        <label class="form-label body2" style="color: #011A3E;">Description</label>
-                          <input type="text" class="form-control" [(ngModel)]="Addon.description" name="description"> 
-                      </div>
-                    </div>
-
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12 mb-2">
-                        <a href="#" class="btn btn-primary mt-1 btn-1 me-2 border-0" style="background-color:#0070D2;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #C3D2FF;">
-                          Save
-                        </a> 
-                        <a href="#" class="btn btn-primary mt-1 btn-2   me-2 border-0" style="background-color:#F7517F;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #C3D2FF;">
-                          Delete
-                        </a> 
-                        <a href="#" class="btn btn-outline-primary  btn-1 mt-1" style="height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #c3d2ff00;">
-                          Reset
-                        </a> 
-                    </div>
-                  </div>
-                    </div>
-                   
-                  </div>
-                </form>
-                </div>
-              
-              <div class="table-responsive">
-                <table class="table table-hover table-nowrap align-items-center" style="min-width: 768px;" id="DyanmicTable">
-                  <thead class="thead-light">
-                    <tr style="text-transform:uppercase;">
-                      <th  class="body2" >ADD ON NAME</th>
-                      <th  class="body2" >DESCRIPTION  </th>
-                      <th  class="body2" >CREATED ON </th>
-                      <th  class="body2" >Actions </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td style="vertical-align: middle;">
-                           <span class="body2 my-2" style="color: #354053;">Support </span>
-                       </td>
-                      <td style="vertical-align: middle;">
-                        <span class="body2 my-2" style="color: #354053;">24/7 support service available </span>
-                       </td>
-                       <td style="vertical-align: middle;">
-                        <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
-                       </td>
-                       <td style="vertical-align: middle;">
-                        <div class="mt-1 d-flex">
-                          <a href="#" class="me-2">
-                            <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
-                          </a>
-                        <a href="#" class="me-1">
-                          <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>                        </a>
-                         </div>
-                      </td>                      
-                    </tr>
-                    <tr>
-                      <td style="vertical-align: middle;">
-                            <span class="body2 my-2" style="color: #354053;">Sub - Users</span>
-                       </td>
-                      <td style="vertical-align: middle;">
-                        <span class="body2 my-2" style="color: #354053;">User can add more sub user </span>
-                       </td>
-                       <td style="vertical-align: middle;"> 
-                        <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
-                       </td>
-                       <td style="vertical-align: middle;">
-                        <div class="mt-1 d-flex">
-                          <a href="#" class="me-2">
-                            <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
-                          </a>
-                        <a href="#" class="me-1">
-                          <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>
-                        </a>
-                         </div>
-                      </td>                      
-                    </tr>
-                    <tr>
-                      <td style="vertical-align: middle;">
-                              <span class="body2 my-2" style="color: #354053;">Add GB available </span>
-                       </td>
-                      <td style="vertical-align: middle;">
-                        <span class="body2 my-2" style="color: #354053;">User can increase the space </span>
-                       </td>
-                       <td style="vertical-align: middle;">
-                        <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>
-                       </td> <td style="vertical-align: middle;">
-                        <div class="mt-1 d-flex">
-                          <a href="#" class="me-2">
-                            <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
-                          </a>
-                        <a href="#" class="me-1">
-                          <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>                        </a>
-                         </div>
-                      </td>                      
-                    </tr>
-                    <tr>
-                      <td style="vertical-align: middle;">
-                              <span class="body2 my-2" style="color: #354053;"> Location </span>
-                       </td>
-                      <td style="vertical-align: middle;">
-                        <span class="body2 my-2" style="color: #354053;">User can add location</span>
-                       </td>
-                       <td style="vertical-align: middle;">                      
-                        <span class="body2 my-2" style="color: #354053;">14/APR/2020 </span>                     
-                       </td> 
-                       <td style="vertical-align: middle;">
-                        <div class="mt-1 d-flex">
-                          <a href="#" class="me-2">
-                            <span class="material-icons" style="font-size: 1.55rem;color: #07D5E8;">edit </span>
-                          </a>
-                        <a href="#" class="me-1">
-                          <i class="bx bxs-trash" style="font-size: 1.55rem;color:#FA9FBD;"></i>                        </a>
-                         </div>
-                      </td>                    
-                    
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-      </div>
-     
-
-
-     
-    
-     
-
-</div>
-</div>
 
 <script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>

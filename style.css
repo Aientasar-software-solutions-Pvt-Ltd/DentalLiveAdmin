@@ -349,6 +349,7 @@ td .body2{
    background-size: 5px 5px, 5px 5px, 2.7em 2.7em;
    background-repeat: no-repeat;}
 ::-webkit-calendar-picker-indicator { background-image: url('assets/calendar.svg');}
+::-ms-calendar-picker-indicator { background-image: url('assets/calendar.svg');}
 
 .btn-1:hover {background: #1991EB!important;color: white!important;-webkit-transition: all 0.35s ease;transition: all 0.35s ease;border: none!important;}
 .btn-1:active {transform: translateY(-0.25em);background: #07D5E8!important;color: white!important;border: none!important;}
