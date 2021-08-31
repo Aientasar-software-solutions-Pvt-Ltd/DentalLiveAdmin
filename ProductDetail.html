@@ -123,24 +123,21 @@
                   <li><a href="VendorOustandinglist.html" class="nav_link "> <span class="nav_name">Vendor
                         outstanding</span> </a></li>
                 </ul>
-                <a href="Cms.html" class="nav_link "> <i class='bx bx-cog nav_icon'></i> <span
-                    class="nav_name">CMS</span> </a>
+                
               </div>
           </nav>
           <nav class="nav mt-5">
             <div class="nav_list">
               <span class="body2 ms-4" style="color:#5D6A7E;">SYSTEM</span>
               <div id="nav_accordion">
+                <a href="Cms.html" class="nav_link "> <i class='bx bx-cog nav_icon'></i> <span
+                  class="nav_name">CMS</span> </a>
                 <a href="UserList.html" class="nav_link"> <i class='bx bx-right-arrow-circle nav_icon'></i> <span
                     class="nav_name">Users</span> </a>
                 <a href="Permissions.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i><span
                     class="nav_name">Permissions</span> </a>
-                <a href="Integration.html" class="nav_link"><i class='bx bx-right-arrow-circle nav_icon'></i><span
-                    class="nav_name">Integration</span> </a>
-                <a href="ContactList.html" class="nav_link "><i class='bx bx-right-arrow-circle nav_icon'></i><span
-                    class="nav_name">Contacts</span> </a>
-                <a href="SocialMedia.html" class="nav_link "><i class='bx bx-right-arrow-circle nav_icon'></i><span
-                    class="nav_name">Social</span> </a>
+              
+             
               </div>
           </nav>
           <nav class="nav mt-5">
@@ -200,9 +197,9 @@
                         </div>
                         <div class="col-md-8">
                           <div class="mb-4">
-                            <label class="form-label body2" style="color: #011A3E;">Feature Name</label>
+                            <label class="form-label body2" style="color: #011A3E;">Description</label>
                             <input type="text" class="form-control" [(ngModel)]="product.description"
-                              name="featureName">
+                              name="Description">
                           </div>
                         </div>
                       </div>
@@ -223,13 +220,15 @@
                           <div class="col-md-4 ">
                             <div class="mb-4">
                               <label class="form-label body2" style="color: #011A3E;">Feature Name</label>
-                              <input #featureName type="text" class="form-control">
+                              <input #featureName type="text" class="form-control" [(ngModel)]="feature.featureName"
+                              name="featureName">
                             </div>
                           </div>
                           <div class="col-md-5">
                             <div class="mb-4">
                               <label class="form-label body2" style="color: #011A3E;">Description</label>
-                              <input #featureDescription type="text" class="form-control">
+                              <input #featureDescription type="text" class="form-control" [(ngModel)]="feature.description"
+                              name="Description">
                             </div>
                           </div>
                           <div class="col-md-3">

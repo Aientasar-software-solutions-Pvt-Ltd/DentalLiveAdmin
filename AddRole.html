@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
     <style>
+      .form-check-input {
+    width: 15px;
+    height: 15px;
+}
    .profile-img img {
     width: 150px;
     height: 150px;
@@ -68,9 +72,6 @@
                 <li  class="nav-item"><a  class="nav-link body2"   href="Cms.html" style="color:#282C33">CMS</a></li>
                 <li  class="nav-item"><a  class="nav-link body2"  href="UserList.html" style="color:#282C33">Users</a></li>
                 <li  class="nav-item"><a  class="nav-link body2"   href="Permissions.html" style="color:#282C33">Permissions</a></li>
-                  <li  class="nav-item"><a  class="nav-link body2"   href="Integration.html" style="color:#282C33">Integration</a></li>
-                  <li  class="nav-item"><a  class="nav-link body2"   href="ContactList.html" style="color:#282C33">Contacts</a></li>
-                  <li  class="nav-item"><a  class="nav-link body2"   href="SocialMedia.html" style="color:#282C33">Social</a></li>
                   <li  class="nav-item"><a  class="nav-link body2"   href="AccountDetail.html" style="color:#282C33">Account Settings </a></li>
                   <li  class="nav-item"><a  class="nav-link body2"   href="Adminlogin.html" style="color:#282C33">Logout</a></li>
               </ul>
@@ -105,9 +106,8 @@
         <nav class="nav mt-5"> 
           <div class="nav_list" >
             <span class="body2 ms-4" style="color:#5D6A7E;">SYSTEM</span>
-            <div id="nav_accordion">
+            <div>
               <a href="Cms.html" class="nav_link "> <i class='bx bx-cog nav_icon'></i> <span class="nav_name">CMS</span> </a>
-
             <a href="UserList.html" class="nav_link"> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Users</span> </a>
             <a href="Permissions.html" class="nav_link active"> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Permissions</span> </a>
         </div>
@@ -115,7 +115,7 @@
       <nav class="nav mt-5"> 
         <div class="nav_list" >
           <span class="body2 ms-4" style="color:#5D6A7E;">SETTINGS</span>
-          <div id="nav_accordion">
+          <div >
           <a href="AccountDetail.html" class="nav_link"> <i class='bx bx-right-arrow-circle nav_icon'></i> <span class="nav_name">Account Settings </span> </a>
           <a href="Adminlogin.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Logout</span> </a>
       </div>
@@ -124,13 +124,16 @@
          </div>
        </div>
      <div class="col-md-9 col-lg-10 p-4 mx-auto">
-          <div class="page-header d-flex">
+       <div class="row">
+         <div class="col-md-12">
+          <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <!-- breadcrumb --> 
-              <li class="breadcrumb-item">
-                <h5 class="fw-bold" style="color: #011A3E;">Permissions</h5>
-            </li> 
-          </ol>
+              <li class="breadcrumb-item fw-bold h5"><a href="Permissions.html" style="color: #011A3E;">Permissions</a></li>
+              <li class="breadcrumb-item active fw-bold h5" aria-current="page" style="color: #011A3E;">Add Role</li>
+            </ol>
+          </nav>
+          
+      </div>
           
           </div>    
          <div class="row  pt-2">
@@ -142,18 +145,10 @@
                     <div class="d-flex my-2">
                     <i class='bx bx-right-arrow-circle pe-2' style="color: #00D9CC;font-size:26px;"></i>
                     <h6 style="color:#354053"> Select Role </h6></div>
-                    <div class="col-md-9">
-                      <div class="mb-4">
-                      <select class="form-select " aria-label="Default select example" style="height:40px"> 
-                        <option selected="">Select Role</option>
-                        <option value="1">Parameter 2</option>
-                      </select></div>
+                    <div class="col-md-10">
+                      <input type="email" class="form-control" placeholder="Enter Role name here" style="font-weight: 400;">
                     </div>
-                    <div class="col-md-3">
-                      <a href="AddRole.html" class="btn btn-primary btn-1  me-3 mb-2  border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background-color:#0070D2;height:40px;padding:10px 31px;">
-                        Add New 
-                      </a>
-                     </div>         
+             
                   </div>
                 </div>
               </div>
@@ -167,13 +162,13 @@
                   <div class="card-body">
                     <div class="row ">
                       <div class="d-flex my-2">
-                        <i class="bx bx-right-arrow-circle pe-2" style="color: #00D9CC;font-size:26px;"></i>
+                        <i class='bx bx-right-arrow-circle pe-2' style="color: #00D9CC;font-size:26px;"></i>
                         <h6 style="color:#354053"> Permissions</h6></div>
                       <div class="col-md-12">
                         <div class="table-responsive">
                           <table class="table  table-nowrap align-items-center">
                             <thead class="thead-light">
-                              <tr>
+                              <tr >
                                 <th class="body2 fw-bold" style="color:#5D6A7E;">Customer </th>
                                 <th class="body2"></th>
                                 <th class="body2"></th>
@@ -216,7 +211,7 @@
                         <div class="table-responsive">
                           <table class="table  table-nowrap align-items-center">
                             <thead class="thead-light">
-                              <tr>
+                              <tr >
                                 <th class="body2 fw-bold" style="color:#5D6A7E;">Products</th>
                                 <th class="body2"></th>
                                 <th class="body2"></th>
@@ -259,7 +254,7 @@
                         <div class="table-responsive">
                           <table class="table  table-nowrap align-items-center">
                             <thead class="thead-light">
-                              <tr>
+                              <tr >
                                 <th class="body2 fw-bold" style="color:#5D6A7E;">Packages </th>
                                 <th class="body2"></th>
                                 <th class="body2"></th>
@@ -302,7 +297,7 @@
                         <div class="table-responsive">
                           <table class="table  table-nowrap align-items-center">
                             <thead class="thead-light">
-                              <tr>
+                              <tr >
                                 <th class="body2 fw-bold" style="color:#5D6A7E;">Vendors </th>
                                 <th class="body2"></th>
                                 <th class="body2"></th>
@@ -346,7 +341,7 @@
                         <div class="table-responsive">
                           <table class="table  table-nowrap align-items-center">
                             <thead class="thead-light">
-                              <tr>
+                              <tr >
                                 <th class="body2 fw-bold" style="color:#5D6A7E;">Finance  </th>
                                 <th class="body2"></th>
                                 <th class="body2"></th>
@@ -389,7 +384,7 @@
                         <div class="table-responsive">
                           <table class="table  table-nowrap align-items-center">
                             <thead class="thead-light">
-                              <tr>
+                              <tr >
                                 <th class="body2 fw-bold" style="color:#5D6A7E;">CMS  </th>
                                 <th class="body2"></th>
                                 <th class="body2"></th>
@@ -432,7 +427,7 @@
                         <div class="table-responsive">
                           <table class="table  table-nowrap align-items-center">
                             <thead class="thead-light">
-                              <tr>
+                              <tr >
                                 <th class="body2 fw-bold" style="color:#5D6A7E;">System </th>
                                 <th class="body2"></th>
                                 <th class="body2"></th>
@@ -475,7 +470,7 @@
                         <div class="table-responsive">
                           <table class="table  table-nowrap align-items-center">
                             <thead class="thead-light">
-                              <tr>
+                              <tr >
                                 <th class="body2 fw-bold" style="color:#5D6A7E;">Account Settings   </th>
                                 <th class="body2"></th>
                                 <th class="body2"></th>
@@ -520,7 +515,13 @@
                      </div>
                   </div>
                 </div>
-               
+                <div class="row mt-2">
+                  <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary btn-1  me-3   border-0" style="background-color:#0070D2;height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #C3D2FF;">
+                      Save
+                    </button>
+                  </div>
+                </div>
               </div>
              
             </div>
